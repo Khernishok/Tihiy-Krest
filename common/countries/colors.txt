@@ -18,6 +18,10 @@ MOP = {
 	color = rgb { 255 69 0 }
 	color_ui = rgb { 163 44 0 }
 }
+JOJ = {
+	color = rgb { 253 223 83 }
+	color_ui = rgb { 163 44 0 }
+}
 KAV = {
 	color = rgb { 128 128 0 }
 	color_ui = rgb { 85 107 47 }

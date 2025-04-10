@@ -12,8 +12,8 @@ state = {
 
 	history = {
 		owner = KAV
-		add_claim_by = RUS
-		add_core_of = RUS
+		
+		add_core_of = KAV
 		add_core_of = CIN
 		add_claim_by = KUB
 		buildings = {

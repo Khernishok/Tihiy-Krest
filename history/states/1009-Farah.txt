@@ -3,10 +3,10 @@ state={
 	name="STATE_1009"
 	state_category = rural
 	provinces={
-		2017 2062 2078 1948
+		2017 2062  1948
 	}
 	history={
-		owner = AFG
+		owner = RAJ
 		add_core_of = AFG
 		add_core_of = PSH
 		add_core_of = KHO

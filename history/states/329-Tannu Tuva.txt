@@ -11,8 +11,8 @@ state={
 
 	history={
 		owner = TAN
-		controller = MON
-		add_claim_by = MON
+		
+		add_core_of = MON
 		add_core_of = TAN
 		add_claim_by = RUS
 		buildings = {

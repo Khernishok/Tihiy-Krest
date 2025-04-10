@@ -3,7 +3,7 @@ state={
 	name="STATE_612"
 
 	history={
-		owner = QIN 
+		owner = MON 
 		add_core_of = MON
 		add_core_of = QIN
 		add_core_of = MEN

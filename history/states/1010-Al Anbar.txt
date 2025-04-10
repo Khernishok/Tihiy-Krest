@@ -9,7 +9,7 @@ state = {
 	}
 
 	history = {
-		owner = IRQ
+		owner = TUR
 		add_core_of = IRQ
 		add_claim_by = JSH
 		victory_points = {
