@@ -1,0 +1,34 @@
+﻿capital = 43
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1896.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    monarchy = 27              
+    constitutional_monarchy = 10
+    conservatism = 15       
+    liberalism = 12         
+    nationalism = 10         
+    socialism = 8              
+    catholicism = 10          
+    orthodox = 5               
+    jewish = 3                 
+}
+
+1896.1.1 = {
+set_stability = 0.50
+}
+
+set_stability = 0.50
+
+	# Лидеры страны
+
+recruit_character = HUN_
+
+
+
+

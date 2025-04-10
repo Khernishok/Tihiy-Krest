@@ -1,0 +1,27 @@
+state={
+	id=1037
+	name="STATE_1037"
+	history={
+		add_core_of = ENG
+		add_core_of = GUE
+		add_core_of = NRM
+		owner = ENG
+		victory_points = {
+			13366 1 
+		}
+		buildings = {
+			infrastructure = 1
+			13366 = {
+				naval_base = 1
+
+			}
+		}
+	}
+	provinces={
+		13378
+	}
+	manpower=41000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

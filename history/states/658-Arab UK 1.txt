@@ -1,0 +1,31 @@
+
+state={
+	id=658
+	name="STATE_658"
+	manpower = 71994
+	
+	state_category = pastoral
+
+
+	history={
+		add_core_of = UAE
+		add_core_of = ADI
+		owner = ENG
+		victory_points = {
+			7960 1 
+		}
+		buildings = {
+			infrastructure = 1
+			7960 = {
+				naval_base = 2
+			}
+		}
+
+	}
+
+	provinces={
+		2048 7960 8108
+	}
+
+	local_supplies=4.0 
+}

@@ -1,0 +1,64 @@
+spriteTypes = {
+	### Unit.Battalions ###
+	spriteType = {		name = "GFX_unit_militia_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Infantry.Militia.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_no_intel_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.No.Intel.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_amphibious_armor_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Armour.Amphibious.Light.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_heavy_armor_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Armour.Tank.Heavy.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_heavy_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.SPAA.Heavy.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_heavy_sp_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.SPG.Heavy.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_heavy_tank_destroyer_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.TD.Heavy.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_light_armor_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Armour.Tank.Light.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_light_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.SPAA.Light.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_light_sp_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.SPG.Light.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_light_tank_destroyer_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.TD.Light.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_medium_armor_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Armour.Tank.Medium.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_medium_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.SPAA.Medium.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_medium_sp_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.SPG.Medium.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_medium_tank_destroyer_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.TD.Medium.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_modern_armor_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Armour.Tank.Modern.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_modern_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.SPAA.Modern.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_modern_sp_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.SPG.Modern.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_modern_tank_destroyer_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.TD.Modern.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_super_heavy_armor_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Armour.Tank.SuperHeavy.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_super_heavy_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.SPAA.SuperHeavy.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_super_heavy_sp_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.SPG.SuperHeavy.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_super_heavy_tank_destroyer_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.TD.SuperHeavy.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.AntiAircraft.Towed.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_anti_tank_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.AntiTank.Towed.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.Gun.Towed.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_bicycle_battalion_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Mobile.Infantry.Bicycle.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_fake_intel_unit_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Fake.Intel.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_infantry_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Infantry.Foot.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_marine_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Infantry.Marine.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_mountaineers_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Infantry.Mountain.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_paratrooper_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Infantry.Airborne.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_rocket_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.Rocket.Towed.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_amphibious_mechanized_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Mobile.Infantry.Mechanised.Amphibious.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_armored_car_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Mobile.Cavalry.Armoured.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_cavalry_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Mobile.Cavalry.Horsed.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_mechanized_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Mobile.Infantry.Mechanised.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_mot_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.AntiAircraft.Motorised.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_mot_anti_tank_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.AntiTank.Motorised.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_mot_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.Gun.Motorised.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_mot_rocket_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.Rocket.Motorised.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_motorized_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Mobile.Infantry.Motorised.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_motorized_rocket_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Mobile.Rocket.Motorised.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_anti_air_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.AntiAircraft.Towed.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_anti_tank_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.AntiTank.Towed.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_armored_car_recon_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Support.Recon.ArmouredCar.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_artillery_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.Gun.Towed.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_engineer_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Support.Engineer.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_field_hospital_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Support.Hospital.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_light_tank_recon_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Support.Recon.Tank.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_logistics_company_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Support.Logistics.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_maintenance_company_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Support.Maintenance.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_military_police_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Support.MilitaryPolice.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_mot_recon_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Support.Recon.Motorised.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_recon_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Support.Recon.Cavalry.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_rocket_artillery_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Artillery.Rocket.Towed.Bn.map.dds"		noOfFrames = 2		}
+	spriteType = {		name = "GFX_unit_signal_company_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/mpu.unit.Support.Signal.Bn.map.dds"		noOfFrames = 2		}
+	
+	
+	}
+	### EOF ###
+	

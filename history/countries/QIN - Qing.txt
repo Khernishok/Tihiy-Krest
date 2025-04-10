@@ -1,0 +1,51 @@
+capital = 195
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+monarchy = 50
+conservatism = 25
+nationalism = 10
+liberalism = 5
+socialism = 3
+military_dictatorship = 2
+neutrality = 2
+buddism = 3
+}
+
+if = {
+	set_autonomy = {
+		target = TIB
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = TAN
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = VIN
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = MAN
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+
+
+set_stability = 0.50
+
+# Лидеры страны
+
+recruit_character = QIN_Cixi_Taihou
+recruit_character = QIN_Guangxi_Aixingero_Zaitian
+

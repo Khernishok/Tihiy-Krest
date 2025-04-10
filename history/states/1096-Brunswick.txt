@@ -1,0 +1,35 @@
+state={
+	id=1096
+	name="STATE_1096"
+
+	history={
+		owner = BSW
+		add_claim_by = PRE
+		victory_points = {
+			9375 1 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = GER
+		add_core_of = WGR
+		add_core_of = BSW
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 1
+				dockyard = 1
+
+			}
+
+		}
+	}
+	provinces={
+		9375 11493 
+	}
+	manpower=500000
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

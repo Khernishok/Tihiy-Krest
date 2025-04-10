@@ -1,0 +1,28 @@
+state={
+	id=816
+	name="STATE_816"
+	state_category = town
+	history={
+		owner = WVR
+		controller = USA
+		add_claim_by = USA
+		add_core_of = WVR
+		add_core_of = VRG
+		add_core_of = APL
+		add_claim_by = IRO
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 3
+			air_base = 3
+		}
+		victory_points = {
+			7588 3
+		}
+	}
+	provinces={
+		801 3941 3975 4627 6850 6958 6971 7466 7588 7646 9923 10441 11888 
+	}
+	manpower=1901974
+	buildings_max_level_factor=1.000
+	state_category = town
+}

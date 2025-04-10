@@ -1,0 +1,50 @@
+﻿capital = 16
+
+set_politics = {
+    ruling_party = liberalism
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+if = {
+		set_autonomy = {
+		target = ALS
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = TUN
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+}
+
+set_popularities = {             
+    liberalism = 32
+    democratic = 20 
+	nationalism = 10
+    conservatism = 10                      
+    socialism = 6    
+	military_dictatorship = 9 
+    military_soviet = 5
+	neutrality = 3
+	torgovtsy = 5       
+}
+
+
+	# Лидеры страны
+
+recruit_character = FRA_Napoleon_4_Eugene
+recruit_character = FRA_Jean_Casimir_Perrier
+
+	
+
+
+
+
+
+
+
+
+

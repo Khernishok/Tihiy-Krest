@@ -1,0 +1,26 @@
+
+state={
+	id=565
+	name="STATE_565" # Bodaybo
+	manpower = 195325
+	state_category = rural
+	resources={
+		steel=10 # was: 32
+		chromium=5 # was: 12
+	}
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = RUS
+		add_core_of = EVE
+	}
+
+	provinces={
+		1792 4703 4737 4795 4868 7726 7759 7828 10583 10654 10688 12531 12668 12681 
+	}
+
+	local_supplies=5.0 
+}

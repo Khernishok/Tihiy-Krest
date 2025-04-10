@@ -1,0 +1,28 @@
+state={
+	id=1062
+	name="STATE_1062"
+
+	history={
+		victory_points = {
+			7541 1 
+		}
+		owner = RUS
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = RUS
+		add_core_of = UZB
+		add_core_of = KKP
+		add_core_of = NOG
+
+	}
+
+	provinces={
+		7541 10348 12233 12474 13207 
+	}
+	manpower=13000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

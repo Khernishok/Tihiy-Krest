@@ -1,0 +1,24 @@
+state={
+	id=1128
+	name="STATE_1128"
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SYR
+		add_core_of = DMS
+		add_claim_by = ISR
+		add_claim_by = DRU
+
+	}
+
+	provinces={
+		13382
+	}
+	manpower=14000
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

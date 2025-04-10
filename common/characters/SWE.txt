@@ -1,0 +1,130 @@
+characters = {
+
+    # Оскар II Фредерик
+    oscar_ii_fredrik_bernadotte = {
+        name = "oscar_ii_fredrik_bernadotte"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_oscar_ii_fredrik_bernadotte_1"
+            }
+            army = {
+                large = "GFX_oscar_ii_fredrik_bernadotte_4"  
+                small = "gfx/interface/ideas/SWE_oscar_ii_fredrik_bernadotte.dds"  # Маленький портрет
+            }
+        }
+		
+    # Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = {
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -7000
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -7001
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборочная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -7002
+			visible = { always = yes }  # Всегда видим
+        }
+
+		
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+	
+	
+	
+	
+	
+  # Густав V Оскар Адольф
+    Gustav_V_Oscar_Adolf = {
+        name = "Gustav_V_Oscar_Adolf"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_Gustav_V_Oscar_Adolf_1"
+            }
+            army = {
+                large = "GFX_Gustav_V_Oscar_Adolf_4"
+                small = "gfx/interface/ideas/SWE_Gustav_V_Oscar_Adolf.dds"  # Маленький портрет
+            }
+        }
+		
+    # Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = {
+            }
+            expire = "1953.3.1.1"  # Дата окончания правления
+            id = -7003
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "1953.3.1.1"  # Дата окончания правления
+            id = -7004
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборочная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "1953.3.1.1"  # Дата окончания правления
+            id = -7005
+			visible = { always = yes }  # Всегда видим
+        }
+
+		
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+}

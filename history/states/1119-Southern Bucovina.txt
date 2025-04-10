@@ -1,0 +1,24 @@
+state={
+	id=1119
+	name="STATE_1119"
+
+	history={
+		owner = MOP
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = MOP
+		add_core_of = ROM
+		add_core_of = MOL
+		add_claim_by = GAL
+		add_core_of = BCV
+	}
+
+	provinces={
+		6761 11689 
+	}
+	manpower=439400
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

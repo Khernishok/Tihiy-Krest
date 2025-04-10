@@ -1,0 +1,1404 @@
+characters = {
+
+    # Николай II
+    RUS_tsar_nikolai_ii_romanov = {
+        name = "RUS_tsar_nikolai_ii_romanov"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_tsar_nikolai_ii_2"  # Портрет для гражданской роли
+            }
+            army = {
+                large = "GFX_RUS_tsar_nikolai_ii_3"  # Портрет для роли генерала
+                small = "gfx/interface/ideas/rus_tsar_nicolas.dds"  # Маленький портрет
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = {
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1000  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1001  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1002  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Монархо-Коммунизм)
+        country_leader = {
+            ideology = monarchical_communism_subtype
+			traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1003  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Православные)
+        country_leader = {
+            ideology = orthodox_subtype
+            traits = {      
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1004  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+				
+	# Лидер страны (Национал-Социализм)
+        country_leader = {
+            ideology = national_socialism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1005  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1006  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1007  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1008  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+
+
+
+
+    # Александра Федоровна
+	
+    RUS_alexandra_fedorovna = {
+        name = "RUS_alexandra_fedorovna"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_alexandra_fedorovna_1"  # Портрет для гражданской роли
+            }
+            army = {
+                large = "GFX_RUS_alexandra_fedorovna_4"  # Портрет для роли генерала (если есть)
+                small = "gfx/interface/ideas/rus_alexandra_fedorovna_icon.dds"  # Маленький портрет
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1020  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1021  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Монархо-Коммунизм)
+        country_leader = {
+            ideology = monarchical_communism_subtype
+			traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1022  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Православные)
+        country_leader = {
+            ideology = orthodox_subtype
+            traits = {      
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1023  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		
+	# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1024  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+        # Генерал (фельдмаршал) - опционально, если хотите добавить её как генерала
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                defensive_planner  # Черта: Оборонный стратег
+            }
+            skill = 4  # Общий уровень навыков
+            attack_skill = 2  # Навык атаки
+            defense_skill = 3  # Навык обороны
+            planning_skill = 2  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            } 
+        }
+    }
+	
+	
+	
+	
+	
+	    # Жириновский Владимир Вольфович
+		
+    RUS_Vladimir_Volfovich_Zhirinovsky = {
+        name = "RUS_Vladimir_Volfovich_Zhirinovsky"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_Vladimir_Volfovich_Zhirinovsky_1"  # Портрет для гражданской роли
+            }
+            army = {
+                large = "GFX_RUS_Vladimir_Volfovich_Zhirinovsky_3"  # Портрет для роли генерала (если есть)
+                small = ""  # Маленький портрет
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1030 # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1031  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1032  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Монархо-Коммунизм)
+        country_leader = {
+            ideology = monarchical_communism_subtype
+			traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1033  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Православные)
+        country_leader = {
+            ideology = orthodox_subtype
+            traits = {      
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1034  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1035  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Хунта)
+        country_leader = {
+            ideology = junta_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1036  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1037  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		
+		# Лидер страны (Военный совет)
+        country_leader = {
+            ideology = military_soviet_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1038  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+	
+	
+	
+	# Лидер страны (Конфедерация)
+        country_leader = {
+            ideology = confederation_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1039  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Демократия)
+        country_leader = {
+            ideology = democratic_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1040  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Консерватизм)
+        country_leader = {
+            ideology = conservatism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1041  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Социализм)
+        country_leader = {
+            ideology = socialism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1042  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Сталинизм)
+        country_leader = {
+            ideology = stalinism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1043  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Национал-Социализм)
+        country_leader = {
+            ideology = national_socialism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1044  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Рабовладельцы)
+        country_leader = {
+            ideology = slave_owners_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1045  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+        # Генерал (фельдмаршал) - опционально, если хотите добавить её как генерала
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                defensive_planner  # Черта: Оборонный стратег
+            }
+            skill = 4  # Общий уровень навыков
+            attack_skill = 9  # Навык атаки
+            defense_skill = 9  # Навык обороны
+            planning_skill = 9  # Навык планирования
+            logistics_skill = 9  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            } 
+        }
+    }
+	
+	
+	
+	
+	    # Николай Николаевич
+		
+    RUS_Nikolay_Nikolaevich_Romanov_junior = {
+        name = "RUS_Nikolay_Nikolaevich_Romanov_junior"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_Nikolay_Nikolaevich_Romanov_junior_1"  # Портрет для гражданской роли
+            }
+            army = {
+                large = "GFX_RUS_Nikolay_Nikolaevich_Romanov_junior_2"  # Портрет для роли генерала (если есть)
+                small = ""  # Маленький портрет
+            }
+        }
+
+            # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1046  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1047  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1048  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Монархо-Коммунизм)
+        country_leader = {
+            ideology = monarchical_communism_subtype
+			traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1049 # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Православные)
+        country_leader = {
+            ideology = orthodox_subtype
+            traits = {      
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1050  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1051  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Хунта)
+        country_leader = {
+            ideology = junta_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1052  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1053  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		
+		# Лидер страны (Военный совет)
+        country_leader = {
+            ideology = military_soviet_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1054  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+	
+		
+	# Лидер страны (Социализм)
+        country_leader = {
+            ideology = socialism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1055  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+		
+	# Лидер страны (Национал-Социализм)
+        country_leader = {
+            ideology = national_socialism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1056  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+
+        # Генерал (фельдмаршал) - опционально, если хотите добавить её как генерала
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                defensive_planner  # Черта: Оборонный стратег
+            }
+            skill = 4  # Общий уровень навыков
+            attack_skill = 9  # Навык атаки
+            defense_skill = 9  # Навык обороны
+            planning_skill = 9  # Навык планирования
+            logistics_skill = 9  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            } 
+        }
+    }
+	
+	
+	
+		    # Михаил Александрович Романов
+		
+    RUS_Mikhail_Alexandrovich_Romanov = {
+        name = "RUS_Mikhail_Alexandrovich_Romanov"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_Mikhail_Alexandrovich_Romanov_1"  # Портрет для гражданской роли
+            }
+            army = {
+                large = "GFX_RUS_Mikhail_Alexandrovich_Romanov_2"  # Портрет для роли генерала (если есть)
+                small = ""  # Маленький портрет
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1057  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1058  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1059  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Монархо-Коммунизм)
+        country_leader = {
+            ideology = monarchical_communism_subtype
+			traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1060  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Православные)
+        country_leader = {
+            ideology = orthodox_subtype
+            traits = {      
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1061  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1062  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		
+		# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1063  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		
+		# Лидер страны (Военный совет)
+        country_leader = {
+            ideology = military_soviet_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1064  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		
+	# Лидер страны (Консерватизм)
+        country_leader = {
+            ideology = conservatism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1065  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Социализм)
+        country_leader = {
+            ideology = socialism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1066  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		
+	# Лидер страны (Национал-Социализм)
+        country_leader = {
+            ideology = national_socialism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1067  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+        # Генерал (фельдмаршал) - опционально, если хотите добавить её как генерала
+        field_marshal = {
+            traits = { 
+      
+            }
+            skill = 4  # Общий уровень навыков
+            attack_skill = 9  # Навык атаки
+            defense_skill = 9  # Навык обороны
+            planning_skill = 9  # Навык планирования
+            logistics_skill = 9  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+    # Лев Давидович Троцкий
+    RUS_Leon_Trotsky = {
+        name = "RUS_Leon_Trotsky"
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_Leon_Trotsky_8" 
+            }
+            army = {
+                large = "GFX_RUS_Leon_Trotsky_9"
+                small = "gfx/interface/ideas/RUS_Leon_Trotsky.dds"  
+            }
+        }
+		
+	# Лидер страны (Коммунизм)
+        country_leader = {
+            ideology = communism_subtype
+            traits = { 
+            }
+            id = -1068  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+	# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            id = -1069  
+			visible = { always = yes }  
+        }
+		
+	# Лидер страны (Хунта)
+        country_leader = {
+            ideology = junta_subtype
+            traits = { 
+            }
+            id = -1070  
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Социализм)
+        country_leader = {
+            ideology = socialism_subtype
+            traits = { 
+            }
+            id = -1071
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Марксизм)
+        country_leader = {
+            ideology = marxism_subtype
+            traits = { 
+            }
+            id = -1072
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Троцкизм)
+        country_leader = {
+            ideology = trotskyism_subtype
+            traits = { 
+            }
+            id = -1073
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Еврейство)
+        country_leader = {
+            ideology = jewish_subtype
+            traits = { 
+            }
+            id = -1074
+			visible = { always = yes }  
+        }
+
+
+				
+	# Лидер страны (Национал-Социализм)
+        country_leader = {
+            ideology = national_socialism_subtype
+            traits = { 
+            }
+            id = -1075
+			visible = { always = yes } 
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            id = -1076
+			visible = { always = yes }  
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            id = -1077
+			visible = { always = yes } 
+        }
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }	
+	
+	
+	
+    # Ульянов Владимир Ильич Ленин
+    RUS_Ulyanov_Vladimir_Ilyich_Lenin = {
+        name = "RUS_Ulyanov_Vladimir_Ilyich_Lenin"
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_Ulyanov_Vladimir_Ilyich_Lenin_3" 
+            }
+            army = {
+                large = "GFX_RUS_Ulyanov_Vladimir_Ilyich_Lenin_2"
+                small = "gfx/interface/ideas/RUS_Ulyanov_Vladimir_Ilyich_Lenin.dds"  
+            }
+        }
+		
+	# Лидер страны (Коммунизм)
+        country_leader = {
+            ideology = communism_subtype
+            traits = { 
+            }
+            id = -1078  
+			visible = { always = yes }  # Всегда видим
+        }
+
+	# Лидер страны (Социализм)
+        country_leader = {
+            ideology = socialism_subtype
+            traits = { 
+            }
+            id = -1079
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Марксизм)
+        country_leader = {
+            ideology = marxism_subtype
+            traits = { 
+            }
+            id = -1080
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Ленинизм)
+        country_leader = {
+            ideology = leninism_subtype
+            traits = { 
+            }
+            id = -1081
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Еврейство)
+        country_leader = {
+            ideology = jewish_subtype
+            traits = { 
+            }
+            id = -1082
+			visible = { always = yes }  
+        }
+
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }		
+	
+	
+    # Иосиф Виссарионович Сталин
+    RUS_Iosif_Vissarionovich_Stalin = {
+        name = "RUS_Iosif_Vissarionovich_Stalin"
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_Iosif_Vissarionovich_Stalin_1" 
+            }
+            army = {
+                large = "GFX_RUS_Iosif_Vissarionovich_Stalin_2"
+                small = "gfx/interface/ideas/RUS_Iosif_Vissarionovich_Stalin.dds"  
+            }
+        }
+		
+	# Лидер страны (Коммунизм)
+        country_leader = {
+            ideology = communism_subtype
+            traits = { 
+            }
+            id = -1083  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+	# Лидер страны (Социализм)
+        country_leader = {
+            ideology = socialism_subtype
+            traits = { 
+            }
+            id = -1084
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Марксизм)
+        country_leader = {
+            ideology = marxism_subtype
+            traits = { 
+            }
+            id = -1085
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Ленинизм)
+        country_leader = {
+            ideology = leninism_subtype
+            traits = { 
+            }
+            id = -1086
+			visible = { always = yes }  
+        }
+
+
+	# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            id = -1087  
+			visible = { always = yes }  
+        }
+		
+	# Лидер страны (Военный Совет)
+        country_leader = {
+            ideology = military_soviet_subtype
+            traits = { 
+            }
+            id = -1088  
+			visible = { always = yes }  
+        }
+		
+	# Лидер страны (Хунта)
+        country_leader = {
+            ideology = junta_subtype
+            traits = { 
+            }
+            id = -1089 
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Сталинизм)
+        country_leader = {
+            ideology = stalinism_subtype
+            traits = { 
+            }
+            id = -1090
+			visible = { always = yes }  
+        }
+
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }		
+
+
+
+
+    # Никита Сергеевич Хрущёв
+    RUS_Nikita_Khruschev = {
+        name = "RUS_Nikita_Khruschev"
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_Nikita_Khruschev_2" 
+            }
+            army = {
+                large = "GFX_RUS_Nikita_Khruschev_12"
+                small = "gfx/interface/ideas/RUS_Iosif_Vissarionovich_Stalin.dds"  
+            }
+        }
+		
+	# Лидер страны (Коммунизм)
+        country_leader = {
+            ideology = communism_subtype
+            traits = { 
+            }
+            id = -1091  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+	# Лидер страны (Социализм)
+        country_leader = {
+            ideology = socialism_subtype
+            traits = { 
+            }
+            id = -1092
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Марксизм)
+        country_leader = {
+            ideology = marxism_subtype
+            traits = { 
+            }
+            id = -1093
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Ленинизм)
+        country_leader = {
+            ideology = leninism_subtype
+            traits = { 
+            }
+            id = -1094
+			visible = { always = yes }  
+        }
+
+
+	# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            id = -1095 
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Сталинизм)
+        country_leader = {
+            ideology = stalinism_subtype
+            traits = { 
+            }
+            id = -1096
+			visible = { always = yes }  
+        }
+
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+	
+	
+	
+	
+
+    # Николай Иванович Бухарин
+    RUS_Nikolai_Bukharin = {
+        name = "RUS_Nikolai_Bukharin"
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_Nikolai_Bukharin_3" 
+            }
+            army = {
+                large = "GFX_RUS_Nikolai_Bukharin_1"
+                small = "gfx/interface/ideas/RUS_Nikolai_Bukharin.dds"  
+            }
+        }
+		
+	# Лидер страны (Коммунизм)
+        country_leader = {
+            ideology = communism_subtype
+            traits = { 
+            }
+            id = -1097
+			visible = { always = yes }
+        }
+
+	# Лидер страны (Социализм)
+        country_leader = {
+            ideology = socialism_subtype
+            traits = { 
+            }
+            id = -1098
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Марксизм)
+        country_leader = {
+            ideology = marxism_subtype
+            traits = { 
+            }
+            id = -1099
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Ленинизм)
+        country_leader = {
+            ideology = leninism_subtype
+            traits = { 
+            }
+            id = -1100
+			visible = { always = yes }  
+        }
+
+
+	# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            id = -1101
+			visible = { always = yes }  
+        }
+
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 1  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }	
+	
+	
+	
+	
+	
+	
+	   # Василий Иванович Чапаев
+    RUS_Vasily_Ivanovich_Chapaev = {
+        name = "RUS_Vasily_Ivanovich_Chapaev"
+        portraits = {
+            civilian = {
+                large = "GFX_RUS_Vasily_Ivanovich_Chapaev_3" 
+            }
+            army = {
+                large = "GFX_RUS_Vasily_Ivanovich_Chapaev_1"
+                small = "gfx/interface/ideas/RUS_Vasily_Ivanovich_Chapaev.dds"  
+            }
+        }
+		
+	# Лидер страны (Коммунизм)
+        country_leader = {
+            ideology = communism_subtype
+            traits = { 
+            }
+            id = -1102
+			visible = { always = yes }
+        }
+
+	# Лидер страны (Социализм)
+        country_leader = {
+            ideology = socialism_subtype
+            traits = { 
+            }
+            id = -1103
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Марксизм)
+        country_leader = {
+            ideology = marxism_subtype
+            traits = { 
+            }
+            id = -1104
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Ленинизм)
+        country_leader = {
+            ideology = leninism_subtype
+            traits = { 
+            }
+            id = -1105
+			visible = { always = yes }  
+        }
+
+
+	# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            id = -1106
+			visible = { always = yes }  
+        }
+		
+		
+	# Лидер страны (Сталинизм)
+        country_leader = {
+            ideology = stalinism_subtype
+            traits = { 
+            }
+            id = -1107
+			visible = { always = yes }  
+        }
+		
+	# Лидер страны (Военный Совет)
+        country_leader = {
+            ideology = military_soviet_subtype
+            traits = { 
+            }
+            id = -1108  
+			visible = { always = yes }  
+        }
+		
+	# Лидер страны (Хунта)
+        country_leader = {
+            ideology = junta_subtype
+            traits = { 
+            }
+            id = -1109
+			visible = { always = yes }  
+        }
+
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 10  # Общий уровень навыков
+            attack_skill = 10  # Навык атаки
+            defense_skill = 10  # Навык обороны
+            planning_skill = 10  # Навык планирования
+            logistics_skill = 10  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+	
+	
+	
+	
+	
+	
+	
+    # Алексей Михайлович Щастный
+    RUS_Alexey_Mikhailovich_Shchastny = {
+        name = "RUS_Alexey_Mikhailovich_Shchastny"  # Идентификатор лидера
+        portraits = {
+		    civilian = {
+                large = "GFX_RUS_Alexey_Mikhailovich_Shchastny_2" 
+            }
+            army = {
+                large = "GFX_RUS_Alexey_Mikhailovich_Shchastny_1"  # Портрет для роли генерала
+                small = "gfx/interface/ideas/rus_tsar_nicolas.dds"  # Маленький портрет
+            }
+			navy = {
+            large = "GFX_RUS_Alexey_Mikhailovich_Shchastny_1"
+            small = "gfx/interface/ideas/rus_tsar_nicolas.dds"
+        }
+    }
+
+		
+	# Лидер страны (Коммунизм)
+        country_leader = {
+            ideology = communism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1110  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+	# Лидер страны (Военная диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1111  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Военный совет)
+        country_leader = {
+            ideology = military_soviet_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  
+            id = -1112  
+			visible = { always = yes }  
+        }
+
+	# Лидер страны (Хунта)
+        country_leader = {
+            ideology = junta_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1113  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Союз Флота)
+        country_leader = {
+            ideology = navy_union_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  
+            id = -1114  
+			visible = { always = yes }  
+        }
+		
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+	
+	
+}

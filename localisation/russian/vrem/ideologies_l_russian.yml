@@ -1,0 +1,201 @@
+﻿l_russian:
+
+ monarchy:0 "Монархия"
+ monarchy_subtype:0 "Монархия"
+ monarchy_desc:0 "Всякая власть от Бога"
+ 
+ constitutional_monarchy:0 "Конституционная Монархия"
+ constitutional_monarchy_subtype:0 "Конституционная Монархия"
+ constitutional_monarchy_desc:0 ""
+ 
+ elective_monarchy:0 "Выборная Монархия"
+ elective_monarchy_subtype:0 "Выборная Монархия"
+ elective_monarchy_desc:0 ""
+ 
+ monarchical_communism:0 "Монархо-Коммунизм"
+ monarchical_communism_subtype:0 "Монархо-Коммунизм"
+ monarchy_communism_desc:0 ""
+
+ military_dictatorship:0 "Военная Диктатура"
+ military_dictatorship_subtype:0 "Военная Диктатура"
+ military_dictatorship_desc:0 "Форма правления, при которой политическая власть принадлежит военным"
+ 
+ military_soviet:0 "Военный совет"
+ military_soviet_subtype:0 "Военный совет"
+ military_soviet_desc:0 "Военный совет"
+
+junta:0 "Хунта"
+junta_subtype:0 "Хунта"
+junta_desc:0 ""
+
+buddism:0 "Буддизм"
+buddism_subtype:0 "Буддизм"
+buddism_desc:0 ""
+
+navy_union:0 "Диктатура Военно-Морского Флота"
+navy_union_subtype:0 "Диктатура Военно-Морского Флота"
+navy_union_desc:0 ""
+
+poets:0 "Диктатура Военно-Морского Флота"
+poets_subtype:0 "Диктатура Военно-Морского Флота"
+poets_desc:0 ""
+
+illuminati:0 "Иллюминаты"
+illuminati_subtype:0 "Иллюминаты"
+illuminati_desc:0 "Тайное общество, стремящееся к установлению нового мирового порядка"
+
+freemasons:0 "Массоны"
+freemasons_subtype:0 "Массоны"
+freemasons_desc:0 "Тайное общество, стремящееся к просвещению и влиянию на мировую политику"
+
+confederation:0 "Конфедерация"
+confederation_subtype:0 "Конфедерация"
+confederation_desc:0 "Выступающее за права и свободу штатов"
+
+democratic:0 "Демократия"
+democratic_subtype:0 "Демократия"
+democratic_desc:0 "Союз суверенных штатов с ограниченной центральной властью"
+
+ republican: "Республиканцы"
+ republican_desc: "За единство нации, промышленный прогресс"
+ progressive_republican_subtype: "Прогрессивные республиканцы"
+
+conservatism:0 "Консерватизм"
+conservatism_subtype:0 "Консерватизм"
+conservatism_desc:0 ""
+
+liberalism:0 "Либерализм"
+liberalism_subtype:0 "Либерализм"
+liberalism_desc:0 ""
+
+neutrality:0 "Олигархизм"
+neutrality_subtype:0 "Олигархизм"
+neutrality_desc:0 ""
+
+torgovtsy:0 "Картели"
+torgovtsy_subtype:0 "Картели"
+torgovtsy_desc:0 ""
+
+corporations:0 "Корпорации"
+corporations_subtype:0 "Корпорации"
+corporations_desc:0 ""
+
+communism:0 "Коммунизм"
+communism_subtype:0 "Коммунизм"
+communism_desc:0 ""
+
+socialism:0 "Социализм"
+socialism_subtype:0 "Социализм"
+socialism_desc:0 ""
+
+marxism:0 "Марксизм"
+marxism_subtype:0 "Марксизм"
+marxism_desc:0 ""
+
+leninism:0 "Ленинизм"
+leninism_subtype:0 "Ленинизм"
+leninism_desc:0 ""
+
+stalinism:0 "Сталинизм"
+stalinism_subtype:0 "Сталинизм"
+stalinism_desc:0 ""
+
+trotskyism:0 "Троцкизм"
+trotskyism_subtype:0 "Троцкизм"
+trotskyism_desc:0 ""
+
+national_socialism:0 "Национал-Социализм"
+national_socialism_subtype:0 "Национал-Социализм"
+national_socialism_desc:0 ""
+
+nationalism:0 "Национализм"
+nationalism_subtype:0 "Национализм"
+nationalism_desc:0 "Идеология, основанная на превосходстве своей нации."
+
+nazism:0 "Нацизм"
+nazism_subtype:0 "Нацизм"
+nazism_desc:0 ""
+
+fascism:0 "Фашизм"
+fascism_subtype:0 "Фашизм"
+fascism_desc:0 ""
+
+falangism:0 "Фалангизм"
+falangism_subtype:0 "Фалангизм"
+falangism_desc:0 ""
+
+rexism:0 "Рексизм"
+rexism_subtype:0 "Рексизм"
+rexism_desc:0 ""
+
+slave_owners:0 "Рабовладельцы"
+slave_owners_subtype:0 "Рабовладельцы"
+slave_owners_desc:0 ""
+
+lawlessness:0 "Разбойники"
+lawlessness_subtype:0 "Разбойники"
+lawlessness_desc:0 ""
+
+cannibals:0 "Каннибалы"
+cannibals_subtype:0 "Каннибалы"
+cannibals_desc:0 ""
+
+occultists:0 "Оккультисты"
+occultists_subtype:0 "Оккультисты"
+occultists_desc:0 ""
+
+paganism:0 "Язычество"
+paganism_subtype:0 "Язычество"
+paganism_desc:0 ""
+
+shamanism:0 "Шаманизм"
+shamanism_subtype:0 "Шаманизм"
+shamanism_desc:0 ""
+
+orthodox:0 "Православные"
+orthodox_subtype:0 "Православные"
+orthodox_desc:0 ""
+
+khlysty:0 "Хлысты"
+khlysty_subtype:0 "Хлысты"
+khlysty_desc:0 ""
+
+catholicism:0 "Католики"
+catholicism_subtype:0 "Католики"
+catholicism_desc:0 ""
+
+radical_catholicism:0 "Радикальный Католицизм"
+radical_catholicism_subtype:0 "Радикальный Католицизм"
+radical_catholicism_desc:0 ""
+
+protestantism:0 "Протестанты"
+protestantism_subtype:0 "Протестанты - это"
+protestantism_desc:0 "Протестанты - не"
+
+radical_protestantism:0 "Радикальные Протестанты"
+radical_protestantism_subtype:0 "Радикальные Протестанты - это"
+radical_protestantism_desc:0 "Радикальные Протестанты - не"
+
+jewish:0 "Еврейство"
+jewish_subtype:0 "Еврейство"
+jewish_desc:0 ""
+
+sunnism:0 "Сунниты"
+sunnism_subtype:0 "Сунниты"
+sunnism_desc:0 ""
+
+radical_sunnism:0 "Радикальные Сунниты"
+radical_sunnism_subtype:0 "Радикальные Сунниты"
+radical_sunnism_desc:0 ""
+
+shiism:0 "Шиизм"
+shiism_subtype:0 "Шиизм"
+shiism_desc:0 ""
+
+radical_shiism:0 "Шиисткие Радикалы"
+radical_shiism_subtype:0 "Шиисткие Радикалы"
+radical_shiism_desc:0 ""
+
+technocrats:0 "Технократы"
+technocrats_subtype:0 "Технократы"
+technocrats_desc:0 ""

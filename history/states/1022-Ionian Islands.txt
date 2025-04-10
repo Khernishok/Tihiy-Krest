@@ -1,0 +1,24 @@
+state={
+	id=1022
+	name="STATE_1022"
+
+	history={
+		victory_points = {
+			10203 1
+		}
+		owner = GRE
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GRE
+		add_core_of = ION
+		add_claim_by = EPI
+	}
+	provinces={
+		1106 10203 
+	}
+	manpower=300000
+	state_category = small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

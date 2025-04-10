@@ -1,0 +1,44 @@
+﻿capital = 2
+
+set_politics = {
+    ruling_party = catholicism
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    catholicism = 32
+	radical_catholicism = 23
+	liberalism = 8
+    conservatism = 10     
+    jewish = 7
+    freemasons = 12
+    illuminati = 8
+   
+}
+
+if = {
+	set_autonomy = {
+		target = ITA
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+}
+
+
+	# Лидеры страны
+
+recruit_character = POP_Lev_XIII
+recruit_character = POP_Piy_X
+
+	
+
+
+
+
+
+
+
+
+

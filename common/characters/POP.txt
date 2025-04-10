@@ -1,0 +1,107 @@
+characters = {
+
+    # Лев XIII
+    POP_Lev_XIII = {
+        name = "POP_Lev_XIII" 
+        portraits = {
+            civilian = {
+                large = "GFX_POP_Lev_XIII_1"
+            }
+        }
+
+    # Лидер страны (Католичество)
+        country_leader = {
+            ideology = catholicism_subtype
+            traits = {
+            }
+            expire = "3221.1.1.1" 
+            id = -3121  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = radical_catholicism_subtype
+            traits = { 
+            }
+            expire = "3222.1.1.1" 
+            id = -3122  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+    }
+	
+	
+	
+	
+ # Лев XIII
+    POP_Piy_X = {
+        name = "POP_Piy_X" 
+        portraits = {
+            civilian = {
+                large = "GFX_POP_Piy_X_1"
+            }
+        }
+
+    # Лидер страны (Католичество)
+        country_leader = {
+            ideology = catholicism_subtype
+            traits = {
+            }
+            expire = "3221.1.1.1" 
+            id = -3231  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = radical_catholicism_subtype
+            traits = { 
+            }
+            expire = "3222.1.1.1" 
+            id = -3232  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    # Пий XI
+	PAP_papa_pio_xi = {
+		name = ITA_papa_pio_xi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_papa_pio_xi
+			}
+		}
+
+		#COUNTRY LEADER ROLE IS GIVEN LATER
+	}
+
+	PAP_papa_pio_xii = {
+		name = ITA_papa_pio_xii
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_papa_pio_xii
+			}
+		}
+
+		#COUNTRY LEADER ROLE IS GIVEN LATER
+	}
+}
+

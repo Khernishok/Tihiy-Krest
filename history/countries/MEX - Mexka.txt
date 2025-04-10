@@ -1,0 +1,28 @@
+capital = 277
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    monarchy = 29
+    military_dictatorship = 7
+    military_soviet = 4
+    illuminati = 5
+    freemasons = 4
+    slave_owners = 11
+    liberalism = 7
+    nationalism = 12
+    neutrality = 6
+    catholicism = 15
+}
+
+set_stability = 0.50
+
+# Лидеры страны
+
+recruit_character = MEX_Maximilian_I
+recruit_character = MEX_Charlotte_Belgium

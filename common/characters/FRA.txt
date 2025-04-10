@@ -1,0 +1,74 @@
+characters = {
+
+    # Наполеон 4 Эжен
+FRA_Napoleon_4_Eugene = {
+        name = "FRA_Napoleon_4_Eugene" 
+        portraits = {
+            civilian = {
+                large = "GFX_FRA_Napoleon_4_Eugene_1"
+            }
+        }
+
+    # Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = {
+            }
+            expire = "3000.3.1.1"  # Дата окончания правления
+            id = -6345
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.3.1.1"  # Дата окончания правления
+            id = -6344
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборочная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.3.1.1"  # Дата окончания правления
+            id = -6343
+			visible = { always = yes }  # Всегда видим
+        }
+    }
+	
+	
+	
+	    # Франц Фердинанд
+FRA_Jean_Casimir_Perrier = {
+        name = "FRA_Jean_Casimir_Perrier" 
+        portraits = {
+            civilian = {
+                large = "GFX_FRA_Jean_Casimir_Perrier_1"
+            }
+        }
+
+    # Лидер страны (Демократия)
+        country_leader = {
+            ideology = democratic_subtype
+            traits = {
+            }
+            expire = "1953.3.1.1"  # Дата окончания правления
+            id = -6233
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Либерал)
+        country_leader = {
+            ideology = liberalism_subtype
+            traits = { 
+            }
+            expire = "1953.3.1.1"  # Дата окончания правления
+            id = -6234
+			visible = { always = yes }  # Всегда видим
+        }
+    }
+}

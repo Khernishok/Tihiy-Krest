@@ -1,0 +1,31 @@
+state={
+	id=1039
+	name="STATE_1039"
+
+	history={
+		owner = CAN
+		victory_points = {
+			3691 1 
+		}
+		buildings = {
+			infrastructure = 1
+			3691 = {
+				naval_base = 1
+
+			}
+		}
+		add_core_of = CAN
+		add_core_of = INU
+		add_core_of = NUN
+		add_core_of = NWT
+	}
+
+	provinces={
+		1712 3691 7813 
+	}
+	manpower=7000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}
+

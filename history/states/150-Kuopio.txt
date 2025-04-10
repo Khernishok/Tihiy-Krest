@@ -1,0 +1,33 @@
+
+state={
+	id=150
+	name="STATE_150"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		owner = FIN
+		controller = RUS
+		add_core_of = FIN
+		add_core_of = KAR
+		add_claim_by = NOV
+		victory_points = {
+			9061 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		193 3030 3068 3185 6146 6210 9061 9169 9181 13114 13115 
+	}
+	manpower=196200
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

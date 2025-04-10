@@ -1,0 +1,514 @@
+focus_tree = {
+    id = AUH_focus_tree
+    
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = AUS
+        }
+    }
+    replace = yes
+    default = no
+
+    ##########################
+    ### КРИЗИС ДУАЛИЗМА ###
+    ##########################
+    focus = {
+        id = AUH_ausgleich_crisis
+        icon = GFX_focus_generic_political_effort
+        x = 10
+        y = 9
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.1
+        }
+    }
+
+    ##########################
+    ### ОСНОВНЫЕ ПУТИ (ВЗАИМОИСКЛЮЧАЮЩИЕ) ###
+    ##########################
+    
+    # Абсолютистская ветка
+    focus = {
+        id = AUH_absolutism_path
+        icon = GFX_focus_generic_monarchy
+        prerequisite = { focus = AUH_ausgleich_crisis }
+        x = 6
+        y = 11
+        cost = 10
+        mutually_exclusive = { 
+            focus = AUH_federal_path 
+            focus = AUH_confederate_path
+            focus = AUH_hungary_path
+            focus = AUH_communist_path
+            focus = AUH_democratic_path
+        }
+    }
+
+    # Федеральная ветка
+    focus = {
+        id = AUH_federal_path
+        icon = GFX_focus_generic_federal_government
+        prerequisite = { focus = AUH_ausgleich_crisis }
+        x = 23
+        y = 11
+        cost = 10
+        mutually_exclusive = { 
+            focus = AUH_absolutism_path 
+            focus = AUH_confederate_path
+            focus = AUH_hungary_path
+            focus = AUH_communist_path
+            focus = AUH_democratic_path
+        }
+    }
+
+    # Конфедеративная ветка
+    focus = {
+        id = AUH_confederate_path
+        icon = GFX_focus_generic_allies_opinion
+        prerequisite = { focus = AUH_ausgleich_crisis }
+        x = 27
+        y = 11
+        cost = 10
+        mutually_exclusive = { 
+            focus = AUH_absolutism_path 
+            focus = AUH_federal_path
+            focus = AUH_hungary_path
+            focus = AUH_communist_path
+            focus = AUH_democratic_path
+        }
+    }
+
+    # Венгерская ветка
+    focus = {
+        id = AUH_hungary_path
+        icon = GFX_focus_generic_political_pressure
+        prerequisite = { focus = AUH_ausgleich_crisis }
+        x = 11
+        y = 11
+        cost = 10
+        mutually_exclusive = { 
+            focus = AUH_absolutism_path 
+            focus = AUH_federal_path
+            focus = AUH_confederate_path
+            focus = AUH_communist_path
+            focus = AUH_democratic_path
+        }
+    }
+
+    # Коммунистическая ветка
+    focus = {
+        id = AUH_communist_path
+        icon = GFX_focus_generic_communist_agitation
+        prerequisite = { 
+		focus = AUH_ausgleich_crisis 
+	}
+        x = 17
+        y = 11
+        cost = 10
+        mutually_exclusive = { 
+            focus = AUH_absolutism_path 
+            focus = AUH_federal_path
+            focus = AUH_confederate_path
+            focus = AUH_hungary_path
+            focus = AUH_democratic_path
+        }
+    }
+
+    ##########################
+    ### АБСОЛЮТИСТСКАЯ ВЕТКА ###
+    ##########################
+    
+    focus = {
+        id = AUH_iron_crown
+        icon = GFX_focus_generic_monarchy
+        prerequisite = { focus = AUH_absolutism_path }
+		mutually_exclusive = { focus = 
+		AUH_hungarian_rule ,
+		AUH_russian_alliance
+		}
+        x = 7
+        y = 12
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.10
+        }
+    }
+
+    focus = {
+        id = AUH_suppress_hungary
+        icon = GFX_focus_generic_mobilization
+        prerequisite = { focus = AUH_iron_crown }
+        x = 8
+        y = 13
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.11
+        }
+    }
+
+    focus = {
+        id = AUH_german_supremacy
+        icon = GFX_focus_ger_anschluss
+        prerequisite = { focus = AUH_iron_crown }
+        x = 6
+        y = 13
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.12
+        }
+    }
+
+    focus = {
+        id = AUH_oppress_minorities
+        icon = GFX_focus_generic_martial_law
+        prerequisite = { focus = AUH_suppress_hungary }
+        x = 8
+        y = 14
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.13
+        }
+    }
+
+    focus = {
+        id = AUH_unify_germany
+        icon = GFX_focus_ger_anschluss
+        prerequisite = { focus = AUH_german_supremacy }
+        x = 7
+        y = 15
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.14
+        }
+    }
+
+    focus = {
+        id = AUH_russian_alliance
+        icon = GFX_focus_sov_slavic_union
+        prerequisite = { focus = AUH_absolutism_path }
+		mutually_exclusive = { focus = AUH_iron_crown }
+        x = 4
+        y = 12
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.15
+        }
+    }
+
+    ##########################
+    ### ФЕДЕРАЛЬНАЯ ВЕТКА ###
+    ##########################
+    
+    focus = {
+        id = AUH_federal_convention
+        icon = GFX_focus_generic_government
+        prerequisite = { 
+		focus = AUH_equal_states
+		}
+		mutually_exclusive = { focus = AUH_free_elections }
+        x = 27
+        y = 13
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.20
+        }
+    }
+
+    focus = {
+        id = AUH_strong_presidency
+        icon = GFX_focus_generic_government
+        prerequisite = { focus = AUH_free_elections }
+		mutually_exclusive = { focus = AUH_ }
+        x = 21
+        y = 13
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.21
+        }
+    }
+
+focus = {
+    id = AUH_equal_states
+    icon = GFX_focus_generic_federal_government
+    prerequisite = { 
+        focus = AUH_confederate_path 
+    }
+    x = 26
+    y = 12
+    cost = 10
+    completion_reward = {
+        country_event = AUH_events.22
+    }
+}
+
+focus = {
+    id = AUH_austria_center_states
+    icon = GFX_focus_generic_austria_center_states_government
+    prerequisite = { 
+        focus = AUH_federal_path
+    }
+    x = 23
+    y = 12
+    cost = 10
+    completion_reward = { }
+}
+
+    focus = {
+        id = AUH_central_bank
+        icon = GFX_focus_generic_economic_effort
+        prerequisite = { focus = AUH_strong_presidency }
+        x = 22
+        y = 17
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.23
+        }
+    }
+
+    focus = {
+        id = AUH_interstate_railways
+        icon = GFX_focus_generic_industry
+        prerequisite = { focus =  }
+        x = 17
+        y = 20
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.24
+        }
+    }
+
+    ##########################
+    ### КОНФЕДЕРАТИВНАЯ ВЕТКА ###
+    ##########################
+
+    focus = {
+        id = AUH_states_sovereignty
+        icon = GFX_focus_generic_allies_opinion
+        prerequisite = { focus = AUH_federal_convention }
+        x = 28
+        y = 14
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.31
+        }
+    }
+
+
+    focus = {
+        id = AUH_free_trade
+        icon = GFX_focus_generic_economic_effort
+        prerequisite = { focus = AUH_states_sovereignty }
+        x = 28
+        y = 15
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.33
+        }
+    }
+
+    focus = {
+        id = AUH_local_armies
+        icon = GFX_focus_generic_army_effort
+        prerequisite = { focus = AUH_federal_convention }
+        x = 26
+        y = 14
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.34
+        }
+    }
+
+    ##########################
+    ### ВЕНГЕРСКАЯ ВЕТКА ###
+    ##########################
+    
+    focus = {
+        id = AUH_hungarian_rule
+		mutually_exclusive = { focus = AUH_iron_crown }
+        icon = GFX_focus_generic_political_pressure
+        prerequisite = { focus = AUH_hungary_path }
+        x = 11
+        y = 12
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.40
+        }
+    }
+
+    focus = {
+        id = AUH_austrian_puppet
+        icon = GFX_focus_generic_mobilization
+        prerequisite = { focus = AUH_hungarian_rule }
+        x = 10
+        y = 13
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.41
+        }
+    }
+
+    focus = {
+        id = AUH_magyarization
+        icon = GFX_focus_generic_political_pressure
+        prerequisite = { focus = AUH_hungarian_rule }
+        x = 12
+        y = 13
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.42
+        }
+    }
+
+    focus = {
+        id = AUH_balkan_ambitions
+        icon = GFX_focus_generic_claim_states
+        prerequisite = { focus = AUH_austrian_puppet }
+        x = 10
+        y = 14
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.43
+        }
+    }
+
+    focus = {
+        id = AUH_purge_slavs
+        icon = GFX_focus_generic_martial_law
+        prerequisite = { focus = AUH_magyarization }
+        x = 12
+        y = 14
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.44
+        }
+    }
+
+    ##########################
+    ### КОММУНИСТИЧЕСКАЯ ВЕТКА ###
+    ##########################
+    
+    focus = {
+        id = AUH_workers_uprising
+        icon = GFX_focus_generic_communist_agitation
+        prerequisite = { focus = AUH_communist_path }
+		mutually_exclusive = { focus = AUH_constitutional_convention }
+        x = 15
+        y = 14
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.50
+        }
+    }
+
+    focus = {
+        id = AUH_red_army
+        icon = GFX_focus_generic_communist_agitation
+        prerequisite = { focus = AUH_workers_uprising }
+        x = 14
+        y = 15
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.51
+        }
+    }
+
+    focus = {
+        id = AUH_purge_bourgeoisie
+        icon = GFX_focus_generic_communist_agitation
+        prerequisite = { focus = AUH_workers_uprising }
+        x = 16
+        y = 15
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.52
+        }
+    }
+
+    focus = {
+        id = AUH_international_revolution
+        icon = GFX_focus_generic_communist_agitation
+        prerequisite = { focus = AUH_red_army }
+        x = 14
+        y = 16
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.53
+        }
+    }
+
+    focus = {
+        id = AUH_workers_paradise
+        icon = GFX_focus_generic_communist_agitation
+        prerequisite = { focus = AUH_purge_bourgeoisie }
+        x = 16
+        y = 16
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.54
+        }
+    }
+
+    ##########################
+    ### ДЕМОКРАТИЧЕСКАЯ ВЕТКА ###
+    ##########################
+    
+    focus = {
+        id = AUH_constitutional_convention
+        icon = GFX_focus_generic_democratic_reform
+	   prerequisite = { 
+		focus = AUH_strong_presidency
+	}
+        x = 19
+        y = 14
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.60
+        }
+    }
+
+    focus = {
+        id = AUH_free_elections
+        icon = GFX_focus_generic_democratic_reform
+        prerequisite = { focus = AUH_communist_path 
+		mutually_exclusive = { focus = AUH_federal_convention }
+		focus = AUH_federal_path 
+		}
+        x = 19
+        y = 12
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.62
+        }
+    }
+
+    focus = {
+        id = AUH_social_reforms
+        icon = GFX_focus_generic_democratic_reform
+        prerequisite = { 
+		focus = AUH_constitutional_convention
+		focus = AUH_workers_paradise
+	}
+        x = 18
+        y = 17
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.63
+        }
+    }
+
+    focus = {
+        id = AUH_economic_liberalization
+        icon = GFX_focus_generic_democratic_reform
+        prerequisite = { 
+		
+		focus = AUH_strong_presidency }
+        x = 20
+        y = 17
+        cost = 10
+        completion_reward = {
+            country_event = AUH_events.64
+        }
+    }
+}

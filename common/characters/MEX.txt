@@ -1,0 +1,106 @@
+characters = {
+
+    # Максимилиан I
+MEX_Maximilian_I = {
+        name = "MEX_Maximilian_I" 
+        portraits = {
+            civilian = {
+                large = "GFX_MEX_Maximilian_I_1"
+            }
+            army = {
+                large = "GFX_MEX_Maximilian_I_4" 
+                small = "gfx/interface/ideas/SPR_Alfonso_XIII_León_Fernando_Mar.dds"  # Маленький портрет
+            }
+        }
+
+    # Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = {
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -5000
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -5001
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборочная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -5002
+			visible = { always = yes }  # Всегда видим
+        }
+       # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+	
+	
+	
+	
+	
+	    # Шарлотта Бельгийская
+MEX_Charlotte_Belgium = {
+        name = "MEX_Charlotte_Belgium" 
+        portraits = {
+            civilian = {
+                large = "GFX_MEX_Charlotte_Belgium_1"
+            }
+        }
+
+    # Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = {
+            }
+            expire = "1953.3.1.1"  # Дата окончания правления
+            id = -5003
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "1953.3.1.1"  # Дата окончания правления
+            id = -5004
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборочная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "1953.3.1.1"  # Дата окончания правления
+            id = -5005
+			visible = { always = yes }  # Всегда видим
+        }
+    }
+}

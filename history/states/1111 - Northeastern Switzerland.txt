@@ -1,0 +1,30 @@
+
+state={
+	id=1111
+	name="STATE_1111"
+	manpower = 1146145
+	
+	state_category = city
+
+
+	history={
+		add_core_of = SWI
+		owner = SWI
+		victory_points = {
+			663 10 
+		}
+		victory_points = { 9638 5 }
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces={
+		661 663 9638 11601 11604 11623 
+	}
+
+	local_supplies=0.000 
+}

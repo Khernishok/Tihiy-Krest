@@ -1,0 +1,26 @@
+state={
+	id=1097
+	name="STATE_1097"
+
+	history={
+		owner = FRA
+		victory_points = {
+			9478 1 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = FRA
+		add_core_of = ANJ
+
+	}
+
+	provinces={
+		503 3495 3509 3523 9478 9867 11463 11613 
+	}
+	manpower=728972
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+	id=1109
+	name="STATE_1109"
+
+	history={
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		owner = TUR
+		add_core_of = BUL
+		add_core_of = MCD
+	}
+
+	provinces={
+		6857 9818 
+	}
+	manpower=224193
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

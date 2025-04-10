@@ -1,0 +1,76 @@
+bookmarks = {
+	bookmark = {
+		name = "KREST_RUS_ST"
+		desc = "KREST_RUS_DESC"
+		date = 1894.1.1.1
+		picture = "GFX_select_date_1894"
+		default_country = "RUS"
+		default = yes
+		
+		# Конфедеративные Штаты Америки
+		"CSA" = {
+			history = "CSA_HISTORY_1894_DESC"
+			ideology = fascism_subtype
+		}
+		
+		# Соединенные Штаты
+		"USA" = {
+			history = "USA_HISTORY_1894_DESC"
+			ideology = democracy_subtype
+		}
+		
+		# Папская Италия
+		"POP" = {
+			history = "POP_HISTORY_1894_DESC"
+			ideology = fascism_subtype
+		}
+		
+		# Пруссия
+		"PRE" = {
+			history = "PRE_HISTORY_1894_DESC"
+			ideology = fascism_subtype
+		}
+		
+		# Османская Империя
+		"TUR" = {
+			history = "TUR_HISTORY_1894_DESC"
+			ideology = fascism_subtype
+		}
+		
+		# Речь Посполитая
+		"POL" = {
+			history = "POL_HISTORY_1894_DESC"
+			ideology = fascism_subtype
+		}
+		
+		# Российская Империя
+		"RUS" = {
+			history = "RUS_HISTORY_1894_DESC"
+			ideology = fascism_subtype
+		}
+		
+		# Японская Империя
+		"YAP" = {
+			history = "YAP_HISTORY_1894_DESC"
+			ideology = fascism_subtype
+		}
+		
+		# Цинский Китай
+		"QIN" = {
+			history = "QIN_HISTORY_1894_DESC"
+			ideology = fascism_subtype
+		}
+		
+		# Испанская Империя
+		"SPR" = {
+			history = "SPR_HISTORY_1894_DESC"
+			ideology = fascism_subtype
+		}
+		
+		# Великобритания
+		"ENG" = {
+			history = "ENG_HISTORY_1894_DESC"
+			ideology = democracy_subtype
+		}
+	}
+}

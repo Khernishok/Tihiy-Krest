@@ -1,0 +1,27 @@
+
+state = {
+	id = 1113
+	name = "STATE_1113"
+	manpower = 711645
+	
+	state_category = city
+
+	history = {
+		owner = ITA
+		victory_points = { #Parma
+			6790 1
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ITA
+		add_claim_by = PAP
+		add_core_of = PMA
+	}
+
+	provinces = {
+		3773 6790  
+	}
+
+	local_supplies = 0.0 
+}

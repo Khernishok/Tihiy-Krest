@@ -1,0 +1,27 @@
+state={
+	id=1036
+	name="STATE_1036"
+	history={
+		add_core_of = ENG
+		add_core_of = JER
+		add_core_of = NRM
+		owner = ENG
+		victory_points = {
+			13377 1 
+		}
+		buildings = {
+			infrastructure = 1
+			13377 = {
+				naval_base = 1
+
+			}
+		}
+	}
+	provinces={
+		13377
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

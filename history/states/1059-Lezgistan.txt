@@ -1,0 +1,27 @@
+state={
+	id=1059
+	name="STATE_1059"
+
+	history={
+		owner = KAV
+		victory_points = {
+			7624 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = RUS
+		add_core_of = DAG
+		add_core_of = LZG
+
+	}
+
+	provinces={
+		1450 3711 4463 7624 
+	}
+	manpower=149000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

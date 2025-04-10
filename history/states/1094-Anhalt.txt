@@ -1,0 +1,36 @@
+state={
+	id=1094
+	name="STATE_1094"
+
+	history={
+		owner = ANH
+		add_claim_by = PRE
+		victory_points = {
+			9560 1 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = GER
+		add_core_of = DDR
+		add_core_of = ANH
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+
+	provinces={
+		6487 9560 
+	}
+	manpower=436213
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=1117
+	name="STATE_1117"
+
+	history={
+		owner = ENG
+		add_core_of = CYP
+		add_core_of = NCP
+		victory_points = {
+			11984 3 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		11984 
+	}
+	manpower=86990
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

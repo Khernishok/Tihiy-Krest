@@ -1,0 +1,46 @@
+﻿capital = 37
+
+	# Лидеры страны
+
+recruit_character = DEN_
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    monarchy = 27              
+    constitutional_monarchy = 10
+    conservatism = 15       
+    liberalism = 12         
+    nationalism = 10         
+    socialism = 8              
+    catholicism = 10          
+    orthodox = 5               
+    jewish = 3                 
+}
+
+if = {
+	set_autonomy = {
+		target = SHL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = HLS
+		autonomous_state = autonomy_integrated_puppet
+	}
+		set_autonomy = {
+		target = GRN
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+
+set_stability = 0.50
+
+
+
+
+

@@ -1,0 +1,151 @@
+capital = 126  # ID столицы (Лондон)
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    monarchy = 30
+    constitutional_monarchy = 15
+    elective_monarchy = 5
+    protestantism = 10
+    radical_protestantism = 3
+    conservatism = 8
+    liberalism = 7
+    nationalism = 6
+    navy_union = 3
+    freemasons = 2
+    slave_owners = 1
+    catholicism = 2
+    radical_catholicism = 1
+    marxism = 1
+    military_dictatorship = 1
+    military_soviet = 1
+    jewish = 1
+    illuminati = 1
+    confederation = 1
+    neutrality = 1
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+		set_autonomy = {
+		target = SCO
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = IRE
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = OMA
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = CAN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = SAF
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = AST
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = BRM
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+	#set_autonomy = {
+	#	target = EGY
+	#	autonomous_state = autonomy_dominion
+	#	freedom_level = 0.2
+	#}
+	set_autonomy = {
+		target = PAL
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = JOR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = KUW
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	
+		set_autonomy = {
+		target = YEM
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = KHO
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	
+		set_autonomy = {
+		target = KHI
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+	
+	set_autonomy = {
+		target = BUK
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.5
+	}
+
+set_stability = 0.50
+
+	# Лидеры страны
+
+recruit_character = ENG_Alexandrina_Victoria
+recruit_character = ENG_Edward_VII
+recruit_character = ENG_Georg_V
+recruit_character = ENG_Edward_VIII
+
+
+
+    # Политики страны
+	
+
+    # Военачальники страны
+	
+	
+	# Учёные Страны
+	

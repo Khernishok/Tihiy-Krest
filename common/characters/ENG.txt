@@ -1,0 +1,356 @@
+characters = {
+
+   # Александрина Виктория
+    ENG_Alexandrina_Victoria = {
+        name = "ENG_Alexandrina_Victoria"
+        portraits = {
+            civilian = {
+                large = "GFX_ENG_Alexandrina_Victoria_1" 
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = {
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1010  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1011  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1012  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+    }
+	
+	
+	
+  # Эдуард VII
+    ENG_Edward_VII = {
+        name = "ENG_Edward_VII"
+        portraits = {
+            civilian = {
+                large = "GFX_ENG_Edward_VII_1"  
+            }
+            army = {
+                large = "GFX_ENG_Edward_VII_1"  
+                small = "gfx/interface/ideas/ENG_Edward_VII.dds"  
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = {
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1013  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1014 # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1015  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1016 # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1017 # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1018  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  
+            id = -1019  
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+	
+	
+
+
+   # Эдуард VIII
+    ENG_Georg_V = {
+        name = "ENG_Georg_V"
+        portraits = {
+            civilian = {
+                large = "GFX_ENG_Georg_V_3" 
+            }
+            army = {
+                large = "GFX_ENG_Georg_V_1"  
+                small = "gfx/interface/ideas/ENG_Georg_V.dds" 
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = {
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1020  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1021  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1022  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1023 # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1024  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1025  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  
+            id = -1026  
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }	
+	
+	
+	
+	
+	
+
+
+   # Эдуард VIII
+    ENG_Edward_VIII = {
+        name = "ENG_Edward_VIII"
+        portraits = {
+            civilian = {
+                large = "GFX_Britain_Edward_VIII_6"  # Портрет для гражданской роли
+            }
+            army = {
+                large = "GFX_Britain_Edward_VIII_4"  # Портрет для роли генерала
+                small = "gfx/interface/ideas/ENG_Edward_VIII.dds"  # Маленький портрет
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = {
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1027  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1028  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1029  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1030  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1031  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1032  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  
+            id = -1033  
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+}

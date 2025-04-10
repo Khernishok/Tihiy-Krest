@@ -1,0 +1,31 @@
+state={
+	id=1054
+	name="STATE_1054"
+	resources={
+		aluminium=2.000
+	}
+
+	history={
+		owner = BOS
+		victory_points = {
+			11845 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+		add_core_of = HRZ
+		add_core_of = SRP
+
+	}
+
+	provinces={
+		11845 
+	}
+	manpower=91200
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

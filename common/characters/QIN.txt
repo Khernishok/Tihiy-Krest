@@ -1,0 +1,85 @@
+characters = {
+
+    # Цыси Тайхоу
+    QIN_Cixi_Taihou = {
+        name = "QIN_Cixi_Taihou" 
+        portraits = {
+            civilian = {
+                large = "GFX_QIN_Cixi_Taihou_1" 
+            }
+        }
+
+    # Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = {
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -3100
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -3101
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборочная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -3102
+			visible = { always = yes }  # Всегда видим
+        }
+	 }
+	 
+	 
+	 
+	 
+	    # Гуансюй Айсиньгёро Цзайтянь
+    QIN_Guangxi_Aixingero_Zaitian = {
+        name = "QIN_Guangxi_Aixingero_Zaitian" 
+        portraits = {
+            civilian = {
+                large = "GFX_QIN_Guangxi_Aixingero_Zaitian_1" 
+            }
+        }
+
+    # Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = {
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -3103
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -3104
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборочная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -3105
+			visible = { always = yes }  # Всегда видим
+        }
+	 }
+}

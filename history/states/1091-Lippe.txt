@@ -1,0 +1,39 @@
+state={
+	id=1091
+	name="STATE_1091"
+
+	history={
+		owner = LPP
+		add_claim_by = PRE
+		add_core_of = GER
+		add_core_of = WGR
+		add_core_of = LPP
+		add_core_of = WPH
+		victory_points = {
+			3355 1 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+
+		}
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 1
+				industrial_complex = 1
+
+			}
+
+		}
+
+	}
+
+
+	provinces={
+		3355
+	}
+	manpower=461433
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

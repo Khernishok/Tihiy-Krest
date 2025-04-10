@@ -1,0 +1,32 @@
+state={
+	id=1086
+	name="STATE_1086"
+
+	history={
+		owner = POP
+		victory_points = {
+			925 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			925 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = ITA
+		add_core_of = POP
+		add_core_of = ANC
+
+	}
+
+	provinces={
+		925 967 3910 6926 9838 11790 11861 
+	}
+	manpower=1278000
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

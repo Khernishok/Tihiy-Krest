@@ -1,0 +1,60 @@
+capital = 362 # Ричмонд
+
+# ПОЛИТИЧЕСКАЯ СИСТЕМА
+set_politics = {
+    ruling_party = confederation
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = yes
+}
+
+set_popularities = {
+    confederation = 26
+    slave_owners = 14
+    conservatism = 8
+    torgovtsy = 3
+    nationalism = 9
+    nazism = 2
+    liberalism = 3
+    neutrality = 1
+    illuminati = 4
+    freemasons = 5
+    military_dictatorship = 12
+    military_soviet = 9
+    lawlessness = 4
+}
+
+# НАЧАЛЬНЫЕ УСЛОВИЯ
+1894.1.1 = {
+    set_stability = 0.50
+    set_war_support = 0.30
+}
+
+
+# СОЗДАНИЕ ФРАКЦИИ
+create_faction = CSA_confederat
+add_to_faction = CSA # Конфедеративные Штаты Америки (лидер)
+add_to_faction = VRG # Свободное Государство Вирджиния
+add_to_faction = TEX # Республика Техас
+add_to_faction = NCR # Суверенная Северная Каролина
+add_to_faction = GRG # Королевство Джорджия
+add_to_faction = ABM # Народная Республика Алабама
+add_to_faction = MSP # Содружество Миссисипи
+add_to_faction = LOU # Федерация Луизианы
+add_to_faction = AKS # Вольный Штат Арканзас
+add_to_faction = TEN # Великое Княжество Теннесси
+add_to_faction = SCR # Южно-Каролинская Конфедерация
+
+# ЛИДЕРЫ
+recruit_character = CSA_Jefferson_Davis
+recruit_character = CSA_John_Caldwell_Calhoun
+recruit_character = CSA_Robert_Edward_Lee
+recruit_character = CSA_Edmund_Kirby_Smith
+recruit_character = CSA_Pierre_Gustave_Toutan_de_Beauregard
+recruit_character = CSA_James_Longstreet
+recruit_character = CSA_Albert_Sidney_Johnston
+recruit_character = CSA_Thomas_Jonathan_Jackson
+recruit_character = CSA_John_Bell_Hood
+recruit_character = CSA_Joseph_Johnston
+recruit_character = CSA_Braxton_Bragg
+recruit_character = CSA_Samuel_Cooper

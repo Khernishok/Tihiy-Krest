@@ -1,0 +1,27 @@
+state={
+	id=1084
+	name="STATE_1084"
+
+	history={
+		victory_points = {
+			10111 1 
+		}
+		owner = SPR
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SPR
+		add_core_of = ADU
+		add_core_of = EAD
+
+	}
+
+	provinces={
+		950 1090 1192 4095 10111 12083
+	}
+	manpower=714256
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

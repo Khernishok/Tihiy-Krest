@@ -1,0 +1,29 @@
+
+state={
+	id=246
+	name="STATE_246"
+	manpower = 1025458
+	
+	state_category = rural
+	resources={
+		steel=16 # was: 24
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			11349 1
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+		}
+		add_core_of = RUS
+		add_core_of = SMO
+	}
+
+	provinces={
+		287 3235 3344 6264 6303 6367 6400 9242 9287 11272 11326 11349 
+	}
+
+	local_supplies=0.0 
+}

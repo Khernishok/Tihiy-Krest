@@ -1,0 +1,33 @@
+state={
+	id=1089
+	name="STATE_1089"
+
+	history={
+		owner = PRE
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+
+		}
+		add_core_of = GER
+		add_core_of = WGR
+		add_core_of = PRE
+		add_core_of = WPH
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		405 9509 11431
+	}
+	manpower=1384297
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

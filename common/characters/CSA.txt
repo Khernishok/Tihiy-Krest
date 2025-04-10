@@ -1,0 +1,850 @@
+characters = {
+
+    # Джефферсон Дэвис
+    CSA_Jefferson_Davis = {
+        name = "CSA_Jefferson_Davis"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_CSA_Jefferson_Davis_1"  # Портрет для гражданской роли
+            }
+            army = {
+                large = "GFX_CSA_Jefferson_Davis_4"  # Портрет для роли генерала
+                small = "gfx/interface/ideas/CSA_Jefferson_Davis.dds"  # Маленький портрет
+            }
+        }
+
+    # Лидер страны (Конфедерал)
+        country_leader = {
+            ideology = confederation_subtype
+            traits = {
+            }
+            id = -2000
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Рабовладельцы)
+        country_leader = {
+            ideology = slave_owners_subtype
+            traits = { 
+            }
+            id = -2001
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Консерватизм)
+        country_leader = {
+            ideology = conservatism_subtype
+            traits = { 
+            }
+            id = -2002  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Демократия)
+        country_leader = {
+            ideology = democratic_subtype
+			traits = { 
+            }
+            id = -2003
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -2004
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            id = -2005
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            id = -2006
+			visible = { always = yes }  # Всегда видим
+        }
+
+	# Лидер страны (Военная диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            id = -2007
+			visible = { always = yes }  # Всегда видим
+        }
+		
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+
+
+
+
+
+
+    # Джон Колдвелл Кэлхун
+    CSA_John_Caldwell_Calhoun = {
+        name = "CSA_John_Caldwell_Calhoun" 
+        portraits = {
+            civilian = {
+                large = "GFX_CSA_John_Caldwell_Calhoun_4"  
+            }
+        }
+
+    # Лидер страны (Конфедерал)
+        country_leader = {
+            ideology = confederation_subtype
+            traits = {
+            }
+            id = -2008
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Рабовладельцы)
+        country_leader = {
+            ideology = slave_owners_subtype
+            traits = { 
+            }
+            id = -2009
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Консерватизм)
+        country_leader = {
+            ideology = conservatism_subtype
+            traits = { 
+            }
+            id = -2010
+			visible = { always = yes }  # Всегда видим
+        }
+
+		
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -2011
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            id = -2012
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            id = -2013
+			visible = { always = yes }  # Всегда видим
+        }
+    }
+
+
+
+
+
+    # Роберт Эдвард Ли
+    CSA_Robert_Edward_Lee = {
+        name = "CSA_Robert_Edward_Lee"
+        portraits = {
+            civilian = {
+                large = "GFX_CSA_Robert_Edward_Lee_4"  
+            }
+            army = {
+                large = "GFX_CSA_Robert_Edward_Lee_2"  
+                small = "gfx/interface/ideas/CSA_Robert_Edward_Lee.dds" 
+            }
+        }
+
+    # Лидер страны (Конфедерал)
+        country_leader = {
+            ideology = confederation_subtype
+            traits = {
+            }
+            id = -2014
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Рабовладельцы)
+        country_leader = {
+            ideology = slave_owners_subtype
+            traits = { 
+            }
+            id = -2015
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Военная Диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            id = -2016
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Военный Совет)
+        country_leader = {
+            ideology = military_soviet_subtype
+            traits = { 
+            }
+            id = -2017
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Хунта)
+        country_leader = {
+            ideology = junta_subtype
+            traits = { 
+            }
+            id = -2018
+			visible = { always = yes }  # Всегда видим
+        }
+
+	# Лидер страны (Консерватизм)
+        country_leader = {
+            ideology = conservatism_subtype
+            traits = { 
+            }
+            id = -2019
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		# Лидер страны (Национализм)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -2020
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+
+
+
+
+
+# Эдмунд Кирби Смит
+CSA_Edmund_Kirby_Smith = {
+    name = "CSA_Edmund_Kirby_Smith"
+    portraits = {
+        civilian = {
+            large = "GFX_CSA_Edmund_Kirby_Smith_2"  # Гражданский портрет
+        }
+        army = {
+            large = "GFX_CSA_Edmund_Kirby_Smith_1"  # Военный портрет
+            small = "gfx/interface/ideas/CSA_Edmund_Kirby_Smith.dds"
+        }
+    }
+
+# Консерватор
+    country_leader = {
+        ideology = conservatism_subtype
+        traits = {
+            military_engineer  # Инженерное образование (Вест-Пойнт)
+            defensive_doctrine # Известен оборонительной тактикой
+        }
+        id = -2021
+        visible = { always = yes }
+    }
+
+# Военные диктатуры
+    country_leader = {
+        ideology = military_dictatorship_subtype
+        traits = {
+            army_officer
+            defensive_doctrine
+        }
+        id = -2022
+        visible = { always = yes }
+    }
+
+
+# Лидер страны (Хунта)
+    country_leader = {
+        ideology = junta_subtype
+        traits = {
+            army_officer
+            military_engineer
+        }
+        id = -2023
+        visible = { always = yes }
+    }
+		
+# Лидер страны (Национализм)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -2024
+			visible = { always = yes }  # Всегда видим
+        }
+		
+# Лидер страны (Конфедерал)
+        country_leader = {
+            ideology = confederation_subtype
+            traits = {
+            }
+            id = -2025
+			visible = { always = yes }  # Всегда видим
+        }
+		
+# Лидер страны (Рабовладельцы)
+        country_leader = {
+            ideology = slave_owners_subtype
+            traits = { 
+            }
+            id = -2026
+			visible = { always = yes }  # Всегда видим
+        }
+
+
+# Генеральские характеристики
+    field_marshal = {
+        traits = {
+            defensive_doctrine
+            army_officer
+            engineer
+        }
+        skill = 4
+        attack_skill = 2
+        defense_skill = 4  # Особо силен в обороне
+        planning_skill = 3
+        logistics_skill = 3  # Хорошие навыки снабжения
+        legacy_id = -3006
+        visible = {
+            NOT = { has_government = communism_subtype }
+        }
+    }
+
+    corps_commander = {
+        traits = {
+            defensive_doctrine
+            army_officer
+        }
+        skill = 3
+        attack_skill = 2
+        defense_skill = 4
+        planning_skill = 2
+        logistics_skill = 3
+        legacy_id = -3007
+        visible = {
+            NOT = { has_government = communism_subtype }
+        }
+    }
+}
+
+
+
+
+
+
+# Пьер Гюстав Тутан де Борегар
+CSA_Pierre_Gustave_Toutan_de_Beauregard = {
+    name = "CSA_Pierre_Gustave_Toutan_de_Beauregard"
+    portraits = {
+        civilian = {
+            large = "GFX_CSA_Pierre_Gustave_Toutan_de_Beauregard_4" 
+        }
+        army = {
+            large = "GFX_CSA_Pierre_Gustave_Toutan_de_Beauregard_1" 
+            small = "gfx/interface/ideas/CSA_Pierre_Gustave_Toutan_de_Beauregard.dds"
+        }
+    }
+
+    # Консерватор
+    country_leader = {
+        ideology = conservatism_subtype
+        traits = {
+            military_engineer 
+            defensive_doctrine 
+        }
+        id = -2027
+        visible = { always = yes }
+    }
+
+    # Военные диктатуры
+    country_leader = {
+        ideology = military_dictatorship_subtype
+        traits = {
+            army_officer
+            defensive_doctrine
+        }
+        id = -2028
+        visible = { always = yes }
+    }
+
+
+    # Лидер страны (Хунта)
+    country_leader = {
+        ideology = junta_subtype
+        traits = {
+            army_officer
+            military_engineer
+        }
+        id = -2029
+        visible = { always = yes }
+    }
+		
+		# Лидер страны (Национализм)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -2030
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		    # Лидер страны (Конфедерал)
+        country_leader = {
+            ideology = confederation_subtype
+            traits = {
+            }
+            id = -2031
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Рабовладельцы)
+        country_leader = {
+            ideology = slave_owners_subtype
+            traits = { 
+            }
+            id = -2032
+			visible = { always = yes }  # Всегда видим
+        }
+
+
+    # Генеральские характеристики
+    field_marshal = {
+        traits = {
+            defensive_doctrine
+            army_officer
+            engineer
+        }
+        skill = 4
+        attack_skill = 2
+        defense_skill = 4  # Особо силен в обороне
+        planning_skill = 3
+        logistics_skill = 3  # Хорошие навыки снабжения
+        legacy_id = -3006
+        visible = {
+            NOT = { has_government = communism_subtype }
+        }
+    }
+
+    corps_commander = {
+        traits = {
+            defensive_doctrine
+            army_officer
+        }
+        skill = 3
+        attack_skill = 2
+        defense_skill = 4
+        planning_skill = 2
+        logistics_skill = 3
+        legacy_id = -3007
+        visible = {
+            NOT = { has_government = communism_subtype }
+        }
+    }
+}
+
+
+
+
+
+
+# Джеймс Лонгстрит
+CSA_James_Longstreet = {
+    name = "CSA_James_Longstreet"
+    portraits = {
+        civilian = {
+            large = "GFX_CSA_James_Longstreet_2" 
+        }
+        army = {
+            large = "GFX_CSA_James_Longstreet_3" 
+            small = "gfx/interface/ideas/CSA_James_Longstreet.dds"
+        }
+    }
+
+    # Консерватор
+    country_leader = {
+        ideology = conservatism_subtype
+        traits = {
+            military_engineer 
+            defensive_doctrine 
+        }
+        id = -2033
+        visible = { always = yes }
+    }
+
+    # Военные диктатуры
+    country_leader = {
+        ideology = military_dictatorship_subtype
+        traits = {
+            army_officer
+            defensive_doctrine
+        }
+        id = -2034
+        visible = { always = yes }
+    }
+
+
+    # Лидер страны (Хунта)
+    country_leader = {
+        ideology = junta_subtype
+        traits = {
+            army_officer
+            military_engineer
+        }
+        id = -2035
+        visible = { always = yes }
+    }
+		
+		# Лидер страны (Национализм)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -2036
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		    # Лидер страны (Конфедерал)
+        country_leader = {
+            ideology = confederation_subtype
+            traits = {
+            }
+            id = -2037
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Рабовладельцы)
+        country_leader = {
+            ideology = slave_owners_subtype
+            traits = { 
+            }
+            id = -2038
+			visible = { always = yes }  # Всегда видим
+        }
+
+
+    # Генеральские характеристики
+    field_marshal = {
+        traits = {
+            defensive_doctrine
+            army_officer
+            engineer
+        }
+        skill = 4
+        attack_skill = 2
+        defense_skill = 4  # Особо силен в обороне
+        planning_skill = 3
+        logistics_skill = 3  # Хорошие навыки снабжения
+        legacy_id = -3006
+        visible = {
+            NOT = { has_government = communism_subtype }
+        }
+    }
+
+    corps_commander = {
+        traits = {
+            defensive_doctrine
+            army_officer
+        }
+        skill = 3
+        attack_skill = 2
+        defense_skill = 4
+        planning_skill = 2
+        logistics_skill = 3
+        legacy_id = -3007
+        visible = {
+            NOT = { has_government = communism_subtype }
+        }
+    }
+}
+
+
+
+
+
+# Альберт Сидни Джонстон
+CSA_Albert_Sidney_Johnston = {
+    name = "CSA_Albert_Sidney_Johnston"
+    portraits = {
+        civilian = {
+            large = "GFX_CSA_Albert_Sidney_Johnston_1" 
+        }
+        army = {
+            large = "GFX_CSA_Albert_Sidney_Johnston_2" 
+            small = "gfx/interface/ideas/CSA_Albert_Sidney_Johnston.dds"
+        }
+    }
+
+    # Консерватор
+    country_leader = {
+        ideology = conservatism_subtype
+        traits = {
+            military_engineer 
+            defensive_doctrine 
+        }
+        id = -2039
+        visible = { always = yes }
+    }
+
+    # Военные диктатуры
+    country_leader = {
+        ideology = military_dictatorship_subtype
+        traits = {
+            army_officer
+            defensive_doctrine
+        }
+        id = -2040
+        visible = { always = yes }
+    }
+
+
+    # Лидер страны (Хунта)
+    country_leader = {
+        ideology = junta_subtype
+        traits = {
+            army_officer
+            military_engineer
+        }
+        id = -2041
+        visible = { always = yes }
+    }
+		
+		# Лидер страны (Национализм)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -2042
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		    # Лидер страны (Конфедерал)
+        country_leader = {
+            ideology = confederation_subtype
+            traits = {
+            }
+            id = -2043
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Рабовладельцы)
+        country_leader = {
+            ideology = slave_owners_subtype
+            traits = { 
+            }
+            id = -2044
+			visible = { always = yes }  # Всегда видим
+        }
+
+
+    # Генеральские характеристики
+    field_marshal = {
+        traits = {
+            defensive_doctrine
+            army_officer
+            engineer
+        }
+        skill = 4
+        attack_skill = 2
+        defense_skill = 4  # Особо силен в обороне
+        planning_skill = 3
+        logistics_skill = 3  # Хорошие навыки снабжения
+        legacy_id = -3006
+        visible = {
+            NOT = { has_government = communism_subtype }
+        }
+    }
+
+    corps_commander = {
+        traits = {
+            defensive_doctrine
+            army_officer
+        }
+        skill = 3
+        attack_skill = 2
+        defense_skill = 4
+        planning_skill = 2
+        logistics_skill = 3
+        legacy_id = -3007
+        visible = {
+            NOT = { has_government = communism_subtype }
+        }
+    }
+}
+
+
+
+
+
+
+
+# Томас Джонатан Джексон
+CSA_Thomas_Jonathan_Jackson = {
+    name = "CSA_Thomas_Jonathan_Jackson"
+    portraits = {
+        civilian = {
+            large = "GFX_CSA_Thomas_Jonathan_Jackson_2" 
+        }
+        army = {
+            large = "GFX_CSA_Thomas_Jonathan_Jackson_3" 
+            small = "gfx/interface/ideas/CSA_Thomas_Jonathan_Jackson.dds"
+        }
+    }
+
+    # Консерватор
+    country_leader = {
+        ideology = conservatism_subtype
+        traits = {
+            military_engineer 
+            defensive_doctrine 
+        }
+        id = -2045
+        visible = { always = yes }
+    }
+
+    # Военные диктатуры
+    country_leader = {
+        ideology = military_dictatorship_subtype
+        traits = {
+            army_officer
+            defensive_doctrine
+        }
+        id = -2046
+        visible = { always = yes }
+    }
+
+
+    # Лидер страны (Хунта)
+    country_leader = {
+        ideology = junta_subtype
+        traits = {
+            army_officer
+            military_engineer
+        }
+        id = -2047
+        visible = { always = yes }
+    }
+		
+		# Лидер страны (Национализм)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -2048
+			visible = { always = yes }  # Всегда видим
+        }
+		
+		    # Лидер страны (Конфедерал)
+        country_leader = {
+            ideology = confederation_subtype
+            traits = {
+            }
+            id = -2049
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Рабовладельцы)
+        country_leader = {
+            ideology = slave_owners_subtype
+            traits = { 
+            }
+            id = -2050
+			visible = { always = yes }  # Всегда видим
+        }
+
+
+    # Генеральские характеристики
+    field_marshal = {
+        traits = {
+            defensive_doctrine
+            army_officer
+            engineer
+        }
+        skill = 4
+        attack_skill = 2
+        defense_skill = 4  # Особо силен в обороне
+        planning_skill = 3
+        logistics_skill = 3  # Хорошие навыки снабжения
+        legacy_id = -3006
+        visible = {
+            NOT = { has_government = communism_subtype }
+        }
+    }
+
+    corps_commander = {
+        traits = {
+            defensive_doctrine
+            army_officer
+        }
+        skill = 3
+        attack_skill = 2
+        defense_skill = 4
+        planning_skill = 2
+        logistics_skill = 3
+        legacy_id = -3007
+        visible = {
+            NOT = { has_government = communism_subtype }
+        }
+    }
+}
+
+
+}

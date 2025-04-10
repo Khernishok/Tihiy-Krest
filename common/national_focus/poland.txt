@@ -1,0 +1,159 @@
+﻿focus_tree = {
+    id = new_poland_focus
+    
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = POL
+        }
+    }
+    replace = yes
+    default = no
+
+    ##########################
+    #### ТИХООКЕАНСКАЯ ПОЛЬША ###
+    ##########################
+
+    focus = {
+        id = POL_pacific_vision
+        icon = GFX_focus_POL_pacific_vision
+        x = 29
+        y = 10
+        cost = 5
+    completion_reward = {
+        set_country_flag = pol_pacific_vision_available
+        country_event = { id = new_poland.1 days = 2 }
+    }
+}
+
+    focus = {
+        id = POL_prepare_expedition
+        icon = GFX_focus_POL_prepare_expedition
+        prerequisite = { focus = POL_pacific_vision }
+        x = 29
+        y = 11
+        cost = 7
+        completion_reward = {
+            country_event = { id = new_poland.10 days = 1 }
+            add_national_unity = 0.05
+        }
+    }
+
+    focus = {
+        id = POL_claim_new_guinea
+        icon = GFX_focus_POL_claim_new_guinea
+        prerequisite = { focus = POL_prepare_expedition }
+        x = 28
+        y = 12
+        cost = 8
+    completion_reward = {
+        country_event = { id = new_poland.2 days = 1 }
+        set_country_flag = pol_new_guinea_claimed
+    }
+}
+
+    focus = {
+        id = POL_invade_new_guinea
+        icon = GFX_focus_POL_invade_new_guinea
+        prerequisite = { focus = POL_claim_new_guinea }
+        x = 28
+        y = 13
+        cost = 10
+        completion_reward = {
+            country_event = { id = new_poland.20 days = 1 }
+        }
+    }
+
+    focus = {
+        id = POL_claim_new_britain
+        icon = GFX_focus_POL_claim_new_britain
+        prerequisite = { focus = POL_prepare_expedition }
+        x = 30
+        y = 12
+        cost = 8
+        completion_reward = {
+            country_event = { id = new_poland.3 days = 1 }
+        }
+    }
+
+    focus = {
+        id = POL_invade_new_britain
+        icon = GFX_focus_POL_invade_new_britain
+        prerequisite = { focus = POL_claim_new_britain }
+        x = 30
+        y = 13
+        cost = 10
+        completion_reward = {
+            country_event = { id = new_poland.21 days = 1 }
+        }
+    }
+
+    focus = {
+        id = POL_papua_solution
+        icon = GFX_focus_POL_papua_solution
+        prerequisite = { 
+            focus = POL_invade_new_guinea 
+            focus = POL_invade_new_britain
+        }
+        x = 29
+        y = 14
+        cost = 10
+        completion_reward = {
+            country_event = { id = new_poland.40 days = 1 }
+        }
+    }
+
+    focus = {
+        id = POL_great_migration
+        icon = GFX_focus_POL_great_migration
+        prerequisite = { focus = POL_papua_solution }
+        x = 26
+        y = 15
+        cost = 10
+        completion_reward = {
+            country_event = { id = new_poland.50 days = 1 }
+        }
+    }
+
+    focus = {
+        id = POL_new_poland
+        icon = GFX_focus_POL_new_poland
+        prerequisite = { focus = POL_great_migration }
+        x = 26
+        y = 16
+        cost = 10
+    completion_reward = {
+        country_event = { id = new_poland.60 days = 1 }
+        set_country_flag = pol_new_poland_declared
+    }
+}
+
+    focus = {
+        id = POL_papua_genocide
+        icon = GFX_focus_POL_papua_genocide
+        prerequisite = { focus = POL_papua_solution }
+        mutually_exclusive = { focus = POL_papua_slavery }
+        x = 30
+        y = 15
+        cost = 10
+        completion_reward = {
+            country_event = { id = new_poland.70 days = 1 }
+            add_war_support = 0.10
+        }
+    }
+
+    focus = {
+        id = POL_papua_slavery
+        icon = GFX_focus_POL_papua_slavery
+        prerequisite = { focus = POL_papua_solution }
+        mutually_exclusive = { focus = POL_papua_genocide }
+        x = 28
+        y = 15
+        cost = 10
+        completion_reward = {
+            country_event = { id = new_poland.80 days = 1 }
+            add_stability = -0.05
+        }
+    }
+}

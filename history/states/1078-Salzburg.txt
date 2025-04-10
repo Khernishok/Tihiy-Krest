@@ -1,0 +1,33 @@
+state={
+	id=1078
+	name="STATE_1078"
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			688 10 
+		}
+		add_core_of = AUS
+		add_core_of = SLZ
+		1938.3.12 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
+
+		}
+
+	}
+
+	provinces={
+		688 3675 11634 
+	}
+	manpower=70000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

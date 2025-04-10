@@ -1,0 +1,46 @@
+state={
+	id=1065
+	name="STATE_1065"
+
+	history={
+		owner = OLD
+		victory_points = {
+			241 5 
+		}
+		victory_points = {
+			336 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 2
+			fuel_silo = 1
+			air_base = 3
+			241 = {
+				naval_base = 8
+
+			}
+
+		}
+		add_core_of = GER
+		add_core_of = WGR
+		add_core_of = OLD
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+				dockyard = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		241 247 309 336 
+	}
+	manpower=550000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=14.000
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=421
+	name="STATE_421"
+	manpower = 390139
+	
+	state_category = rural
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = PER
+		add_claim_by = KUR
+		add_core_of = LOR
+		#add_core_of = JAL
+	}
+
+	provinces={
+		829 1922 5050 10774 
+	}
+
+	local_supplies=0.0 
+}

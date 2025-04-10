@@ -1,0 +1,109 @@
+﻿l_russian:
+# Империя Шведов
+oscar_ii_fredrik_bernadotte:0 "Оскар II Фредерик"
+Gustav_V_Oscar_Adolf:0 "Густав V Оскар Адольф"
+
+ 
+ # КША - Конфедерация
+CSA_Jefferson_Davis:0 "Джефферсон Дэвис"
+CSA_John_Caldwell_Calhoun:0 "Джон Колдвелл Кэлхун"
+CSA_Robert_Edward_Lee:0 "Роберт Эдвард Ли"
+CSA_Edmund_Kirby_Smith:0 "Эдмунд Кирби Смит"
+CSA_Pierre_Gustave_Toutan_de_Beauregard:0 "Пьер Гюстав Тутан де Борегар"
+CSA_James_Longstreet:0 "Джеймс Лонгстрит"
+CSA_Albert_Sidney_Johnston:0 "Альберт Сидни Джонстон"
+CSA_Thomas_Jonathan_Jackson:0 "Томас Джонатан Джексон"
+CSA_John_Bell_Hood:0 "Джон Белл Худ"
+CSA_Joseph_Johnston:0 "Джозеф Джонстон"
+CSA_Braxton_Bragg:0 "Брэкстон Брэгг"
+CSA_Samuel_Cooper:0 "Сэмюэл Купер"
+
+# Техас
+TEX_Francis_Lubbock:0 "Фрэнсис Лаббок"
+
+ # США - Соединёные Штаты Америки
+USA_Abraham_Lincoln:0 "Авраам Линкольн"
+USA_John_Smith:0 "Джон Смит"
+USA_John_Fitzgerald_Kennedy:0 "Джон Фицджеральд Кеннеди"
+USA_Douglas_MacArthur:0 "Дуглас Макартур"
+
+
+
+
+ # Мексиканская Империя
+MEX_Maximilian_I:0 "Максимилиан I"
+MEX_Charlotte_Belgium:0 "Шарлотта Карлота Бельгийская"
+
+ # Испанская Империя
+SPR_Maria_Kristina_Austriatska:0 "Мария Кристина Австрийская"
+SPR_Alfonso_XIII_Leon_Fernando_Mar: "Альфонсо Леон XIII Фернандо"
+SPR_Maria_de_las_Mercedes_Orleans:0 "Мария де лас Мерседес Орлеанская"
+SPR_Maria_Teresa_Spain:0 "Мария Терезия Испанская"
+
+ # Австро-Венгрия
+AUS_Franz_Joseph_I:0 "Франц Иосиф I"
+AUS_Franz_Ferdinand:0 "Франц Фердинанд"
+
+
+
+# Россия
+ RUS_tsar_nikolai_ii_romanov:0 "Николай II"
+ RUS_alexandra_fedorovna:0 "Александра Фёдоровна Романова"
+ RUS_Vladimir_Volfovich_Zhirinovsky:0 "Жириновский Владимир Вольфович"
+ RUS_Nikolay_Nikolaevich_Romanov_junior:0 "Младший Николай Николаевич Романов"
+ RUS_Mikhail_Alexandrovich_Romanov:0 "Михаил Александрович Романов"
+ 
+# Армия
+
+# Флот
+ RUS_Alexey_Mikhailovich_Shchastny:0 "Алексей Михайлович Щастный"
+ 
+ # СССР
+ RUS_Ulyanov_Vladimir_Ilyich_Lenin:0 "Ульянов Владимир Ильич Ленин"
+ RUS_Leon_Trotsky:0 "Лев Давидович Троцкий"
+ RUS_Iosif_Vissarionovich_Stalin:0 "Иосиф Виссарионович Сталин"
+ RUS_Nikolai_Bukharin:0 "Николай Иванович Бухарин"
+ RUS_Nikita_Khruschev:0 "Никита Сергеевич Хрущёв"
+ RUS_Vasily_Ivanovich_Chapaev:0 "Василий Иванович Чапаев"
+ 
+ RUS_Felix_Dzerzhinsky:0 "Феликс Дзержинский"
+ 
+ # Японская Империя
+ YAP_Meiji_Mutsuhito:0 "Мэйдзи Муцухито"
+ YAP_Hirohito:0 "Хирохито"
+ 
+ # Династия Цин
+ 
+ QIN_Cixi_Taihou:0 "Цыси Тайхоу"
+ QIN_Guangxi_Aixingero_Zaitian:0 "Гуансюй Айсиньгёро Цзайтянь"
+ 
+ 
+ # Рим
+ POP_Lev_XIII:0 "Лев XIII"
+ POP_Piy_X:0 "Пий X"
+
+# Франция
+ FRA_Napoleon_4_Eugene:0 "Наполеон 4 Эжен"
+ FRA_Jean_Casimir_Perrier:0 "Жан Казимир-Перье"
+ 
+# Пруссия
+PRE_William__II:0 "Вильгельм II"
+PRE_Viktoria_Luise:0 "Виктория Луиза Прусская"
+PRE_William_III:0 "Вильгельм III"
+PRE_Otto_von_Bismarck:0 "Отто фон Бисмарк"
+
+# Британия
+ENG_Alexandrina_Victoria:0 "Александрина Виктория"
+ENG_Georg_V:0 "Георг V"
+ENG_Edward_VIII:0 "Эдуард VIII Альберт Кристиан Георг Эндрю Патрик Дэвид"
+
+# Речь Посполитая
+POL_Stanislav_II_August_Poniatowski:0 "Станислав II Август Понятовский"
+POL_Mikhail_Kazimir_II_Oginsky:0 "Михаил Казимир II Огинский"
+
+# Османская Империя
+TUR_abdul_hamid_II:0 "Абдул-Хамид II"
+TUR_mehmed_v:0 "Мехмед V"
+TUR_Fatma_Neslishah_Osmanoglu:0 "Фатьма Неслишах Османоглу"
+
+ 

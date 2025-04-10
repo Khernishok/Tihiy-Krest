@@ -1,0 +1,246 @@
+characters = {
+
+# Джон Смит
+    USA_John_Smith = {
+        name = "USA_John_Smith"
+        portraits = {
+            civilian = {
+                large = "GFX_USA_John_Smith_1"
+            }
+		    army = {
+                large = "GFX_USA_John_Smith_11"
+                small = "gfx/interface/ideas/USA_John_Smith.dds"  
+            }
+        }
+
+	# Лидер страны (Военная диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            id = -4000
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Республиканцы)
+        country_leader = {
+            ideology = republican_subtype
+            traits = { 
+            }
+            id = -4001
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	    # Лидер страны (Консерватизм)
+        country_leader = {
+            ideology = conservatism_subtype
+            traits = { 
+            }
+            id = -4002
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Национал-Социализм)
+        country_leader = {
+            ideology = national_socialism_subtype
+            traits = { 
+            }
+            id = -4003
+			visible = { always = yes }  # Всегда видим
+        }
+		
+    # Лидер страны (Национализм)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -4004
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            id = -4005
+			visible = { always = yes }  # Всегда видим
+        }
+		
+    # Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            id = -4006
+			visible = { always = yes }  # Всегда видим
+        }
+			
+			    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+
+# Авраам Линкольн
+    USA_Abraham_Lincoln = {
+        name = "USA_Abraham_Lincoln"
+        portraits = {
+            civilian = {
+                large = "GFX_USA_Abraham_Lincoln_2"
+            }
+        }
+
+    # Республиканцы
+        country_leader = {
+            ideology = republican_subtype
+            traits = {
+            }
+            id = -4007
+			visible = { always = yes }
+        }
+		
+    # Олигархи
+        country_leader = {
+            ideology = neutrality_subtype
+            traits = {
+            }
+            id = -4008
+			visible = { always = yes }
+        }
+    }
+	
+# Джон Фицджеральд Кеннеди	
+	USA_John_Fitzgerald_Kennedy = {
+        name = "USA_John_Fitzgerald_Kennedy"
+        portraits = {
+            civilian = {
+                large = "GFX_USA_John_Fitzgerald_Kennedy_1"
+            }
+		    army = {
+                large = "GFX_USA_John_Fitzgerald_Kennedy_2"
+                small = "gfx/interface/ideas/USA_John_Fitzgerald_Kennedy.dds"  
+            }
+        }
+
+        country_leader = {
+            ideology = democratic_subtype
+            traits = { charismatic_speaker reformer }
+            id = -4009
+            visible = yes
+        }
+        
+        country_leader = {
+            ideology = liberalism_subtype
+            traits = { popular_figure reformer }
+            id = -4010
+            visible = yes
+        }
+		
+		country_leader = {
+            ideology = neutrality_subtype
+            traits = { popular_figure reformer }
+            id = -4011
+            visible = yes
+        }
+
+			
+			    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+	
+# Дуглас Макартур
+	USA_Douglas_MacArthur = {
+        name = "USA_Douglas_MacArthur"
+        portraits = {
+            civilian = {
+                large = "GFX_USA_Douglas_MacArthur_1"
+            }
+		    army = {
+                large = "GFX_USA_Douglas_MacArthur_2"
+                small = "gfx/interface/ideas/USA_John_Fitzgerald_Kennedy.dds"  
+            }
+        }
+
+
+	# Лидер страны (Республиканцы)
+        country_leader = {
+            ideology = republican_subtype
+            traits = { 
+            }
+            id = -4012
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	    # Лидер страны (Консерватизм)
+        country_leader = {
+            ideology = conservatism_subtype
+            traits = { 
+            }
+            id = -4013
+			visible = { always = yes }  # Всегда видим
+        }
+		
+			# Лидер страны (Военный совет)
+        country_leader = {
+            ideology = military_soviet_subtype
+            traits = { 
+            }
+            id = -4014
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Военная диктатура)
+        country_leader = {
+            ideology = military_dictatorship_subtype
+            traits = { 
+            }
+            id = -4015
+			visible = { always = yes }  # Всегда видим
+        }
+
+			
+			    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+}

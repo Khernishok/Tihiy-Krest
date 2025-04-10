@@ -1,0 +1,29 @@
+state={
+	id=1017
+	name="STATE_1017"
+
+	history = {
+		owner = AUS
+		add_core_of = YUG
+		add_core_of = CRO
+		add_core_of = DAL
+		add_core_of = RAG
+		victory_points = {
+			6889 3 
+		}
+		buildings = {
+			infrastructure = 3
+			6889 = {
+				naval_base = 1
+
+			}
+		}
+	}
+	provinces={
+		3868 6889 
+	}
+	manpower=60000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

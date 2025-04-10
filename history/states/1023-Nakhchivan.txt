@@ -1,0 +1,27 @@
+state={
+	id=1023
+	name="STATE_1023"
+
+	history={
+		owner = ARM
+		victory_points = {
+			6997 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = RUS
+		add_core_of = ARM
+		add_core_of = AZR
+		add_core_of = NAK
+
+	}
+	provinces={
+		6997 
+	}
+	manpower=122000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

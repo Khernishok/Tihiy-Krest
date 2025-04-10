@@ -1,0 +1,3737 @@
+ideologies = {
+
+#Демократия
+
+democratic = {
+
+	types = {
+		democratic_subtype = {
+		}
+		naz_democratic_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_DEMOCRATIC_1"
+		"FACTION_NAME_DEMOCRATIC_2"
+		"FACTION_NAME_DEMOCRATIC_3"
+		"FACTION_NAME_DEMOCRATIC_4"
+		"FACTION_NAME_DEMOCRATIC_5"
+		"FACTION_NAME_DEMOCRATIC_6"
+	}
+
+	color = { 24 40 93 }
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		# Убрано ограничение на оправдание войн только против угрожающих стран
+		# can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.10  # Снижено влияние войны на мировое напряжение
+	faction_impact_on_world_tension = 0.05  # Снижено влияние фракции на мировое напряжение
+
+	modifiers = {
+		generate_wargoal_tension = 0.10  # Минимальное влияние на мировое напряжение при оправдании целей
+		join_faction_tension = 0.50
+		lend_lease_tension = 0.25
+		send_volunteers_tension = 0.25
+		guarantee_tension = 0.10
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+	}
+
+	ai_democratic = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+	
+	
+republican = {
+
+	types = {
+		republican_subtype = { }  
+		progressive_republican_subtype = { }  
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_REPUBLICAN_1"  
+		"FACTION_NAME_REPUBLICAN_2"  
+		"FACTION_NAME_REPUBLICAN_3"  
+		"FACTION_NAME_REPUBLICAN_4"  
+		"FACTION_NAME_REPUBLICAN_5"  
+	}
+
+	color = { 204 85 0 }  
+
+	rules = {
+		can_create_collaboration_government = yes  
+		can_declare_war_on_same_ideology = no  
+		can_force_government = yes  
+		can_send_volunteers = yes  
+		can_puppet = yes  
+		can_lower_tension = yes  
+		can_guarantee_other_ideologies = yes  
+	}
+
+	can_host_government_in_exile = yes  
+
+	war_impact_on_world_tension = 0.15  
+	faction_impact_on_world_tension = 0.10  
+
+	modifiers = {
+		generate_wargoal_tension = 0.15  
+		join_faction_tension = 0.60  
+		lend_lease_tension = 0.30  
+		send_volunteers_tension = 0.30  
+		guarantee_tension = 0.15  
+		civilian_intel_to_others = 15.0  
+		army_intel_to_others = 10.0  
+		navy_intel_to_others = 15.0  
+		airforce_intel_to_others = 10  
+		embargo_cost_factor = -0.4  
+		embargo_threshold_factor = -0.4  
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.40  
+		faction_join_popularity_factor = 0.10  
+	}
+
+	ai_democratic = yes  
+	ai_ideology_wanted_units_factor = 1.05  
+}
+	
+	
+	#Коммунизм
+	
+communism = {
+
+	types = {
+		# Базовый подтип коммунизма
+		communism_subtype = {
+		}
+
+		# Агрессивный подтип коммунизма (например, сталинизм)
+		stalinist_subtype = {
+			rules = {
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_create_collaboration_government = yes  # Добавлено создание коллаборационных правительств
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Снижено влияние на мировое напряжение
+				generate_wargoal_tension = 0.50  # Снижено напряжение при оправдании целей
+			}
+		}
+
+		# Умеренный подтип коммунизма (например, троцкизм)
+		trotskyist_subtype = {
+			rules = {
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes  # Возможность снижать напряжение
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.25  # Минимальное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_COMMUNIST_1"
+		"FACTION_NAME_COMMUNIST_2"
+		"FACTION_NAME_COMMUNIST_3"
+		"FACTION_NAME_COMMUNIST_4"
+		"FACTION_NAME_COMMUNIST_5"
+	}
+
+	color = { 51 0 0 }  # Темно-красный цвет
+
+	war_impact_on_world_tension = 0.50  # Снижено влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.25  # Снижено влияние фракций на напряжение
+
+	ai_communist = yes  # Использует поведение AI для коммунистов
+	ai_ideology_wanted_units_factor = 1.20  # Увеличение желаемого количества юнитов
+
+	rules = {
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+	}
+
+	can_collaborate = yes  # Может сотрудничать с другими странами
+
+	modifiers = {
+		civilian_intel_to_others = 10.0
+		army_intel_to_others = 7.5
+		navy_intel_to_others = 12.5
+		airforce_intel_to_others = 7.5
+		hidden_modifier = { join_faction_tension = -0.1 }  # Снижение напряжения при вступлении в фракцию
+		embargo_threshold_factor = 0.5  # Увеличение порога для эмбарго
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		generate_wargoal_tension = 0.50  # Снижение напряжения при оправдании целей
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_war_support_factor = 0.10  # Увеличение поддержки войны в фракции
+	}
+}
+
+
+
+
+
+#Фашизм
+
+fascism = {
+
+	types = {
+		# Базовый подтип фашизма
+		fascism_subtype = {
+		}
+
+		# Агрессивный подтип фашизма (например, нацизм)
+		nazi_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				# Убрано ограничение на оправдание войн только против угрожающих стран
+				# can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Снижено влияние на мировое напряжение
+				generate_wargoal_tension = 0.50  # Снижено напряжение при оправдании целей
+			}
+		}
+
+		# Умеренный подтип фашизма (например, итальянский фашизм)
+		italian_fascism_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_FASCISM_1"
+		"FACTION_NAME_FASCISM_2"
+		"FACTION_NAME_FASCISM_3"
+		"FACTION_NAME_FASCISM_4"
+		"FACTION_NAME_FASCISM_5"
+		"FACTION_NAME_FASCISM_6"
+	}
+
+	color = { 58 51 34 }  # Коричневатый оттенок
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	ai_fascist = yes  # Использует поведение AI для фашистов
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_war_support_factor = 0.10  # Увеличение поддержки войны в фракции
+	}
+}
+
+
+# Олигархи
+neutrality = {
+
+	types = {
+		# Базовый подтип нейтралитета
+		neutrality_subtype = {
+		}
+
+		# Изоляционистский подтип (например, Швейцария)
+		isolationist_subtype = {
+			rules = {
+				can_force_government = no  # Не может навязывать идеологию
+				can_puppet = no  # Не может создавать марионеточные государства
+				can_send_volunteers = no  # Не может отправлять добровольцев
+				can_guarantee_other_ideologies = no  # Не может гарантировать независимость
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				faction_impact_on_world_tension = 0.05
+				drift_defence_factor = -0.5  # Усиленная защита от идеологического дрейфа
+			}
+		}
+
+		# Миротворческий подтип (например, Швеция)
+		peacekeeper_subtype = {
+			rules = {
+				can_force_government = yes
+				can_puppet = yes
+				can_send_volunteers = yes  # Может отправлять добровольцев
+				can_guarantee_other_ideologies = yes  # Может гарантировать независимость
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				generate_wargoal_tension = 0.25  # Низкое напряжение при оправдании целей
+				guarantee_tension = 0.10  # Низкое напряжение при гарантиях
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_NONALIGNED_1"
+		"FACTION_NAME_NONALIGNED_2"
+		"FACTION_NAME_NONALIGNED_3"
+		"FACTION_NAME_NONALIGNED_4"
+		"FACTION_NAME_NONALIGNED_5"
+	}
+
+	color = { 147 158 163 }  # Серо-голубой цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_force_government = yes  # Может навязывать идеологию
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_send_volunteers = no  # Не может отправлять добровольцев
+	}
+
+	modifiers = {
+		generate_wargoal_tension = 0.5  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.4  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.6  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.4  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.4  # Влияние гарантий независимости на напряжение
+		drift_defence_factor = -0.3  # Защита от идеологического дрейфа
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 10.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 10.0  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_stability_factor = 0.10  # Увеличение стабильности в фракции
+	}
+
+	ai_neutral = yes  # Использует поведение AI для нейтральных стран
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+
+#Монархия
+
+monarchy = {
+
+	types = {
+		# Базовый подтип монархии
+		monarchy_subtype = {
+		}
+
+		# Абсолютистский подтип (например, Пруссия)
+		absolutist_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+			}
+		}
+
+		# Конституционный подтип (например, Великобритания)
+		constitutional_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_MONARCHY_1"
+		"FACTION_NAME_MONARCHY_2"
+		"FACTION_NAME_MONARCHY_3"
+		"FACTION_NAME_MONARCHY_4"
+		"FACTION_NAME_MONARCHY_5"
+		"FACTION_NAME_MONARCHY_6"
+	}
+
+	color = { 232 224 192 }  # Бежевый цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_war_support_factor = 0.10  # Увеличение поддержки войны в фракции
+	}
+
+	ai_fascist = yes  # Использует поведение AI для фашистов (можно заменить на монархический AI, если есть)
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+#Конституционная монархия
+
+constitutional_monarchy = {
+
+	types = {
+		# Базовый подтип конституционной монархии
+		constitutional_monarchy_subtype = {
+		}
+
+		# Либеральный подтип (например, Великобритания)
+		liberal_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				stability_factor = 0.10  # Увеличение стабильности
+			}
+		}
+
+		# Консервативный подтип (например, Япония)
+		conservative_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				war_support_factor = 0.10  # Увеличение поддержки войны
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_CONSTITUTIONAL_MONARCHY_1"
+		"FACTION_NAME_CONSTITUTIONAL_MONARCHY_2"
+		"FACTION_NAME_CONSTITUTIONAL_MONARCHY_3"
+		"FACTION_NAME_CONSTITUTIONAL_MONARCHY_4"
+		"FACTION_NAME_CONSTITUTIONAL_MONARCHY_5"
+		"FACTION_NAME_CONSTITUTIONAL_MONARCHY_6"
+	}
+
+	color = { 196 123 3 }  # Оранжево-коричневый цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_stability_factor = 0.10  # Увеличение стабильности в фракции
+	}
+
+	ai_fascist = yes  # Использует поведение AI для фашистов (можно заменить на монархический AI, если есть)
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+
+#Выборная монархия
+
+elective_monarchy = {
+
+	types = {
+		elective_monarchy_subtype = {
+		}
+
+		# Аристократический подтип (например, Священная Римская империя)
+		aristocratic_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				political_power_factor = 0.10  # Увеличение генерации политической власти
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_ELECTIVE_MONARCHY_1"
+		"FACTION_NAME_ELECTIVE_MONARCHY_2"
+		"FACTION_NAME_ELECTIVE_MONARCHY_3"
+		"FACTION_NAME_ELECTIVE_MONARCHY_4"
+		"FACTION_NAME_ELECTIVE_MONARCHY_5"
+		"FACTION_NAME_ELECTIVE_MONARCHY_6"
+	}
+
+	color = { 218 165 32 }  # Золотисто-коричневый цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_manpower_factor = 0.10  # Увеличение доступной рабочей силы в фракции
+	}
+
+	ai_democratic = yes  # Использует поведение AI для демократических стран
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+#Монархо-Коммунизм
+
+monarchical_communism = {
+
+	types = {
+		# Базовый подтип монархо-коммунизма
+		monarchical_communism_subtype = {
+		}
+
+		# Авторитарный подтип (например, Северная Корея)
+		authoritarian_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				stability_factor = 0.10  # Увеличение стабильности
+			}
+		}
+
+		# Прогрессивный подтип (например, гипотетическая монархия с социалистическими реформами)
+		progressive_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				construction_speed_factor = 0.10  # Увеличение скорости строительства
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_MONARCHICAL_COMMUNISM_1"
+		"FACTION_NAME_MONARCHICAL_COMMUNISM_2"
+		"FACTION_NAME_MONARCHICAL_COMMUNISM_3"
+		"FACTION_NAME_MONARCHICAL_COMMUNISM_4"
+		"FACTION_NAME_MONARCHICAL_COMMUNISM_5"
+		"FACTION_NAME_MONARCHICAL_COMMUNISM_6"
+	}
+
+	color = { 251 104 91 }  # Красноватый оттенок
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_stability_factor = 0.10  # Увеличение стабильности в фракции
+	}
+
+	ai_communist = yes  # Использует поведение AI для коммунистов
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+
+# Военная диктатура
+
+military_dictatorship = {
+
+	types = {
+		# Базовый подтип военной диктатуры
+		military_dictatorship_subtype = {
+		}
+
+		# Агрессивный подтип (например, режим Пиночета)
+		aggressive_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				army_attack_factor = 0.10  # Увеличение атаки армии
+			}
+		}
+
+		# Стабилизационный подтип (например, режим Сухарто)
+		stabilization_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				stability_factor = 0.10  # Увеличение стабильности
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_MILITARY_DICTATORSHIP_1"
+		"FACTION_NAME_MILITARY_DICTATORSHIP_2"
+		"FACTION_NAME_MILITARY_DICTATORSHIP_3"
+		"FACTION_NAME_MILITARY_DICTATORSHIP_4"
+		"FACTION_NAME_MILITARY_DICTATORSHIP_5"
+		"FACTION_NAME_MILITARY_DICTATORSHIP_6"
+	}
+
+	color = { 32 86 49 }  # Темно-зеленый цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_army_attack_factor = 0.10  # Увеличение атаки армии в фракции
+	}
+
+	ai_fascist = yes  # Использует поведение AI для фашистов
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+
+# Военный совет
+
+military_soviet = {
+
+	types = {
+		# Базовый подтип военного совета
+		military_soviet_subtype = {
+		}
+
+		# Революционный подтип (например, военный совет с сильным влиянием революционных идей)
+		revolutionary_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				war_support_factor = 0.10  # Увеличение поддержки войны
+			}
+		}
+
+		# Реформистский подтип (например, военный совет с акцентом на реформы)
+		reformist_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				construction_speed_factor = 0.10  # Увеличение скорости строительства
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_MILITARY_SOVIET_1"
+		"FACTION_NAME_MILITARY_SOVIET_2"
+		"FACTION_NAME_MILITARY_SOVIET_3"
+		"FACTION_NAME_MILITARY_SOVIET_4"
+		"FACTION_NAME_MILITARY_SOVIET_5"
+		"FACTION_NAME_MILITARY_SOVIET_6"
+	}
+
+	color = { 132 166 84 }  # Тёмно-красный цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_war_support_factor = 0.10  # Увеличение поддержки войны в фракции
+	}
+
+	ai_communist = yes  # Использует поведение AI для коммунистов
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+
+# Хунта
+
+junta = {
+
+	types = {
+		# Базовый подтип хунты
+		junta_subtype = {
+		}
+
+		# Агрессивный подтип (например, режим Пиночета)
+		aggressive_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				army_attack_factor = 0.10  # Увеличение атаки армии
+			}
+		}
+
+		# Стабилизационный подтип (например, режим Сухарто)
+		stabilization_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				stability_factor = 0.10  # Увеличение стабильности
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_JUNTA_1"
+		"FACTION_NAME_JUNTA_2"
+		"FACTION_NAME_JUNTA_3"
+		"FACTION_NAME_JUNTA_4"
+		"FACTION_NAME_JUNTA_5"
+		"FACTION_NAME_JUNTA_6"
+	}
+
+	color = { 105 105 105 }  # Тёмно-серый цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_army_attack_factor = 0.10  # Увеличение атаки армии в фракции
+	}
+
+	ai_fascist = yes  # Использует поведение AI для фашистов
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+
+#Диктатура Флота
+
+navy_union = {
+
+	types = {
+		# Базовый подтип Союза Флота
+		navy_union_subtype = {
+		}
+
+		# Морской доминион (например, военно-морская держава с акцентом на экспансию)
+		maritime_dominion_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				navy_attack_factor = 0.10  # Увеличение атаки флота
+			}
+		}
+
+		# Торговый союз (например, флот, ориентированный на защиту торговых путей)
+		trade_union_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				trade_route_protection_factor = 0.20  # Увеличение защиты торговых путей
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_NAVY_UNION_1"
+		"FACTION_NAME_NAVY_UNION_2"
+		"FACTION_NAME_NAVY_UNION_3"
+		"FACTION_NAME_NAVY_UNION_4"
+		"FACTION_NAME_NAVY_UNION_5"
+		"FACTION_NAME_NAVY_UNION_6"
+	}
+
+	color = { 0 0 128 }  # Тёмно-синий цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_navy_attack_factor = 0.10  # Увеличение атаки флота в фракции
+	}
+
+	ai_fascist = yes  # Использует поведение AI для фашистов
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+
+#Поэты
+poets = {
+
+	types = {
+		# Базовый подтип поэтов
+		poets_subtype = {
+		}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				navy_attack_factor = 0.10  # Увеличение атаки флота
+			}
+		}
+
+		# Торговый союз (например, флот, ориентированный на защиту торговых путей)
+		trade_union_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				trade_route_protection_factor = 0.20  # Увеличение защиты торговых путей
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_NAVY_UNION_1"
+		"FACTION_NAME_NAVY_UNION_2"
+		"FACTION_NAME_NAVY_UNION_3"
+		"FACTION_NAME_NAVY_UNION_4"
+		"FACTION_NAME_NAVY_UNION_5"
+		"FACTION_NAME_NAVY_UNION_6"
+	}
+
+	color = { 0 0 128 }  # Тёмно-синий цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_navy_attack_factor = 0.10  # Увеличение атаки флота в фракции
+	}
+
+	ai_fascist = yes  # Использует поведение AI для фашистов
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+
+#Иллюминаты
+
+illuminati = {
+
+	types = {
+		# Базовый подтип Иллюминатов
+		illuminati_subtype = {
+		}
+
+		# Тайное общество (например, скрытая власть с акцентом на манипуляции)
+		secret_society_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				political_power_factor = 0.20  # Увеличение генерации политической власти
+			}
+		}
+
+		# Глобальный контроль (например, Иллюминаты, стремящиеся к мировому господству)
+		global_control_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				intel_network_growth_factor = 0.20  # Увеличение скорости роста разведывательной сети
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_ILLUMINATI_1"
+		"FACTION_NAME_ILLUMINATI_2"
+		"FACTION_NAME_ILLUMINATI_3"
+		"FACTION_NAME_ILLUMINATI_4"
+		"FACTION_NAME_ILLUMINATI_5"
+		"FACTION_NAME_ILLUMINATI_6"
+	}
+
+	color = { 203 208 88 }  # Золотисто-зелёный цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_intel_network_growth_factor = 0.20  # Увеличение скорости роста разведывательной сети в фракции
+	}
+
+	ai_democratic = yes  # Использует поведение AI для демократических стран
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+#Масоны
+
+freemasons = {
+
+	types = {
+		# Базовый подтип Масонов
+		freemasons_subtype = {
+		}
+
+		# Тайный орден (например, масоны, скрывающие свои цели)
+		secret_order_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				political_power_factor = 0.20  # Увеличение генерации политической власти
+			}
+		}
+
+		# Просветительский орден (например, масоны, стремящиеся к просвещению)
+		enlightenment_order_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				research_speed_factor = 0.10  # Увеличение скорости исследований
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_FREEMASONS_1"
+		"FACTION_NAME_FREEMASONS_2"
+		"FACTION_NAME_FREEMASONS_3"
+		"FACTION_NAME_FREEMASONS_4"
+		"FACTION_NAME_FREEMASONS_5"
+		"FACTION_NAME_FREEMASONS_6"
+	}
+
+	color = { 163 84 166 }  # Фиолетовый цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_research_speed_factor = 0.10  # Увеличение скорости исследований в фракции
+	}
+
+	ai_fascist = yes  # Использует поведение AI для фашистов
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+    # Конфедерации
+    confederation = {
+        types = {
+            # Базовый подтип (умеренный)
+            confederation_subtype = {
+                rules = {
+                    can_create_factions = yes
+                    can_join_factions = yes
+                    can_puppet = yes
+                    puppet_type = confederate_state  # Использует наш особый тип автономии
+                }
+                modifiers = {
+                    stability_factor = -0.15
+                    war_support_factor = 0.20
+                }
+            }
+
+            # Подтип с упором на права штатов
+            states_rights_subtype = {
+                rules = {
+                    can_decline_call_to_war = yes
+                    can_secede_from_faction = yes
+                }
+                modifiers = {
+                    recruitable_population_factor = 0.25
+                    resistance_target = -0.30
+                }
+            }
+
+            # Централизованный подтип
+            strong_government_subtype = {
+                rules = {
+                    can_force_government = yes
+                    can_send_volunteers = yes
+                }
+                modifiers = {
+                    stability_factor = 0.15
+                    mobilization_speed_factor = 0.10
+                }
+            }
+        }
+
+        # Настройки цвета и названий
+        color = { 165 42 42 }  # Темно-красный/коричневый
+        dynamic_faction_names = {
+            "FACTION_CONFEDERATE_STATES"
+            "FACTION_SOUTHERN_ALLIANCE"
+            "FACTION_STATES_RIGHTS_UNION"
+        }
+
+        # Общие правила
+        rules = {
+            can_create_collaboration_government = yes
+            can_declare_war_on_same_ideology = no
+            can_lower_tension = yes
+            can_guarantee_other_ideologies = yes
+        }
+
+        # Модификаторы
+        modifiers = {
+            war_impact_on_world_tension = 0.30
+            faction_impact_on_world_tension = 0.15
+            generate_wargoal_tension = 0.75
+            join_faction_tension = 0.60
+        }
+
+        # Настройки AI
+        ai_fascist = yes
+        ai_ideology_wanted_units_factor = 1.15
+    }
+
+
+
+	
+
+#Консерватизм	
+	
+conservatism = {
+
+	types = {
+		# Базовый подтип Консерватизма
+		conservatism_subtype = {
+		}
+
+		# Традиционалистский подтип (например, консерватизм с акцентом на традиции)
+		traditionalist_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				stability_factor = 0.20  # Увеличение стабильности
+			}
+		}
+
+		# Реформистский подтип (например, консерватизм с элементами реформ)
+		reformist_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				research_speed_factor = 0.10  # Увеличение скорости исследований
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_CONSERVATISM_1"
+		"FACTION_NAME_CONSERVATISM_2"
+		"FACTION_NAME_CONSERVATISM_3"
+		"FACTION_NAME_CONSERVATISM_4"
+		"FACTION_NAME_CONSERVATISM_5"
+		"FACTION_NAME_CONSERVATISM_6"
+	}
+
+	color = { 251 226 111 }  # Золотистый цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_stability_factor = 0.10  # Увеличение стабильности в фракции
+	}
+
+	ai_democratic = yes  # Использует поведение AI для демократических стран
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+	
+	
+	#Либерализм	
+	
+liberalism = {
+
+	types = {
+		# Базовый подтип Либерализма
+		liberalism_subtype = {
+		}
+
+		# Прогрессивный подтип (например, либерализм с акцентом на социальные реформы)
+		progressive_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				political_power_factor = 0.20  # Увеличение генерации политической власти
+			}
+		}
+
+		# Экономический подтип (например, либерализм с акцентом на свободный рынок)
+		economic_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				trade_income_factor = 0.20  # Увеличение дохода от торговли
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_LIBERALISM_1"
+		"FACTION_NAME_LIBERALISM_2"
+		"FACTION_NAME_LIBERALISM_3"
+		"FACTION_NAME_LIBERALISM_4"
+		"FACTION_NAME_LIBERALISM_5"
+		"FACTION_NAME_LIBERALISM_6"
+	}
+
+	color = { 137 173 189 }  # Голубовато-серый цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_trade_income_factor = 0.20  # Увеличение дохода от торговли в фракции
+	}
+
+	ai_democratic = yes  # Использует поведение AI для демократических стран
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+	
+	
+	
+	#Торговцы
+
+torgovtsy = {
+
+	types = {
+		# Базовый подтип Торговцев
+		torgovtsy_subtype = {
+		}
+
+		# Торговый союз (например, акцент на международную торговлю)
+		trade_union_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				trade_income_factor = 0.30  # Увеличение дохода от торговли
+			}
+		}
+
+		# Морские торговцы (например, акцент на морскую торговлю)
+		maritime_traders_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				navy_attack_factor = 0.10  # Увеличение атаки флота
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_TORGOVTSY_1"
+		"FACTION_NAME_TORGOVTSY_2"
+		"FACTION_NAME_TORGOVTSY_3"
+		"FACTION_NAME_TORGOVTSY_4"
+		"FACTION_NAME_TORGOVTSY_5"
+		"FACTION_NAME_TORGOVTSY_6"
+	}
+
+	color = { 175 154 214 }  # Фиолетово-серый цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_trade_income_factor = 0.30  # Увеличение дохода от торговли в фракции
+	}
+
+	ai_neutral = yes  # Использует поведение AI для нейтральных стран
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+	
+	
+	
+	
+	
+#Корпорации
+
+corporations = {
+
+	types = {
+		# Базовый подтип Корпораций
+		corporations_subtype = {
+		}
+
+		# Торговые корпорации (например, акцент на международную торговлю)
+		trade_corporations_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				trade_income_factor = 0.30  # Увеличение дохода от торговли
+			}
+		}
+
+		# Промышленные корпорации (например, акцент на производство)
+		industrial_corporations_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				production_speed_factor = 0.10  # Увеличение скорости производства
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_CORPORATIONS_1"
+		"FACTION_NAME_CORPORATIONS_2"
+		"FACTION_NAME_CORPORATIONS_3"
+		"FACTION_NAME_CORPORATIONS_4"
+		"FACTION_NAME_CORPORATIONS_5"
+		"FACTION_NAME_CORPORATIONS_6"
+	}
+
+	color = { 204 107 161 }  # Розовато-фиолетовый цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_production_speed_factor = 0.10  # Увеличение скорости производства в фракции
+	}
+
+	ai_neutral = yes  # Использует поведение AI для нейтральных стран
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+	
+	
+	
+	
+	#Социализм
+
+socialism = {
+
+	types = {
+		# Базовый подтип Социализма
+		socialism_subtype = {
+		}
+
+		# Демократический социализм (например, акцент на социальные реформы и демократию)
+		democratic_socialism_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				stability_factor = 0.20  # Увеличение стабильности
+			}
+		}
+
+		# Революционный социализм (например, акцент на революционные изменения)
+		revolutionary_socialism_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				war_support_factor = 0.10  # Увеличение поддержки войны
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_SOCIALISM_1"
+		"FACTION_NAME_SOCIALISM_2"
+		"FACTION_NAME_SOCIALISM_3"
+		"FACTION_NAME_SOCIALISM_4"
+		"FACTION_NAME_SOCIALISM_5"
+		"FACTION_NAME_SOCIALISM_6"
+	}
+
+	color = { 245 45 65 }  # Красный цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_stability_factor = 0.10  # Увеличение стабильности в фракции
+	}
+
+	ai_communist = yes  # Использует поведение AI для коммунистов
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+
+#Марксизм
+
+marxism = {
+
+	types = {
+		# Базовый подтип Марксизма
+		marxism_subtype = {
+		}
+
+		# Революционный марксизм (например, акцент на революцию и диктатуру пролетариата)
+		revolutionary_marxism_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no  # Может оправдывать войны против любых стран
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.10  # Минимальное влияние на напряжение
+				generate_wargoal_tension = 0.50  # Низкое напряжение при оправдании целей
+				war_support_factor = 0.20  # Увеличение поддержки войны
+			}
+		}
+
+		# Научный марксизм (например, акцент на научный подход и планирование)
+		scientific_marxism_subtype = {
+			rules = {
+				can_create_collaboration_government = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = yes
+				can_guarantee_other_ideologies = yes
+			}
+			modifiers = {
+				war_impact_on_world_tension = 0.50  # Умеренное влияние на напряжение
+				faction_impact_on_world_tension = 0.25
+				research_speed_factor = 0.10  # Увеличение скорости исследований
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_MARXISM_1"
+		"FACTION_NAME_MARXISM_2"
+		"FACTION_NAME_MARXISM_3"
+		"FACTION_NAME_MARXISM_4"
+		"FACTION_NAME_MARXISM_5"
+		"FACTION_NAME_MARXISM_6"
+	}
+
+	color = { 195 0 10 }  # Тёмно-красный цвет
+
+	war_impact_on_world_tension = 0.25  # Влияние войн на мировое напряжение
+	faction_impact_on_world_tension = 0.10  # Влияние фракций на напряжение
+
+	rules = {
+		can_create_collaboration_government = yes  # Может создавать коллаборационные правительства
+		can_declare_war_on_same_ideology = yes  # Может объявлять войны странам с той же идеологией
+		can_force_government = yes  # Может навязывать идеологию
+		can_send_volunteers = yes  # Может отправлять добровольцев
+		can_puppet = yes  # Может создавать марионеточные государства
+		can_lower_tension = yes  # Может снижать мировое напряжение
+		can_only_justify_war_on_threat_country = yes  # Может оправдывать войны только против угрожающих стран
+		can_guarantee_other_ideologies = yes  # Может гарантировать независимость стран с другими идеологиями
+	}
+
+	can_host_government_in_exile = yes  # Может принимать правительства в изгнании
+
+	modifiers = {
+		generate_wargoal_tension = 1.00  # Влияние на напряжение при оправдании целей
+		join_faction_tension = 0.80  # Влияние на напряжение при вступлении в фракцию
+		lend_lease_tension = 0.50  # Влияние ленд-лиза на напряжение
+		send_volunteers_tension = 0.50  # Влияние отправки добровольцев на напряжение
+		guarantee_tension = 0.25  # Влияние гарантий независимости на напряжение
+		civilian_intel_to_others = 20.0  # Разведданные для других стран (гражданские)
+		army_intel_to_others = 5.0  # Разведданные для других стран (армия)
+		navy_intel_to_others = 20.0  # Разведданные для других стран (флот)
+		airforce_intel_to_others = 5  # Разведданные для других стран (авиация)
+		embargo_cost_factor = -0.5  # Снижение стоимости эмбарго
+		embargo_threshold_factor = -0.5  # Снижение порога для эмбарго
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50  # Увеличение мнения о торговле внутри фракции
+		faction_research_speed_factor = 0.10  # Увеличение скорости исследований в фракции
+	}
+
+	ai_communist = yes  # Использует поведение AI для коммунистов
+	ai_ideology_wanted_units_factor = 1.10  # Увеличение желаемого количества юнитов
+}
+
+
+
+#Ленинизм
+
+leninism = {
+	types = {
+		leninism_subtype = {
+			modifiers = {
+				political_power_gain = 0.10  # Ленинский подход к мобилизации масс
+				stability_factor = 0.05     # Больше стабильности благодаря идеологической сплоченности
+				war_support_factor = 0.10   # Высокая поддержка войны благодаря революционному энтузиазму
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_LENINISM_1"  # "Интернационал рабочих"
+		"FACTION_NAME_LENINISM_2"  # "Союз революционных республик"
+		"FACTION_NAME_LENINISM_3"  # "Фронт пролетарской солидарности"
+		"FACTION_NAME_LENINISM_4"  # "Лига социалистических государств"
+		"FACTION_NAME_LENINISM_5"  # "Коалиция народных республик"
+		"FACTION_NAME_LENINISM_6"  # "Всемирный союз трудящихся"
+	}
+
+	color = { 236 70 70 }  # Ярко-красный, символизирующий революцию
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = no  # Ленинизм стремится к единству рабочих, а не к конфликтам внутри идеологии
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = no  # Убираем ограничение на объявление войны только угрожающим странам
+		can_guarantee_other_ideologies = yes
+		can_declare_war_with_any_tension = yes  # Разрешаем объявление войны при любом уровне напряженности
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.20  # Ленинизм воспринимается как менее агрессивный
+	faction_impact_on_world_tension = 0.05  # Акцент на международной солидарности
+
+	modifiers = {
+		generate_wargoal_tension = 0.50  # Меньше напряженности при создании целей войны
+		join_faction_tension = 0.50      # Поощрение вступления в фракцию
+		lend_lease_tension = 0.30        # Ленд-лиз воспринимается как помощь, а не угроза
+		send_volunteers_tension = 0.40   # Волонтеры воспринимаются как поддержка революции
+		guarantee_tension = 0.20        # Гарантии менее провокационны
+		civilian_intel_to_others = 25.0  # Больше разведданных благодаря международным связям
+		army_intel_to_others = 10.0      # Армия более открыта для сотрудничества
+		navy_intel_to_others = 25.0      # Флот активно участвует в международных операциях
+		airforce_intel_to_others = 10.0  # Авиация менее скрытна
+		embargo_cost_factor = -0.75      # Эмбарго менее эффективно против ленинизма
+		embargo_threshold_factor = -0.75 # Ленинизм устойчив к эмбарго
+		production_factory_max_efficiency_factor = 0.10  # Повышение эффективности производства
+		research_speed_factor = 0.05     # Ускорение исследований благодаря коллективному труду
+		justify_war_goal_time = -0.50    # Ускорение создания целей войны на 50%
+		justify_war_goal_cost = -0.50    # Снижение стоимости создания целей войны на 50%
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.75  # Высокий уровень торгового доверия
+		faction_join_tension = -0.20         # Меньше напряженности при вступлении в фракцию
+	}
+
+	ai_communist = yes
+	ai_ideology_wanted_units_factor = 1.20  # Ленинизм стремится к сильной армии для защиты революции
+}
+
+
+#Сталинизм
+
+stalinism = {
+	types = {
+		stalinism_subtype = {
+			modifiers = {
+				political_power_gain = -0.05  # Централизация власти снижает политическую активность
+				stability_factor = 0.10       # Высокая стабильность благодаря жесткому контролю
+				war_support_factor = 0.15     # Высокая поддержка войны благодаря пропаганде
+				conscription_factor = 0.20    # Больше мобилизационных возможностей
+			}
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_STALINISM_1"  # "Союз советских государств"
+		"FACTION_NAME_STALINISM_2"  # "Блок социалистических наций"
+		"FACTION_NAME_STALINISM_3"  # "Коалиция народной защиты"
+		"FACTION_NAME_STALINISM_4"  # "Фронт социалистической безопасности"
+		"FACTION_NAME_STALINISM_5"  # "Лига сталинистских республик"
+		"FACTION_NAME_STALINISM_6"  # "Союз народной воли"
+	}
+
+	color = { 177 27 44 }  # Темно-красный, символизирующий жесткость и контроль
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes  # Сталинизм допускает конфликты внутри идеологии
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = no  # Сталинизм не снижает напряженность
+		can_only_justify_war_on_threat_country = no  # Убираем ограничение на объявление войны только угрожающим странам
+		can_guarantee_other_ideologies = yes
+		can_declare_war_with_any_tension = yes  # Разрешаем объявление войны при любом уровне напряженности
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.35  # Сталинизм воспринимается как более агрессивный
+	faction_impact_on_world_tension = 0.15  # Фракции сталинизма вызывают больше напряженности
+
+	modifiers = {
+		generate_wargoal_tension = 0.80  # Меньше напряженности при создании целей войны
+		join_faction_tension = 1.00      # Вступление в фракцию вызывает больше напряженности
+		lend_lease_tension = 0.70        # Ленд-лиз воспринимается как угроза
+		send_volunteers_tension = 0.80   # Волонтеры воспринимаются как агрессия
+		guarantee_tension = 0.50        # Гарантии более провокационны
+		civilian_intel_to_others = 10.0  # Меньше разведданных благодаря закрытости
+		army_intel_to_others = 2.0       # Армия более скрытна
+		navy_intel_to_others = 10.0      # Флот менее открыт
+		airforce_intel_to_others = 2.0   # Авиация более скрытна
+		embargo_cost_factor = -0.25      # Эмбарго более эффективно против сталинизма
+		embargo_threshold_factor = -0.25 # Сталинизм менее устойчив к эмбарго
+		production_factory_max_efficiency_factor = 0.15  # Высокая эффективность производства благодаря централизации
+		research_speed_factor = -0.05    # Замедление исследований из-за бюрократии
+		justify_war_goal_time = -0.50    # Ускорение создания целей войны на 50%
+		justify_war_goal_cost = -0.50    # Снижение стоимости создания целей войны на 50%
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.25  # Низкий уровень торгового доверия
+		faction_join_tension = 0.10         # Больше напряженности при вступлении в фракцию
+	}
+
+	ai_communist = yes
+	ai_ideology_wanted_units_factor = 1.30  # Сталинизм стремится к максимальной военной мощи
+}
+
+#Троцкизм
+
+trotskyism = {
+
+	types = {
+		trotskyism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_TROTSKYISM_1"
+		"FACTION_NAME_TROTSKYISM_2"
+		"FACTION_NAME_TROTSKYISM_3"
+		"FACTION_NAME_TROTSKYISM_4"
+		"FACTION_NAME_TROTSKYISM_5"
+		"FACTION_NAME_TROTSKYISM_6"
+	}
+
+	color = { 83 4 4 }
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		# annex_cost_factor = 0.5 
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+}
+
+
+
+#Национал-социализм
+
+national_socialism = {
+
+	types = {
+		national_socialism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_NATIONAL_SOCIALISM_1"
+		"FACTION_NAME_NATIONAL_SOCIALISM_2"
+		"FACTION_NAME_NATIONAL_SOCIALISM_3"
+		"FACTION_NAME_NATIONAL_SOCIALISM_4"
+		"FACTION_NAME_NATIONAL_SOCIALISM_5"
+		"FACTION_NAME_NATIONAL_SOCIALISM_6"
+	}
+
+	color = { 107 76 76 }
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		# annex_cost_factor = 0.5 
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+}
+
+
+
+#Национализм
+
+nationalism = {
+
+	types = {
+		nationalism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_NATIONALISM_1"
+		"FACTION_NAME_NATIONALISM_2"
+		"FACTION_NAME_NATIONALISM_3"
+		"FACTION_NAME_NATIONALISM_4"
+		"FACTION_NAME_NATIONALISM_5"
+		"FACTION_NAME_NATIONALISM_6"
+	}
+
+	color = { 66 66 66 }
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		# annex_cost_factor = 0.5 
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+}
+
+
+
+
+#Нацизм
+
+nazism = {
+
+	types = {
+		nazism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_NAZISM_1"
+		"FACTION_NAME_NAZISM_2"
+		"FACTION_NAME_NAZISM_3"
+		"FACTION_NAME_NAZISM_4"
+		"FACTION_NAME_NAZISM_5"
+		"FACTION_NAME_NAZISM_6"
+	}
+
+	color = { 38 38 38 }
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		# annex_cost_factor = 0.5 
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+}
+
+
+
+
+
+
+
+#Фалангизм
+
+falangism = {
+
+	types = {
+		falangism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_FALANGISM_1"
+		"FACTION_NAME_FALANGISM_2"
+		"FACTION_NAME_FALANGISM_3"
+		"FACTION_NAME_FALANGISM_4"
+		"FACTION_NAME_FALANGISM_5"
+		"FACTION_NAME_FALANGISM_6"
+	}
+
+	color = { 115 92 33 }
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		# annex_cost_factor = 0.5 
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+}
+
+
+
+#Рексизм
+
+rexism = {
+
+	types = {
+		rexism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_REXISM_1"
+		"FACTION_NAME_REXISM_2"
+		"FACTION_NAME_REXISM_3"
+		"FACTION_NAME_REXISM_4"
+		"FACTION_NAME_REXISM_5"
+		"FACTION_NAME_REXISM_6"
+	}
+
+	color = { 195 139 24 }
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		# annex_cost_factor = 0.5 
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+}
+
+
+#Рабовладельцы
+
+slave_owners = {
+
+	types = {
+		slave_owners_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_SLAVE_OWNERS_1"
+		"FACTION_NAME_SLAVE_OWNERS_2"
+		"FACTION_NAME_SLAVE_OWNERS_3"
+		"FACTION_NAME_SLAVE_OWNERS_4"
+		"FACTION_NAME_SLAVE_OWNERS_5"
+		"FACTION_NAME_SLAVE_OWNERS_6"
+	}
+
+	color = { 139 69 19 } # Коричневый, ассоциируется с землёй и традициями
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Беззаконие
+
+lawlessness = {
+
+	types = {
+		lawlessness_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_LAWLESSNESS_1"
+		"FACTION_NAME_LAWLESSNESS_2"
+		"FACTION_NAME_LAWLESSNESS_3"
+		"FACTION_NAME_LAWLESSNESS_4"
+		"FACTION_NAME_LAWLESSNESS_5"
+		"FACTION_NAME_LAWLESSNESS_6"
+	}
+
+	color = { 188 204 168 }
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+		
+		
+		
+		
+	#Каннибалы
+
+cannibals = {
+
+	types = {
+		cannibals_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_CANNIBALS_1"
+		"FACTION_NAME_CANNIBALS_2"
+		"FACTION_NAME_CANNIBALS_3"
+		"FACTION_NAME_CANNIBALS_4"
+		"FACTION_NAME_CANNIBALS_5"
+		"FACTION_NAME_CANNIBALS_6"
+	}
+
+	color = { 139 0 0 } # Тёмно-красный, символизирующий кровь и жестокость
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+#Оккультисты
+
+occultists = {
+
+	types = {
+		occultists_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_OCCULTISTS_1"
+		"FACTION_NAME_OCCULTISTS_2"
+		"FACTION_NAME_OCCULTISTS_3"
+		"FACTION_NAME_OCCULTISTS_4"
+		"FACTION_NAME_OCCULTISTS_5"
+		"FACTION_NAME_OCCULTISTS_6"
+	}
+
+	color = { 75 0 130 } # Индиго, символизирующий тайну и мистику
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+
+#Язычество
+
+paganism = {
+
+	types = {
+		paganism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_PAGANISM_1"
+		"FACTION_NAME_PAGANISM_2"
+		"FACTION_NAME_PAGANISM_3"
+		"FACTION_NAME_PAGANISM_4"
+		"FACTION_NAME_PAGANISM_5"
+		"FACTION_NAME_PAGANISM_6"
+	}
+
+	color = { 34 139 34 } # Зелёный, символизирующий природу и древние традиции
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_neutral = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Шаманизм
+
+shamanism = {
+
+	types = {
+		shamanism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_SHAMANISM_1"
+		"FACTION_NAME_SHAMANISM_2"
+		"FACTION_NAME_SHAMANISM_3"
+		"FACTION_NAME_SHAMANISM_4"
+		"FACTION_NAME_SHAMANISM_5"
+		"FACTION_NAME_SHAMANISM_6"
+	}
+
+	color = { 0 100 0 } # Тёмно-зелёный, символизирующий связь с природой и духами
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_communist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Православные
+
+orthodox = {
+
+	types = {
+		orthodox_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_ORTHODOX_1"
+		"FACTION_NAME_ORTHODOX_2"
+		"FACTION_NAME_ORTHODOX_3"
+		"FACTION_NAME_ORTHODOX_4"
+		"FACTION_NAME_ORTHODOX_5"
+		"FACTION_NAME_ORTHODOX_6"
+	}
+
+	color = { 255 255 255 } # Золотой, символизирующий святость и богатство православной традиции
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_communist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+# Буддизм
+
+buddism = {
+
+	types = {
+		buddism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_BUDDISM_1"
+		"FACTION_NAME_BUDDISM_2"
+		"FACTION_NAME_BUDDISM_3"
+		"FACTION_NAME_BUDDISM_4"
+		"FACTION_NAME_BUDDISM_5"
+		"FACTION_NAME_BUDDISM_6"
+	}
+
+	color = { 255 218 41 } 
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_communist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Хлысты
+
+khlysty = {
+
+	types = {
+		khlysty_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_KHLYSTY_1"
+		"FACTION_NAME_KHLYSTY_2"
+		"FACTION_NAME_KHLYSTY_3"
+		"FACTION_NAME_KHLYSTY_4"
+		"FACTION_NAME_KHLYSTY_5"
+		"FACTION_NAME_KHLYSTY_6"
+	}
+
+	color = { 139 0 0 } # Тёмно-красный, символизирующий религиозный фанатизм
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Католицизм
+
+catholicism = {
+
+	types = {
+		catholicism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_CATHOLICISM_1"
+		"FACTION_NAME_CATHOLICISM_2"
+		"FACTION_NAME_CATHOLICISM_3"
+		"FACTION_NAME_CATHOLICISM_4"
+		"FACTION_NAME_CATHOLICISM_5"
+		"FACTION_NAME_CATHOLICISM_6"
+	}
+
+	color = { 178 153 83 }
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Радикальный католицизм
+
+radical_catholicism = {
+
+	types = {
+		radical_catholicism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_RADICAL_CATHOLICISM_1"
+		"FACTION_NAME_RADICAL_CATHOLICISM_2"
+		"FACTION_NAME_RADICAL_CATHOLICISM_3"
+		"FACTION_NAME_RADICAL_CATHOLICISM_4"
+		"FACTION_NAME_RADICAL_CATHOLICISM_5"
+		"FACTION_NAME_RADICAL_CATHOLICISM_6"
+	}
+
+	color = { 123 110 101 } 
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+#Радикальное Протестанство
+
+radical_protestantism = {
+
+	types = {
+		radical_protestantism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_RADICAL_PROTESTANTISM_1"
+		"FACTION_NAME_RADICAL_PROTESTANTISM_2"
+		"FACTION_NAME_RADICAL_PROTESTANTISM_3"
+		"FACTION_NAME_RADICAL_PROTESTANTISM_4"
+		"FACTION_NAME_RADICAL_PROTESTANTISM_5"
+		"FACTION_NAME_RADICAL_PROTESTANTISM_6"
+	}
+
+	color = { 242 199 171 } 
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+#Протестанство
+
+protestantism = {
+
+	types = {
+		protestantism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_PROTESTANTISM_1"
+		"FACTION_NAME_PROTESTANTISM_2"
+		"FACTION_NAME_PROTESTANTISM_3"
+		"FACTION_NAME_PROTESTANTISM_4"
+		"FACTION_NAME_PROTESTANTISM_5"
+		"FACTION_NAME_PROTESTANTISM_6"
+	}
+
+	color = { 242 199 171 } 
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+#Иудаизм
+
+jewish = {
+
+	types = {
+		jewish_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_JEWISH_1"
+		"FACTION_NAME_JEWISH_2"
+		"FACTION_NAME_JEWISH_3"
+		"FACTION_NAME_JEWISH_4"
+		"FACTION_NAME_JEWISH_5"
+		"FACTION_NAME_JEWISH_6"
+	}
+
+	color = { 61 80 92 } 
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Суннизм
+
+sunnism = {
+
+	types = {
+		sunnism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_SUNNISM_1"
+		"FACTION_NAME_SUNNISM_2"
+		"FACTION_NAME_SUNNISM_3"
+		"FACTION_NAME_SUNNISM_4"
+		"FACTION_NAME_SUNNISM_5"
+		"FACTION_NAME_SUNNISM_6"
+	}
+
+	color = { 0 128 0 } # Зелёный, символизирующий ислам и природу
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Радикальный суннизм
+
+radical_sunnism = {
+
+	types = {
+		radical_sunnism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_RADICAL_SUNNISM_1"
+		"FACTION_NAME_RADICAL_SUNNISM_2"
+		"FACTION_NAME_RADICAL_SUNNISM_3"
+		"FACTION_NAME_RADICAL_SUNNISM_4"
+		"FACTION_NAME_RADICAL_SUNNISM_5"
+		"FACTION_NAME_RADICAL_SUNNISM_6"
+	}
+
+	color = { 0 100 0 } # Тёмно-зелёный, символизирующий радикализм и ислам
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Шиизм
+
+shiism = {
+
+	types = {
+		shiism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_SHIISM_1"
+		"FACTION_NAME_SHIISM_2"
+		"FACTION_NAME_SHIISM_3"
+		"FACTION_NAME_SHIISM_4"
+		"FACTION_NAME_SHIISM_5"
+		"FACTION_NAME_SHIISM_6"
+	}
+
+	color = { 128 0 128 } # Фиолетовый, символизирующий духовность и мистику
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Радикальный шиизм
+
+radical_shiism = {
+
+	types = {
+		radical_shiism_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_RADICAL_SHIISM_1"
+		"FACTION_NAME_RADICAL_SHIISM_2"
+		"FACTION_NAME_RADICAL_SHIISM_3"
+		"FACTION_NAME_RADICAL_SHIISM_4"
+		"FACTION_NAME_RADICAL_SHIISM_5"
+		"FACTION_NAME_RADICAL_SHIISM_6"
+	}
+
+	color = { 75 0 130 } # Индиго, символизирующий радикализм и мистику
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_fascist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+
+
+
+#Технократы
+
+technocrats = {
+
+	types = {
+		technocrats_subtype = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_TECHNOCRATS_1"
+		"FACTION_NAME_TECHNOCRATS_2"
+		"FACTION_NAME_TECHNOCRATS_3"
+		"FACTION_NAME_TECHNOCRATS_4"
+		"FACTION_NAME_TECHNOCRATS_5"
+		"FACTION_NAME_TECHNOCRATS_6"
+	}
+
+	color = { 0 191 255 } # Голубой, символизирующий технологии и инновации
+
+	rules = {
+		can_create_collaboration_government = yes
+		can_declare_war_on_same_ideology = yes
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = yes
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+	}
+
+	can_host_government_in_exile = yes
+
+	war_impact_on_world_tension = 0.25
+	faction_impact_on_world_tension = 0.1
+
+	modifiers = {
+		generate_wargoal_tension = 1.00
+		join_faction_tension = 0.80
+		lend_lease_tension = 0.50
+		send_volunteers_tension = 0.50
+		guarantee_tension = 0.25
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 5.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 5
+		embargo_cost_factor = -0.5
+		embargo_threshold_factor = -0.5
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50
+	}
+	ai_communist = yes
+	ai_ideology_wanted_units_factor = 1.10
+}
+}

@@ -1,0 +1,25 @@
+state={
+	id=1106
+	name="STATE_1106"
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 3 #was: 5
+		}
+		add_core_of = CAN
+		add_core_of = PEI
+		add_core_of = ACA
+		add_core_of = WAB
+		victory_points = {
+			4360 1 
+		}
+	}
+	provinces={
+		4360 
+	}
+	manpower=92238	
+	state_category = small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=1046
+	name="STATE_1046"
+
+	history={
+		owner = NHP
+		controller = USA
+		add_claim_by = USA
+		add_core_of = NHP
+		add_core_of = NEG
+		add_core_of = WAB
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = { 733 1 }
+	}
+
+	provinces={
+		733 3712 3715 10481 
+	}
+	manpower=483000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = city
+}

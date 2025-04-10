@@ -1,0 +1,10 @@
+﻿l_russian:
+ United_States:0 "Соединённые штаты"
+ confederation:0 "Конфедерация Штатов"
+ 
+ # Названия фракций
+ FACTION_NAME_REPUBLICAN_UNION: "Республиканский Союз"
+ FACTION_NAME_REPUBLICAN_LEAGUE: "Республиканская Лига"
+ FACTION_NAME_REPUBLICAN_COMMONWEALTH: "Республиканское Содружество"
+ FACTION_NAME_GRAND_OLD_PARTY: "Великая Старая Партия"
+ FACTION_NAME_LIBERTY_COALITION: "Коалиция Свободы"

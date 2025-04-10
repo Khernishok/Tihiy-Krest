@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+    SpriteType = {	
+		name = "GFX_RUS_Anex_Afganistan"
+		texturefile = "gfx/interface/goals/stran/Vostok/AFG/focus_afghan_expedition.dds"
+	}
+	
+}
+
+

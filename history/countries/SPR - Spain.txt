@@ -1,0 +1,62 @@
+capital = 41
+
+set_politics = {
+    ruling_party = constitutional_monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = yes
+}
+
+recruit_character = SPR_Maria_Kristina_Austriatska
+recruit_character = SPR_Alfonso_XIII_Leon_Fernando_Mar
+recruit_character = SPR_Maria_de_las_Mercedes_Orleans
+recruit_character = SPR_Maria_Teresa_Spain
+
+set_popularities = {
+    constitutional_monarchy = 29
+    military_dictatorship = 7
+    military_soviet = 4
+    illuminati = 5
+    freemasons = 4
+    slave_owners = 11
+    liberalism = 7
+    nationalism = 12
+    neutrality = 6
+    catholicism = 15
+}
+
+# DIPLOMACY
+if = {
+set_autonomy = {
+    target = PUE
+    autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+    target = CUB
+    autonomous_state = autonomy_integrated_puppet
+    freedom_level = 0.35
+}
+set_autonomy = {
+    target = PHI
+    autonomous_state = autonomy_integrated_puppet
+    freedom_level = 0.4
+}
+set_autonomy = {
+    target = GUM
+    autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+    target = FSM
+    autonomous_state = autonomy_integrated_puppet
+    freedom_level = 0.35
+}
+set_autonomy = {
+    target = FLO
+    autonomous_state = autonomy_integrated_puppet
+    freedom_level = 0.35
+}
+         }
+
+set_stability = 0.50
+
+# Лидеры страны

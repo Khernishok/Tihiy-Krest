@@ -1,0 +1,75 @@
+characters = {
+
+    # Фрэнсис Лаббок 
+    TEX_Francis_Lubbock = {
+        name = "TXA_Francis_Lubbock" 
+        portraits = {
+            civilian = {
+                large = "GFX_TEX_Francis_Lubbock_1" 
+            }
+        }
+
+    # Лидер страны (Конфедерал)
+        country_leader = {
+            ideology = confederation_subtype
+            traits = {
+            }
+            id = -1
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Рабовладельцы)
+        country_leader = {
+            ideology = slave_owners_subtype
+            traits = { 
+            }
+            id = -1
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Консерватизм)
+        country_leader = {
+            ideology = conservatism_subtype
+            traits = { 
+            }
+            id = -1
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Демократия)
+        country_leader = {
+            ideology = democratic_subtype
+			traits = { 
+            }
+            id = -1
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -1
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            id = -1
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            id = -1
+			visible = { always = yes }  # Всегда видим
+        }
+    }
+}

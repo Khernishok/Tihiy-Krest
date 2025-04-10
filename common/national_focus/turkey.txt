@@ -1,0 +1,14 @@
+﻿focus_tree = {
+    id = osman_focus
+
+    
+
+    focus = {
+        id = TUR_Hamidi_Massacre
+        icon = GFX_TUR_Hamidi_Massacre
+
+
+        
+        }
+    }
+}

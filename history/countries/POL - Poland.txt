@@ -1,0 +1,74 @@
+capital = 10
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+	monarchy = 30
+	orthodox = 17
+	paganism = 4
+	khlysty = 6
+	jewish = 2
+	military_dictatorship = 7
+    military_soviet = 4
+    illuminati = 5
+	freemasons = 4
+	slave_owners =  3
+    conservatism = 6 
+	marxism = 2
+    liberalism = 5
+	nationalism = 3
+	neutrality = 2
+}
+
+if = {
+	set_autonomy = {
+		target = GAL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = SMO
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = BCV
+		autonomous_state = autonomy_integrated_puppet
+	}
+		set_autonomy = {
+		target = LIT
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = SIL
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = MOP
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+}
+
+set_stability = 0.50
+
+	# Лидеры страны
+
+recruit_character = POL_Stanislav_II_August_Poniatowski
+recruit_character = POL_Mikhail_Kazimir_II_Oginsky
+
+
+
+    # Политики страны
+	
+
+    # Военачальники страны
+	
+	
+	# Учёные Страны
+	

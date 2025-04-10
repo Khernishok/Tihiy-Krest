@@ -1,0 +1,38 @@
+
+state={
+	id=29
+	name="STATE_29"
+
+	history={
+		owner = FRA
+		victory_points = {
+			11548 15 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		add_core_of = FRA
+		add_core_of = ART
+		add_core_of = PIC
+		add_core_of = BRG
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		3476 3536 6504 9500 11548 
+	}
+	manpower=1179467
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=15.000
+}
+

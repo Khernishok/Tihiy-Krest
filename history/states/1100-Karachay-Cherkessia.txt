@@ -1,0 +1,30 @@
+state={
+	id=1100
+	name="STATE_1100"
+
+	resources = {
+		chromium = 18
+	}
+
+	history={
+		owner = KAV
+		add_claim_by = RUS
+		victory_points = {
+			714 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = RUS
+		add_core_of = KUB
+		add_core_of = KCH
+	}
+
+	provinces={
+		714 6692 9649 11633 11664 
+	}
+	manpower=240000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

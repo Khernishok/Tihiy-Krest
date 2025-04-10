@@ -1,0 +1,24 @@
+state={
+	id=1032
+	name="STATE_1032"
+
+	history={
+		add_core_of = ROM
+		add_core_of = MOL
+		add_core_of = GAG
+		owner = MOL
+		victory_points = {
+			3724 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		3724 
+	}
+	manpower=255200
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

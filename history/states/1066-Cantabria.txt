@@ -1,0 +1,25 @@
+state={
+	id=1066
+	name="STATE_1066"
+
+	history={
+		owner = SPR
+		victory_points = {
+			11688 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SPR
+		add_core_of = CTB
+
+	}
+
+	provinces={
+		738 9703 11688 
+	}
+	manpower=382000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=1073
+	name="STATE_1073"
+	resources={
+		steel=14.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = BRG
+		add_core_of = LRA
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		521 5291 11488 11516 11642 
+	}
+	manpower=1059901
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

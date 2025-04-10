@@ -1,0 +1,28 @@
+
+state={
+	id=1018
+	name="STATE_1018"
+
+	history={
+		owner = HUN
+		victory_points = {
+			13275 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+		add_core_of = KRJ
+
+	}
+
+	provinces={
+		3596 13376 
+	}
+	manpower=250000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

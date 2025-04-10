@@ -1,0 +1,1360 @@
+
+spriteTypes = {
+    
+	
+		# Империя Шведов
+	
+	#Оскар II Фредерик
+	   spriteType = {
+		name = "GFX_oscar_ii_fredrik_bernadotte_1"
+		texturefile = "gfx/personaj/Sever/SWE/leaders/monacrhy/Oscar_II_Fredrik_Bernadotte/oscar_ii_fredrik_bernadotte_1.png"
+	}
+	
+	spriteType = {
+		name = "GFX_oscar_ii_fredrik_bernadotte_4"
+		texturefile = "gfx/personaj/Sever/SWE/leaders/monacrhy/Oscar_II_Fredrik_Bernadotte/oscar_ii_fredrik_bernadotte_4.dds"
+	}
+	
+	#Густав V Оскар Адольф
+	spriteType = {
+		name = "GFX_Gustav_V_Oscar_Adolf_1"
+		texturefile = "gfx/personaj/Sever/SWE/leaders/monacrhy/Gustav_V_Oscar_Adolf/Gustav_V_Oscar_Adolf_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Gustav_V_Oscar_Adolf_4"
+		texturefile = "gfx/personaj/Sever/SWE/leaders/monacrhy/Gustav_V_Oscar_Adolf/Gustav_V_Oscar_Adolf_4.dds"
+	}
+	
+			# Империя Братании
+	
+	#Эдуард VIII
+	spriteType = {
+		name = "GFX_Britain_Edward_VIII_1"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Britain_Edward_VIII_2"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_2.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_Britain_Edward_VIII_3"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Britain_Edward_VIII_4"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_4.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_Britain_Edward_VIII_5"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Britain_Edward_VIII_6"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_6.dds"
+	}
+	
+
+	
+	# Россия
+	
+    #Николай 2	
+    spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_1"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_1.png"
+	}
+	    spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_2"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_2.png"
+	}
+	
+    spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_3"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_3.png"
+	}
+	
+    spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_4"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_4.png"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_5"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_5.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_6"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_6.png"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_7"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_7.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_8"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_8.png"
+	}
+	
+		spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_9"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_9.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_10"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_10.png"
+	}
+	
+		spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_11"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_11.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_RUS_tsar_nikolai_ii_12"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nicholas_II/RUS_nicholas_romanov_12.png"
+	}
+	
+		#Александра Фёдоровна
+		spriteType = {
+		name = "GFX_RUS_alexandra_fedorovna_1"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Alexandra_Fedorovna/Alexandra_Fedorovna_1.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_RUS_alexandra_fedorovna_4"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Alexandra_Fedorovna/Alexandra_Fedorovna_4.dds"
+	}
+	
+	#Жириновский
+		spriteType = {
+		name = "GFX_RUS_Vladimir_Volfovich_Zhirinovsky_1"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Vladimir_Volfovich_Zhirinovsky/Vladimir_Volfovich_Zhirinovsky_1.dds"
+	}
+	
+	    spriteType = {
+		name = "GFX_RUS_Vladimir_Volfovich_Zhirinovsky_3"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Vladimir_Volfovich_Zhirinovsky/Vladimir_Volfovich_Zhirinovsky_3.dds"
+	}
+	
+	#Младший Николай Николаевич Романов
+	    spriteType = {
+		name = "GFX_RUS_Nikolay_Nikolaevich_Romanov_junior_1"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nikolay_Nikolaevich_Romanov_junior/RUS_Nikolay_Nikolaevich_Romanov_junior_1.png"
+	}
+	
+	    spriteType = {
+		name = "GFX_RUS_Nikolay_Nikolaevich_Romanov_junior_2"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Nikolay_Nikolaevich_Romanov_junior/RUS_Nikolay_Nikolaevich_Romanov_junior_2.png"
+	}
+	
+    #Михаил Александрович Романов
+	spriteType = {
+		name = "GFX_RUS_Mikhail_Alexandrovich_Romanov_1"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Mikhail_Alexandrovich_Romanov/RUS_Mikhail_Alexandrovich_Romanov_1.png"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Mikhail_Alexandrovich_Romanov_2"
+		texturefile = "gfx/personaj/Evrazia/RUS/leaders/Romanovy/Mikhail_Alexandrovich_Romanov/RUS_Mikhail_Alexandrovich_Romanov_2.png"
+	}	
+	
+	
+# Алексей Михайлович Щастный
+	spriteType = {
+		name = "GFX_RUS_Alexey_Mikhailovich_Shchastny_1"
+		texturefile = "gfx\personaj\Evrazia\RUS\flot\Alexey_Mikhailovich_Shchastny/Alexey_Mikhailovich_Shchastny_1.png"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Alexey_Mikhailovich_Shchastny_2"
+		texturefile = "gfx\personaj\Evrazia\RUS\flot\Alexey_Mikhailovich_Shchastny/Alexey_Mikhailovich_Shchastny_2.png"
+	}
+	
+	
+	
+	# СССР
+	# Лев Троцкий
+    spriteType = {
+		name = "GFX_RUS_Leon_Trotsky_1"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Leon_Trotsky/Leon_Trotsky_1.dds"
+	}	
+
+    spriteType = {
+		name = "GFX_RUS_Leon_Trotsky_2"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Leon_Trotsky/Leon_Trotsky_2.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_RUS_Leon_Trotsky_3"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Leon_Trotsky/Leon_Trotsky_3.dds"
+	}	
+
+    spriteType = {
+		name = "GFX_RUS_Leon_Trotsky_4"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Leon_Trotsky/Leon_Trotsky_4.dds"
+	}
+
+    spriteType = {
+		name = "GFX_RUS_Leon_Trotsky_5"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Leon_Trotsky/Leon_Trotsky_5.dds"
+	}	
+
+    spriteType = {
+		name = "GFX_RUS_Leon_Trotsky_6"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Leon_Trotsky/Leon_Trotsky_6.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_RUS_Leon_Trotsky_7"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Leon_Trotsky/Leon_Trotsky_7.dds"
+	}	
+
+    spriteType = {
+		name = "GFX_RUS_Leon_Trotsky_8"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Leon_Trotsky/Leon_Trotsky_8.dds"
+	}		
+
+    spriteType = {
+		name = "GFX_RUS_Leon_Trotsky_9"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Leon_Trotsky/Leon_Trotsky_9.dds"
+	}
+	
+	
+	# Ульянов Владимир Ильич Ленин
+	spriteType = {
+		name = "GFX_RUS_Ulyanov_Vladimir_Ilyich_Lenin_1"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Lenin_Vladimir/RUS_Ulyanov_Vladimir_Ilyich_Lenin_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Ulyanov_Vladimir_Ilyich_Lenin_2"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Lenin_Vladimir/RUS_Ulyanov_Vladimir_Ilyich_Lenin_2.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_RUS_Ulyanov_Vladimir_Ilyich_Lenin_3"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Lenin_Vladimir/RUS_Ulyanov_Vladimir_Ilyich_Lenin_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Ulyanov_Vladimir_Ilyich_Lenin_4"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Lenin_Vladimir/RUS_Ulyanov_Vladimir_Ilyich_Lenin_4.dds"
+	}
+	
+
+
+
+	# Иосиф Виссарионович Сталин
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_1"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_2"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_3"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_4"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_4.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_5"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_6"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_7"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_8"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_8.dds"
+	}
+
+		spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_9"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_10"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_10.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_11"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_11.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_12"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_12.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_13"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_13.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_14"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_14.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_15"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_15.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_16"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_16.dds"
+	}
+	
+			spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_17"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_17.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_18"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_18.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_19"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_19.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Iosif_Vissarionovich_Stalin_20"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Iosif_Stalin/Iosif_Vissarionovich_Stalin_20.dds"
+	}
+	
+	
+	
+	# Никита Сергеевич Хрущёв
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_1"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_2"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_3"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_4"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_4.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_5"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_6"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_7"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_8"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_8.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_9"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_10"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_10.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_11"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_11.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_12"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_12.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_13"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_13.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_14"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_14.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_15"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_15.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikita_Khruschev_16"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikita_Khruschev/Nikita_Khruschev_16.dds"
+	}
+	
+	
+	
+	# Николай Иванович Бухарин
+	spriteType = {
+		name = "GFX_RUS_Nikolai_Bukharin_1"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikolai_Bukharin/Nikolai_Bukharin_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_RUS_Nikolai_Bukharin_2"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikolai_Bukharin/Nikolai_Bukharin_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Nikolai_Bukharin_3"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikolai_Bukharin/Nikolai_Bukharin_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_RUS_Nikolai_Bukharin_4"
+		texturefile = "gfx/personaj/Evrazia/SOV/leaders/Nikolai_Bukharin/Nikolai_Bukharin_4.dds"
+	}
+	
+	# Василий Иванович Чапаев
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_1"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_2"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_3"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_4"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_5"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_6"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_7"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_8"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_9"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_10"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_10.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_11"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_11.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_12"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_12.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_13"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_13.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_14"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_14.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_15"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_15.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_16"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_16.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_17"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_17.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_18"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_18.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_19"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_19.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_RUS_Vasily_Ivanovich_Chapaev_20"
+		texturefile = "gfx/personaj/Evrazia/SOV/army/Vasily_Ivanovich_Chapaev/Vasily_Ivanovich_Chapaev_20.dds"
+	}
+	
+	
+	
+    # США - Соединённые Штаты Америки
+	
+# Авраам Линкольн
+	spriteType = {
+		name = "GFX_USA_Abraham_Lincoln_1"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/republican/Abraham_Lincoln/Abraham_Lincoln_1.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_Abraham_Lincoln_2"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/republican/Abraham_Lincoln/Abraham_Lincoln_2.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_Abraham_Lincoln_3"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/republican/Abraham_Lincoln/Abraham_Lincoln_3.dds"
+	}	
+	
+	
+# Джон Смит
+	spriteType = {
+		name = "GFX_USA_John_Smith_1"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_1.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_2"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_2.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_3"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_3.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_4"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_4.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_USA_John_Smith_5"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_5.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_6"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_6.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_7"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_7.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_8"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_8.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_USA_John_Smith_9"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_9.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_10"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_10.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_11"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_11.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_12"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_12.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_USA_John_Smith_13"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_13.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_14"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_14.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_USA_John_Smith_15"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_15.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_USA_John_Smith_16"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/Fascism-Nazism/John_Smith/John_Smith_16.dds"
+	}	
+	
+
+#Джон Фицджеральд Кеннеди
+	spriteType = {
+		name = "GFX_USA_John_Fitzgerald_Kennedy_1"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/democrats/John_Fitzgerald_Kennedy/John_Fitzgerald_Kennedy_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_John_Fitzgerald_Kennedy_2"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/democrats/John_Fitzgerald_Kennedy/John_Fitzgerald_Kennedy_2.dds"
+	}
+	
+#Дуглас Макартур
+	spriteType = {
+		name = "GFX_USA_Douglas_MacArthur_1"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/army/Douglas_MacArthur/Douglas_MacArthur_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_USA_Douglas_MacArthur_2"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/army/Douglas_MacArthur/Douglas_MacArthur_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_Douglas_MacArthur_3"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/army/Douglas_MacArthur/Douglas_MacArthur_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_USA_Douglas_MacArthur_4"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/army/Douglas_MacArthur/Douglas_MacArthur_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_Douglas_MacArthur_5"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/army/Douglas_MacArthur/Douglas_MacArthur_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_USA_Douglas_MacArthur_6"
+		texturefile = "gfx/personaj/Omerika/Sever/USA/leaders/army/Douglas_MacArthur/Douglas_MacArthur_6.dds"
+	}
+	
+    # Конфедерационные Штаты
+	
+#Джефферсон Дэвис
+
+	   spriteType = {
+		name = "GFX_CSA_Jefferson_Davis_1"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Jefferson_Davis/CSA_Jefferson_Davis_1.dds"
+	}
+	
+	 spriteType = {
+		name = "GFX_CSA_Jefferson_Davis_2"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Jefferson_Davis/CSA_Jefferson_Davis_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_Jefferson_Davis_3"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Jefferson_Davis/CSA_Jefferson_Davis_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_Jefferson_Davis_4"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Jefferson_Davis/CSA_Jefferson_Davis_4.dds"
+	}
+	
+	
+
+#Джон Колдвелл Кэлхун
+    spriteType = {
+		name = "GFX_CSA_John_Caldwell_Calhoun_1"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/John_Caldwell_Calhoun/CSA_John_Caldwell_Calhoun_1.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_CSA_John_Caldwell_Calhoun_2"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/John_Caldwell_Calhoun/CSA_John_Caldwell_Calhoun_2.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_CSA_John_Caldwell_Calhoun_3"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/John_Caldwell_Calhoun/CSA_John_Caldwell_Calhoun_3.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_CSA_John_Caldwell_Calhoun_4"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/John_Caldwell_Calhoun/CSA_John_Caldwell_Calhoun_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_John_Caldwell_Calhoun_5"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/John_Caldwell_Calhoun/CSA_John_Caldwell_Calhoun_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_John_Caldwell_Calhoun_6"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/John_Caldwell_Calhoun/CSA_John_Caldwell_Calhoun_6.dds"
+	}
+	
+	
+	
+	
+#Роберт Эдвард Ли
+    spriteType = {
+		name = "GFX_CSA_Robert_Edward_Lee_1"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Robert_Edward_Lee/CSA_Robert_Edward_Lee_1.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_CSA_Robert_Edward_Lee_2"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Robert_Edward_Lee/CSA_Robert_Edward_Lee_2.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_CSA_Robert_Edward_Lee_3"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Robert_Edward_Lee/CSA_Robert_Edward_Lee_3.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_CSA_Robert_Edward_Lee_4"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Robert_Edward_Lee/CSA_Robert_Edward_Lee_4.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_CSA_Robert_Edward_Lee_5"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Robert_Edward_Lee/CSA_Robert_Edward_Lee_5.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_CSA_Robert_Edward_Lee_6"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Robert_Edward_Lee/CSA_Robert_Edward_Lee_6.dds"
+	}
+	
+	    spriteType = {
+		name = "GFX_CSA_Robert_Edward_Lee_7"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Robert_Edward_Lee/CSA_Robert_Edward_Lee_7.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_CSA_Robert_Edward_Lee_8"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Robert_Edward_Lee/CSA_Robert_Edward_Lee_8.dds"
+	}
+	
+	
+	
+	
+	
+	
+# Эдмунд Кирби Смит
+	   spriteType = {
+		name = "GFX_CSA_Edmund_Kirby_Smith_1"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Edmund_Kirby_Smith/Edmund_Kirby_Smith_1.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_CSA_Edmund_Kirby_Smith_2"
+        texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Edmund_Kirby_Smith/Edmund_Kirby_Smith_2.dds"
+	}
+	
+	
+	
+	
+		
+# Пьер Гюстав Тутан де Борегар
+	   spriteType = {
+		name = "GFX_CSA_Pierre_Gustave_Toutan_de_Beauregard_1"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Pierre_Gustave_Toutan_de_Beauregard/Pierre_Gustave_Toutan_de_Beauregard_1.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_CSA_Pierre_Gustave_Toutan_de_Beauregard_2"
+        texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Pierre_Gustave_Toutan_de_Beauregard/Pierre_Gustave_Toutan_de_Beauregard_2.dds"
+	}
+	   spriteType = {
+		name = "GFX_CSA_Pierre_Gustave_Toutan_de_Beauregard_3"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Pierre_Gustave_Toutan_de_Beauregard/Pierre_Gustave_Toutan_de_Beauregard_3.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_CSA_Pierre_Gustave_Toutan_de_Beauregard_4"
+        texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Pierre_Gustave_Toutan_de_Beauregard/Pierre_Gustave_Toutan_de_Beauregard_4.dds"
+	}
+	
+	
+	
+	
+	
+# Джеймс Лонгстрит
+	   spriteType = {
+		name = "GFX_CSA_James_Longstreet_1"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/James_Longstreet/CSA_James_Longstreet_1.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_CSA_James_Longstreet_2"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/James_Longstreet/CSA_James_Longstreet_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_James_Longstreet_3"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/James_Longstreet/CSA_James_Longstreet_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_James_Longstreet_4"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/James_Longstreet/CSA_James_Longstreet_4.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_CSA_James_Longstreet_5"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/James_Longstreet/CSA_James_Longstreet_5.dds"
+	}
+	
+	
+	
+	
+# Альберт Сидни Джонстон
+	spriteType = {
+		name = "GFX_CSA_Albert_Sidney_Johnston_1"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Albert_Sidney_Johnston/Albert_Sidney_Johnston_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_Albert_Sidney_Johnston_2"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Albert_Sidney_Johnston/Albert_Sidney_Johnston_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_Albert_Sidney_Johnston_3"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Albert_Sidney_Johnston/Albert_Sidney_Johnston_1.dds"
+	}
+	
+	
+	
+	
+# Томас Джонатан Джексон
+	spriteType = {
+		name = "GFX_CSA_Thomas_Jonathan_Jackson_1"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Thomas_Jonathan_Jackson/Thomas_Jonathan_Jackson_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_Thomas_Jonathan_Jackson_2"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Thomas_Jonathan_Jackson/Thomas_Jonathan_Jackson_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_Thomas_Jonathan_Jackson_3"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Thomas_Jonathan_Jackson/Thomas_Jonathan_Jackson_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_Thomas_Jonathan_Jackson_4"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Thomas_Jonathan_Jackson/Thomas_Jonathan_Jackson_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_Thomas_Jonathan_Jackson_5"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Thomas_Jonathan_Jackson/Thomas_Jonathan_Jackson_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CSA_Thomas_Jonathan_Jackson_6"
+		texturefile = "gfx/personaj/Omerika/Sever/CSA/leaders/Army/Thomas_Jonathan_Jackson/Thomas_Jonathan_Jackson_6.dds"
+	}
+	
+	
+	
+	
+	
+	# Техас Штат
+	
+    # Фрэнсис Лаббок 
+	   spriteType = {
+		name = "GFX_TEX_Francis_Lubbock_1"
+		texturefile = "gfx\personaj\Omerika\Sever\TEX\leaders\Francis_Lubbock/Francis_Lubbock_1.dds"
+	}
+	
+	
+	
+	
+# Османская Империя
+# Абдул-Хамид II
+	   spriteType = {
+		name = "GFX_TUR_abdul_hamid_II_1"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/Abdul_Hamid_II/TUR_Abdul_Hamid_II_1.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_TUR_abdul_hamid_II_2"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/Abdul_Hamid_II/TUR_Abdul_Hamid_II_2.png"
+	}
+
+	   spriteType = {
+		name = "GFX_TUR_abdul_hamid_II_3"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/Abdul_Hamid_II/TUR_Abdul_Hamid_II_3.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_TUR_abdul_hamid_II_4"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/Abdul_Hamid_II/TUR_Abdul_Hamid_II_4.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_TUR_abdul_hamid_II_5"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/Abdul_Hamid_II/TUR_Abdul_Hamid_II_5.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_TUR_abdul_hamid_II_6"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/Abdul_Hamid_II/TUR_Abdul_Hamid_II_6.png"
+	}
+
+	   spriteType = {
+		name = "GFX_TUR_abdul_hamid_II_7"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/Abdul_Hamid_II/TUR_Abdul_Hamid_II_7.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_TUR_abdul_hamid_II_8"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/Abdul_Hamid_II/TUR_Abdul_Hamid_II_8.png"
+	}
+	
+# Мехмед V
+	   spriteType = {
+		name = "GFX_TUR_mehmed_v_1"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/mehmed_v/TUR_mehmed_v_1.png"
+	}
+	
+	 spriteType = {
+		name = "GFX_TUR_mehmed_v_2"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/mehmed_v/TUR_mehmed_v_2.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_TUR_mehmed_v_3"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/mehmed_v/TUR_mehmed_v_3.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_TUR_mehmed_v_4"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/mehmed_v/TUR_mehmed_v_4.png"
+	}
+	
+# Фатьма Неслишах Османоглу
+	   spriteType = {
+		name = "GFX_TUR_Fatma_Neslishah_Osmanoglu_1"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/Fatma_Neslishah_Osmanoglu/TUR_Fatma_Neslishah_Osmanoglu_1.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_TUR_Fatma_Neslishah_Osmanoglu_2"
+		texturefile = "gfx/personaj/Vostok/TUR/leaders/monacrhy/Fatma_Neslishah_Osmanoglu/TUR_Fatma_Neslishah_Osmanoglu_2.png"
+	}
+	
+	
+	
+	
+	
+	
+	
+# Британская Империя
+
+# Александрина Виктория
+
+spriteType = {
+		name = "GFX_ENG_Alexandrina_Victoria_1"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Alexandrina_Victoria/Alexandrina_Victoria_1.dds"
+	}
+	
+spriteType = {
+		name = "GFX_ENG_Alexandrina_Victoria_2"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Alexandrina_Victoria/Alexandrina_Victoria_2.dds"
+	}
+
+
+# Эдуард VII
+	   spriteType = {
+		name = "GFX_ENG_Edward_VII_1"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VII/Britain_Edward_VII_1.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_ENG_Edward_VII_2"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VII/Britain_Edward_VII_2.dds"
+	}
+	
+ 
+
+
+# Эдуард VIII
+	   spriteType = {
+		name = "GFX_ENG_Edward_VIII_1"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_1.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_ENG_Edward_VIII_2"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_2.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_ENG_Edward_VIII_3"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_3.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_ENG_Edward_VIII_4"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_4.dds"
+	}
+	
+	    spriteType = {
+		name = "GFX_ENG_Edward_VIII_5"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_5.png"
+	}
+	
+	   spriteType = {
+		name = "GFX_ENG_Edward_VIII_6"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Edward_VIII/Britain_Edward_VIII_6.dds"
+	}
+	
+	
+	# Георг V
+	   spriteType = {
+		name = "GFX_ENG_Georg_V_1"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Georg_V/Georg_V_1.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_ENG_Georg_V_2"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Georg_V/Georg_V_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ENG_Georg_V_3"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Georg_V/Georg_V_3.dds"
+	}
+	
+	   spriteType = {
+		name = "GFX_ENG_Georg_V_4"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Georg_V/Georg_V_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ENG_Georg_V_5"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Georg_V/Georg_V_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ENG_Georg_V_6"
+		texturefile = "gfx/personaj/Evropa/ENG/leaders/monacrhy/Georg_V/Georg_V_6.dds"
+	}
+	
+	
+	
+
+	
+	
+	
+	# Гуансюй Айсиньгёро Цзайтянь
+	spriteType = {
+		name = "GFX_QIN_Guangxi_Aixingero_Zaitian_1"
+		texturefile = "gfx/personaj/Azia/QIN/leaders/monacrhy/Guangxi_Aixingero_Zaitian/Guangxi_Aixingero_Zaitian_1.dds"
+	}
+	
+	
+	# Испанская Империя
+	# Мария Кристина Австрийская
+	   spriteType = {
+		name = "GFX_SPR_Maria_Kristina_Austriatska_1"
+		texturefile = "gfx/personaj/Evropa/SPR/leaders/monacrhy/Maria_Kristina_Austriatska/SPR_Maria_Kristina_Austriatska_1.dds"
+	}
+	
+	# Альфонс XIII Леон Фернандо Мария Хайме Исидро Паскуаль Антонио де Борбон-и-Габсбурго-Лорена
+	spriteType = {
+		name = "GFX_SPR_Alfonso_XIII_Leon_Fernando_Mar_1"
+		texturefile = "gfx/personaj/Evropa/SPR/leaders/monacrhy/Alfonso_XIII_Leon_Fernando_Mar/SPR_Alfonso_XIII_Leon_Fernando_Mar_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SPR_Alfonso_XIII_Leon_Fernando_Mar_4"
+		texturefile = "gfx/personaj/Evropa/SPR/leaders/monacrhy/Alfonso_XIII_Leon_Fernando_Mar/SPR_Alfonso_XIII_Leon_Fernando_Mar_4.dds"
+	}
+	
+	# Мария де лас Мерседес Орлеанская
+	 spriteType = {
+		name = "GFX_SPR_Maria_de_las_Mercedes_Orleans_1"
+		texturefile = "gfx/personaj/Evropa/SPR/leaders/monacrhy/Maria_de_las_Mercedes_Orleans/SPR_Maria_de_las_Mercedes_Orleans_1.dds"
+	}
+	
+	# Мария Терезия Испанская
+	spriteType = {
+		name = "GFX_SPR_Maria_Teresa_Spain_1"
+		texturefile = "gfx/personaj/Evropa/SPR/leaders/monacrhy/Maria_Teresa_Spain/SPR_Maria_Teresa_Spain_1.dds"
+	}
+	
+	
+	# Мексиканская Империя
+	# Максимилиан I
+	   spriteType = {
+		name = "GFX_MEX_Maximilian_I_1"
+		texturefile = "gfx/personaj/Omerika/Sever/MEX/leaders/monacrhy/Maximilian_I/MEX_Maximilian_I_1.png"
+	}
+	
+	 spriteType = {
+		name = "GFX_MEX_Maximilian_I_4"
+		texturefile = "gfx/personaj/Omerika/Sever/MEX/leaders/monacrhy/Maximilian_I/MEX_Maximilian_I_4.png"
+	}
+	
+	# Шарлотта Бельгийская
+	spriteType = {
+		name = "GFX_MEX_Charlotte_Belgium_1"
+		texturefile = "gfx/personaj/Omerika/MEX/leaders/monacrhy/Charlotte_Belgium/MEX_Charlotte_Belgium_1.png"
+	}
+	
+	
+# Японская Империя
+	# Мэйдзи
+	   spriteType = {
+		name = "GFX_YAP_Meiji_Mutsuhito_1"
+		texturefile = "gfx/personaj/Azia/YAP/leaders/Meiji_Mutsuhito/Meiji_Mutsuhito_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_YAP_Meiji_Mutsuhito_4"
+		texturefile = "gfx/personaj/Azia/YAP/leaders/Meiji_Mutsuhito/Meiji_Mutsuhito_4.dds"
+	}
+	
+	
+	# Хирохито
+	   spriteType = {
+		name = "GFX_YAP_Hirohito_1"
+		texturefile = "gfx/personaj/Azia/YAP/leaders/Hirohito/YAP_Hirohito_Civilian.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_YAP_Hirohito_4"
+		texturefile = "gfx/personaj/Azia/YAP/leaders/Hirohito/YAP_Hirohito.dds"
+	}
+	
+	
+# Австро-Венгрия
+	# Франц Иосиф I
+	   spriteType = {
+		name = "GFX_AUS_Franz_Joseph_I_1"
+		texturefile = "gfx/personaj/Evropa/AUS/leaders/monacrhy/Franz_Joseph_I/AUS_Franz_Joseph_I_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_AUS_Franz_Joseph_I_4"
+		texturefile = "gfx/personaj/Evropa/AUS/leaders/monacrhy/Franz_Joseph_I/AUS_Franz_Joseph_I_4.dds"
+	}
+	
+	
+	# Франц Иосиф I
+	spriteType = {
+		name = "GFX_AUS_Franz_Ferdinand_1"
+		texturefile = "gfx/personaj/Evropa/AUS/leaders/monacrhy/Franz_Ferdinand/AUS_Franz_Ferdinand_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_AUS_Franz_Ferdinand_4"
+		texturefile = "gfx/personaj/Evropa/AUS/leaders/monacrhy/Franz_Ferdinand/AUS_Franz_Ferdinand_4.dds"
+	}
+	
+	
+	
+	
+	
+# Китай - Династия Цин
+	# Цыси Тайхоу
+	   spriteType = {
+		name = "GFX_QIN_Cixi_Taihou_1"
+		texturefile = "gfx/personaj/Azia/QIN/leaders/monacrhy/Cixi_Taihou/Cixi_Taihou_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_QIN_Cixi_Taihou_2"
+		texturefile = "gfx/personaj/Azia/QIN/leaders/monacrhy/Cixi_Taihou/Cixi_Taihou_2.dds"
+	}
+	
+	
+	# Гуансюй Айсиньгёро Цзайтянь
+	spriteType = {
+		name = "GFX_QIN_Guangxi_Aixingero_Zaitian_1"
+		texturefile = "gfx/personaj/Azia/QIN/leaders/monacrhy/Guangxi_Aixingero_Zaitian/Guangxi_Aixingero_Zaitian_1.dds"
+	}
+
+
+# Рим
+	# Лев XIII
+	   spriteType = {
+		name = "GFX_POP_Lev_XIII_1"
+		texturefile = "gfx/personaj/Evropa/POP/leaders/catholicism/Lev_XIII/Lev_XIII.dds"
+	}
+	
+	
+	# Пий X
+	spriteType = {
+		name = "GFX_POP_Piy_X_1"
+		texturefile = "gfx/personaj/Evropa/POP/leaders/catholicism/Piy_X/Piy_X.dds"
+	}
+	
+	
+# Франция
+	# Наполеон 4 Эжен
+	   spriteType = {
+		name = "GFX_FRA_Napoleon_4_Eugene_1"
+		texturefile = "gfx/personaj/Evropa/FRA/leaders/monacrhy/Napoleon_4_Eugene/FRA_Napoleon_1_Eugene.dds"
+	}
+	
+	
+	# Жан Казимир-Перье
+	spriteType = {
+		name = "GFX_FRA_Jean_Casimir_Perrier_1"
+		texturefile = "gfx/personaj/Evropa/FRA/leaders/monacrhy/Jean_Casimir_Perrier/FRA_Jean_Casimir_Perrier.dds"
+	}
+	
+	
+	
+# Пруссия	
+# Вильгельм II
+    spriteType = {
+		name = "GFX_PRE_William_II__1"
+		texturefile = "gfx/personaj/Evropa/PRE/leaders/monacrhy/Wilhelm_II/PRE_wilhelm_II_1.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_PRE_William_II__4"
+		texturefile = "gfx/personaj/Evropa/PRE/leaders/monacrhy/Wilhelm_II/PRE_wilhelm_II_4.dds"
+	}
+	
+# Виктория Луиза Прусская
+    spriteType = {
+		name = "GFX_PRE_Viktoria_Luise_1"
+		texturefile = "gfx/personaj/Evropa/PRE/leaders/monacrhy/Viktoria_Luise/PRE_Viktoria_Luise_1.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_PRE_Viktoria_Luise_4"
+		texturefile = "gfx/personaj/Evropa/PRE/leaders/monacrhy/Viktoria_Luise/PRE_Viktoria_Luise_4.dds"
+	}
+	
+# Вильгельм III
+    spriteType = {
+		name = "GFX_PRE_William_III_1"
+		texturefile = "gfx/personaj/Evropa/PRE/leaders/monacrhy/Wilhelm_III/PRE_Germany_Wilhelm_III_1.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_PRE_William_III_4"
+		texturefile = "gfx/personaj/Evropa/PRE/leaders/monacrhy/Wilhelm_III/PRE_Germany_Wilhelm_III_4.dds"
+	}
+	
+# Отто фон Бисмарк
+    spriteType = {
+		name = "GFX_PRE_Otto_von_Bismarck_1"
+		texturefile = "gfx/personaj/Evropa/PRE/leaders/monacrhy/Otto_von_Bismarck/PRE_Otto_von_Bismarck_1.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_PRE_Otto_von_Bismarck_4"
+		texturefile = "gfx/personaj/Evropa/PRE/leaders/monacrhy/Otto_von_Bismarck/PRE_Otto_von_Bismarck_4.dds"
+	}
+	
+	
+	
+	
+	
+	# Речь Посполитая	
+# Станислав Август Понятовский
+    spriteType = {
+		name = "GFX_POL_Stanislav_II_August_Poniatowski_1"
+		texturefile = "gfx/personaj/Evropa/POL/leaders/monacrhy/Stanislav_II_August_Poniatowski/POL_Stanislav_II_August_Poniatowski_1.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_POL_Stanislav_II_August_Poniatowski_4"
+		texturefile = "gfx/personaj/Evropa/POL/leaders/monacrhy/Stanislav_II_August_Poniatowski/POL_Stanislav_II_August_Poniatowski_4.dds"
+	}
+	
+# Михаил Казимир Огинский
+    spriteType = {
+		name = "GFX_POL_Mikhail_Kazimir_II_Oginsky_1"
+		texturefile = "gfx/personaj/Evropa/POL/leaders/monacrhy/Mikhail_Kazimir_II_Oginsky/POL_Mikhail_Kazimir_II_Oginsky_1.dds"
+	}
+}
+
+
+
+
+
+
+

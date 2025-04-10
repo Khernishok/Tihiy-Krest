@@ -1,0 +1,26 @@
+state={
+	id=1060
+	name="STATE_1060"
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = TUR
+		add_claim_by = ARM
+		add_claim_by = GEO
+		add_core_of = LAZ
+		add_core_of = PON
+		add_core_of = WAR
+
+	}
+
+	provinces={
+		3714 11753 
+	}
+	manpower=350000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

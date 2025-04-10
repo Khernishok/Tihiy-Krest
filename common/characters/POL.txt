@@ -1,0 +1,127 @@
+characters = {
+
+    # Станислав Август Понятовский
+    POL_Stanislav_II_August_Poniatowski = {
+        name = "POL_Stanislav_II_August_Poniatowski"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_POL_Stanislav_II_August_Poniatowski_1"  # Портрет для гражданской роли
+            }
+            army = {
+                large = "GFX_POL_Stanislav_II_August_Poniatowski_4"  # Портрет для роли генерала
+                small = "gfx/interface/ideas/rus_tsar_nicolas.dds"  # Маленький портрет
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = {
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1141  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1001  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1142  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1143  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1144  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1145  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+
+
+
+
+    # Михаил Казимир Огинский
+	
+    POL_Mikhail_Kazimir_II_Oginsky = {
+        name = "POL_Mikhail_Kazimir_II_Oginsky"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_POL_Mikhail_Kazimir_II_Oginsky_1"  # Портрет для гражданской роли
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1146  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy
+            traits = { 
+            }
+            expire = "3000.1.1.1"  # Дата окончания правления
+            id = -1147  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+    }
+}

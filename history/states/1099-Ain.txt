@@ -1,0 +1,25 @@
+state={
+	id=1099
+	name="STATE_1099"
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = FRA
+		add_core_of = ARP
+		add_core_of = BRG
+
+	}
+
+	provinces={
+		641 6639 9590 
+	}
+	manpower=316710
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

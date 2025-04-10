@@ -1,0 +1,22 @@
+﻿capital = 821
+
+set_politics = {
+    ruling_party = constitutional_monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {             
+    constitutional_monarchy = 40
+    nationalism = 20 
+	liberalism = 5
+    conservatism = 7
+    socialism = 6    
+	military_dictatorship = 5 
+    military_soviet = 5
+	neutrality = 3
+	democratic = 2
+	torgovtsy = 5
+	lawlessness = 2       
+}

@@ -1,0 +1,21 @@
+state={
+	id=1081
+	name="STATE_1081"
+
+	history = {
+		owner = RUS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = RUS
+		add_core_of = EVE
+	}
+
+	provinces = {
+		1697 1741 1837 2900 2923 4687 4743 4782 4785 4812 4831 4842 7707 7805 7863 9224 10628 10631 11328 12523 12687 13065
+	}
+
+	manpower = 25003
+	state_category = pastoral
+	local_supplies = 0.0 
+}

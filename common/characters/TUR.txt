@@ -1,0 +1,275 @@
+characters = {
+
+    # Абдул-Хамид II
+    TUR_abdul_hamid_II = {
+        name = "TUR_abdul_hamid_II"  # Идентификатор лидера
+        portraits = {
+            civilian = {
+                large = "GFX_TUR_abdul_hamid_II_4"  
+            }
+            army = {
+                large = "GFX_TUR_abdul_hamid_II_3"  
+                small = "gfx/interface/ideas/rus_tsar_nicolas.dds" 
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = {
+            }
+            id = -1340  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            id = -1341  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            id = -1342  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+
+		
+		
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -1343  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            id = -1344  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            id = -1345  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+			# Лидер страны (Сунизм)
+        country_leader = {
+            ideology = sunnism_subtype
+            traits = { 
+            }
+            id = -1346  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+					# Лидер страны (Радикальный Сунизм)
+        country_leader = {
+            ideology = radical_sunnism_subtype
+            traits = { 
+            }
+            id = -1347  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+	
+	
+	
+	    # Мехмед V
+    TUR_mehmed_v = {
+        name = "TUR_mehmed_v"  
+        portraits = {
+            civilian = {
+                large = "GFX_TUR_mehmed_v_2"  
+            }
+            army = {
+                large = "GFX_TUR_mehmed_v_1"  
+                small = "gfx/interface/ideas/tur_mehmed_v.dds" 
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = {
+            }
+            id = -1350  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            id = -1351  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            id = -1352  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Лидер страны (Националисты)
+        country_leader = {
+            ideology = nationalism_subtype
+            traits = { 
+            }
+            id = -1353  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Нацизм)
+        country_leader = {
+            ideology = nazism_subtype
+            traits = { 
+            }
+            id = -1354  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Фашизм)
+        country_leader = {
+            ideology = fascism_subtype
+            traits = { 
+            }
+            id = -1355  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+			# Лидер страны (Сунизм)
+        country_leader = {
+            ideology = sunnism_subtype
+            traits = { 
+            }
+            id = -1356  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+					# Лидер страны (Радикальный Сунизм)
+        country_leader = {
+            ideology = radical_sunnism_subtype
+            traits = { 
+            }
+            id = -1357  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+    # Генерал (фельдмаршал)
+        field_marshal = {
+            traits = { 
+                old_guard  # Черта: Старая гвардия
+                war_hero   # Черта: Герой войны
+            }
+            skill = 5  # Общий уровень навыков
+            attack_skill = 3  # Навык атаки
+            defense_skill = 2  # Навык обороны
+            planning_skill = 1  # Навык планирования
+            logistics_skill = 1  # Навык логистики
+            legacy_id = -1  # Уникальный идентификатор
+            visible = { 
+                NOT = { has_government = идеология }  # Видим только при некоммунистическом правительстве
+            }
+        }
+    }
+	
+
+
+
+
+	    # Фатьма Неслишах Османоглу
+    TUR_Fatma_Neslishah_Osmanoglu = {
+        name = "TUR_Fatma_Neslishah_Osmanoglu"  
+        portraits = {
+            civilian = {
+                large = "GFX_TUR_Fatma_Neslishah_Osmanoglu_1"  
+            }
+        }
+
+    # Лидер страны (монархия)
+        country_leader = {
+            ideology = monarchy_subtype
+            traits = {
+            }
+            id = -1358  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Конституционная Монархия)
+        country_leader = {
+            ideology = constitutional_monarchy_subtype
+            traits = { 
+            }
+            id = -1359  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+	# Лидер страны (Выборная Монархия)
+        country_leader = {
+            ideology = elective_monarchy_subtype
+            traits = { 
+            }
+            id = -1360  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+
+		
+			# Лидер страны (Сунизм)
+        country_leader = {
+            ideology = sunnism_subtype
+            traits = { 
+            }
+            id = -1361  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+		
+					# Лидер страны (Радикальный Сунизм)
+        country_leader = {
+            ideology = radical_sunnism_subtype
+            traits = { 
+            }
+            id = -1362  # Уникальный идентификатор
+			visible = { always = yes }  # Всегда видим
+        }
+    }
+
+
+}

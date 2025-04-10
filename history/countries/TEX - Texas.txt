@@ -1,0 +1,20 @@
+﻿capital = 375
+
+set_politics = {
+    ruling_party = confederation
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = yes
+}
+
+set_popularities = {
+    confederation = 20
+    slave_owners = 20
+    conservatism = 20
+    torgovtsy = 20
+    nationalism = 20
+}
+
+# Лидеры страны
+
+recruit_character = TEX_Francis_Lubbock

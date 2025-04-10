@@ -1,0 +1,66 @@
+capital = 757 
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+if = {
+	set_autonomy = {
+		target = WUR
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = HES
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = NAS
+		autonomous_state = autonomy_puppet
+	}
+		set_autonomy = {
+		target = 
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+}
+
+set_popularities = {
+	monarchy = 30
+	orthodox = 17
+	paganism = 4
+	khlysty = 6
+	jewish = 2
+	military_dictatorship = 7
+    military_soviet = 4
+    illuminati = 5
+	freemasons = 4
+	slave_owners =  3
+    conservatism = 6 
+	marxism = 2
+    liberalism = 5
+	nationalism = 3
+	neutrality = 2
+}
+
+set_stability = 0.50
+
+	# Лидеры страны
+
+recruit_character = PRE_William__II
+recruit_character = PRE_Viktoria_Luise
+recruit_character = PRE_William_III
+recruit_character = PRE_Otto_von_Bismarck
+
+
+
+    # Политики страны
+	
+
+    # Военачальники страны
+	
+	
+	# Учёные Страны
+	

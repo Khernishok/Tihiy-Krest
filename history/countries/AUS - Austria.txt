@@ -1,0 +1,106 @@
+﻿capital = 4 # ID столицы ()
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {             
+    constitutional_monarchy = 32
+    nationalism = 20 
+	liberalism = 10
+    conservatism = 10                      
+    socialism = 6    
+	military_dictatorship = 5 
+    military_soviet = 5
+	neutrality = 3
+	democratic = 2
+	torgovtsy = 5
+	lawlessness = 2       
+}
+
+if = {
+	set_autonomy = {
+		target = HUN
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = #BCV
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.35
+	}
+		set_autonomy = {
+		target = #GAL
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = 
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = SIL
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = MRV
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+	    set_autonomy = {
+		target = DAL
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+		    set_autonomy = {
+		target = CZE
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = CRO
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = 
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = 
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = 
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = 
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+}
+
+
+	# Лидеры страны
+
+recruit_character = AUS_Franz_Joseph_I
+recruit_character = AUS_Franz_Ferdinand
+
+	
+
+
+
+
+
+
+
+
+

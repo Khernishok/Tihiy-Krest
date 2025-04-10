@@ -1,0 +1,23 @@
+
+state = {
+	id = 878
+	name = "STATE_878" # Khatangsky
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RUS
+		add_core_of = DOL
+
+	}
+	provinces={
+		11122 11261
+	}
+	manpower=3971
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

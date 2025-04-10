@@ -1,0 +1,206 @@
+capital = 358
+
+# Лидеры страны
+
+recruit_character = USA_Abraham_Lincoln 
+recruit_character = USA_John_Smith 
+recruit_character = USA_John_Fitzgerald_Kennedy 
+recruit_character = USA_Douglas_MacArthur 
+
+set_politics = {
+    ruling_party = republican
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = yes
+}
+
+set_popularities = {
+    liberalism = 14 
+    republican = 20
+    conservatism = 13
+    democratic = 16
+    slave_owners = 5
+    nationalism = 8 
+    military_dictatorship = 6
+    military_soviet = 5
+    illuminati = 5
+    freemasons = 3
+    neutrality = 3
+    catholicism = 2
+}
+
+if = {
+	set_autonomy = {
+		target = CLF
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = NMX
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = NVD
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = UTA
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = ORG
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = WSH
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = WSC
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = NDK
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = NEB
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = KNS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = IWA
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = MSS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = IOW
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = MIN
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = WIS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = ILL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = MCH
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = IND
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = OHO
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = PEN
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = DLW
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = NJE
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = MRL 
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = MST
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = RIS 
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = CLD
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = WVR
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = CNT
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = VMT
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = MNE
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = NYO
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = NHP
+		autonomous_state = autonomy_integrated_puppet
+	}
+	
+	set_autonomy = {
+		target = KTY
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+
+create_faction = USA_democratic
+add_to_faction = USA
+
+
+set_stability = 0.50
+
+
+

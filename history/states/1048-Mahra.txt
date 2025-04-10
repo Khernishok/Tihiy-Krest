@@ -1,0 +1,25 @@
+state={
+	id=1048
+	name="STATE_1048"
+
+	history={
+		owner = RAJ
+		victory_points = { 13079 1 }
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = YEM
+		add_core_of = MHR
+		add_core_of = HDH
+
+	}
+
+	provinces={
+		12894 13079 
+	}
+	manpower=370601
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=1076
+	name="STATE_1076"
+
+	history={
+		owner = HES
+		victory_points = {
+			589 1 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = WGR
+		add_core_of = HES
+
+	}
+
+	provinces={
+		589 3574 6549 11560 
+	}
+	manpower=1109313
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

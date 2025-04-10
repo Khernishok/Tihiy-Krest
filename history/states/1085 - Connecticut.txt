@@ -1,0 +1,32 @@
+state={
+	id=1085
+	name="STATE_1085"
+
+	history={
+		owner = CNT
+		controller = USA
+		add_claim_by = USA
+		add_core_of = CNT
+		add_core_of = NEG
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			industrial_complex = 1
+			9832 = {
+				naval_base = 3
+
+			}
+		}
+		victory_points = {
+			9850 1 
+		}
+	}
+
+	provinces={
+		6909 9832 9847 9850 13381
+	}
+	manpower=1700000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = city
+}

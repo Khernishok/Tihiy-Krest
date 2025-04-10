@@ -1,0 +1,39 @@
+capital = 757 
+
+set_politics = {
+    ruling_party = buddism
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+buddism = 37
+monarchy = 17
+conservatism = 22
+nationalism = 10
+liberalism = 5
+socialism = 3
+military_dictatorship = 2
+neutrality = 2
+lawlessness = 1
+neutrality = 1
+}
+
+set_stability = 0.50
+
+	# Лидеры страны
+
+recruit_character = 
+recruit_character = 
+
+
+
+    # Политики страны
+	
+
+    # Военачальники страны
+	
+	
+	# Учёные Страны
+	

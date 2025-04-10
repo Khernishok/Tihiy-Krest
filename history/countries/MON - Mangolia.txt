@@ -1,0 +1,23 @@
+﻿capital = 330
+
+recruit_character = 
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+monarchy = 40
+conservatism = 20
+shamanism = 15
+nationalism = 8
+military_dictatorship = 5
+neutrality = 4
+lawlessness = 3
+neutrality = 2
+confederation = 2
+paganism = 1
+}

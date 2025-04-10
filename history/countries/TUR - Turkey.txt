@@ -1,0 +1,94 @@
+﻿capital = 797 
+
+	# Лидеры страны
+
+recruit_character = TUR_abdul_hamid_II
+recruit_character = TUR_mehmed_v
+recruit_character = TUR_Fatma_Neslishah_Osmanoglu
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {             
+    monarchy = 40
+    nationalism = 20 
+	liberalism = 5
+    conservatism = 7
+    socialism = 6    
+	military_dictatorship = 5 
+    military_soviet = 5
+	neutrality = 3
+	democratic = 2
+	torgovtsy = 5
+	lawlessness = 2       
+}
+
+if = {
+	set_autonomy = {
+		target = ALB
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = CRI
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+		set_autonomy = {
+		target = NJR
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = QAT
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	    set_autonomy = {
+		target = WLL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	
+	set_autonomy = {
+		target = WLL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	
+	set_autonomy = {
+		target = MOL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	
+		set_autonomy = {
+		target = KAV
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+			set_autonomy = {
+		target = BOS
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+}
+
+	
+
+
+
+
+
+
+
+
+

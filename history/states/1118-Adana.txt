@@ -1,0 +1,36 @@
+state={
+	id=1118
+	name="STATE_1118"
+
+	history={
+		owner = TUR
+		victory_points = {
+			9893 15
+		}
+		victory_points = {
+			11746 5 
+		}
+		victory_points = {
+			11810 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			11746 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = TUR
+		add_core_of = RMZ
+		add_core_of = CIL
+		add_core_of = KRM
+	}
+
+	provinces={
+		806 11746 11810
+	}
+	manpower=383645
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

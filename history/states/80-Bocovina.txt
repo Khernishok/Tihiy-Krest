@@ -1,0 +1,30 @@
+state={
+	id=80
+	name="STATE_80"
+	manpower = 474600
+	
+	state_category = rural
+	
+	history=
+	{
+		victory_points = {
+			577 1 
+		}
+		owner = MOP
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+		add_core_of = ROM
+		add_core_of = MOP
+		add_core_of = MOL
+		add_core_of = UKR
+		add_claim_by = GAL
+		add_core_of = BCV
+	}
+	provinces={
+		577 9548
+	}
+
+	local_supplies=0.0 
+}

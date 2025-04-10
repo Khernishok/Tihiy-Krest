@@ -1,0 +1,107 @@
+capital = 195  # ID столицы (Петроград)
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+	monarchy = 30
+	orthodox = 17
+	paganism = 4
+	khlysty = 6
+	jewish = 2
+	military_dictatorship = 7
+    military_soviet = 4
+    illuminati = 5
+	freemasons = 4
+	slave_owners =  3
+    conservatism = 6 
+	marxism = 2
+    liberalism = 5
+	nationalism = 3
+	neutrality = 2
+}
+
+1896.1.1 = {
+give_guarantee = SER
+set_stability = 0.50
+}
+
+# DIPLOMACY
+if = {
+	set_autonomy = {
+		target = MLR
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = ALK
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = FIN
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = DON
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = KUB
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = LAT
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = NRU
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+		set_autonomy = {
+		target = EST
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+	else = {
+		puppet = 
+		puppet = 
+	}
+}
+
+set_stability = 0.50
+
+	# Лидеры страны
+
+recruit_character = RUS_tsar_nikolai_ii_romanov
+recruit_character = RUS_alexandra_fedorovna
+recruit_character = RUS_Nikolay_Nikolaevich_Romanov_junior
+recruit_character = RUS_Mikhail_Alexandrovich_Romanov
+recruit_character = RUS_Vladimir_Volfovich_Zhirinovsky
+
+recruit_character = RUS_Ulyanov_Vladimir_Ilyich_Lenin
+recruit_character = RUS_Iosif_Vissarionovich_Stalin
+recruit_character = RUS_Leon_Trotsky
+recruit_character = RUS_Nikolai_Bukharin
+recruit_character = RUS_Nikita_Khruschev
+recruit_character = RUS_Vasily_Ivanovich_Chapaev
+
+
+    # Политики страны
+	
+
+    # Военачальники страны
+	
+	
+	# Учёные Страны
+	
+	
+	# Флот
+	recruit_character = RUS_Alexey_Mikhailovich_Shchastny

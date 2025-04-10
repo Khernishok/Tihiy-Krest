@@ -1,0 +1,40 @@
+state={
+	id=1068
+	name="STATE_1068"
+
+	history={
+		owner = NAS
+		add_claim_by = PRE
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			6488 20.0 
+		}
+		add_core_of = GER
+		add_core_of = PRE
+		add_core_of = WGR
+		add_core_of = NAS
+		add_core_of = HES
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
+				arms_factory = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6444 6488 9486 
+	}
+	manpower=1670000
+	state_category=large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

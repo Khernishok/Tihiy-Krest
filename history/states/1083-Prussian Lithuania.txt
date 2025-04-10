@@ -1,0 +1,27 @@
+state={
+	id=1083
+	name="STATE_1083"
+
+	history={
+		victory_points = {
+			348 1 
+		}
+		owner = PRE
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GER
+		add_core_of = PRE
+		add_core_of = PLI
+		add_core_of = PRS
+
+	}
+
+	provinces={
+		281 348 3384 
+	}
+	manpower=65000
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+state={
+	id=1058
+	name="STATE_1058"
+
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+		add_core_of = SER
+		add_core_of = VOJ
+		add_core_of = SLA
+		add_core_of = KRJ
+		add_claim_by = BNT
+
+	}
+
+	provinces={
+		9608 
+	}
+	manpower=50000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

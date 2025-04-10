@@ -1,0 +1,30 @@
+
+state={
+	id=1021
+	name="STATE_1021"
+
+	history={
+		owner = HUN
+		victory_points = {
+			3974 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+		add_core_of = DAL
+		add_core_of = KRJ
+
+	}
+
+	provinces={
+		984 3974 6611 
+	}
+	manpower=250000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

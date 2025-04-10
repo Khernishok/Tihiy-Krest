@@ -1,0 +1,53 @@
+capital = 141  # ID столицы (Стокгольм)
+
+set_politics = {
+    ruling_party = constitutional_monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+	constitutional_monarchy = 21
+	liberalism = 19
+	conservatism = 14
+	marxism = 4
+	socialism = 5 
+	nationalism = 8
+	catholicism = 2
+	jewish = 3
+	democratic = 2 
+	navy_union = 3
+	military_dictatorship = 3
+    military_soviet = 2
+    illuminati = 3
+	freemasons = 2
+	torgovtsy = 4
+	lawlessness = 2
+	neutrality = 3
+}
+
+# DIPLOMACY
+if = {
+	set_autonomy = {
+		target = NOR
+		autonomous_state = autonomy_integrated_puppet
+	}
+}
+
+set_stability = 0.50
+
+	# Лидеры страны
+
+recruit_character = oscar_ii_fredrik_bernadotte
+recruit_character = Gustav_V_Oscar_Adolf
+
+
+    # Политики страны
+	
+
+    # Военачальники страны
+	
+	
+	# Учёные Страны
+	
