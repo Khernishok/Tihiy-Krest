@@ -4,8 +4,8 @@ state = {
 
 	history = {
 		owner = KAV
-		add_claim_by = RUS
-		add_core_of = RUS
+		
+		add_core_of = KAV
 		add_core_of = KUB
 		add_claim_by = GEO
 		add_claim_by = ABK
@@ -19,7 +19,7 @@ state = {
 	}
 
 	provinces = {
-		  9663  
+		9663  
 	}
 	manpower = 45000
 	buildings_max_level_factor = 1.000

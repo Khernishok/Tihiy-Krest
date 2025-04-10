@@ -7,7 +7,7 @@ state={
 		2101 4949 5020
 	}
 	history={
-		owner = AFG
+		owner = RAJ
 		add_core_of = AFG
 		add_core_of = BLC
 	}

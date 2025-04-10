@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = TIB
-		controller = QIN
+		
 		add_claim_by = QIN
 	    add_core_of = TIB
 		buildings = {

@@ -9,7 +9,7 @@ state={
 		add_core_of = QAT
 		add_core_of = BKH
 		add_claim_by = UAE
-		owner = QAT
+		owner = ENG
 		victory_points = {
 			8051 1
 		}

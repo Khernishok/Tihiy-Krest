@@ -8,11 +8,11 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
-		owner = QIN
-		add_core_of = QIN
+		owner = JOJ
+		add_core_of = JOJ
 		add_core_of = MON
-		add_core_of = SIK
-		add_core_of = CHI
+		
+		
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 2

@@ -3,7 +3,7 @@ state={
 	name="STATE_1026"
 
 	history={
-		owner = KAV
+		owner = TUR
 		victory_points = {
 			3653 3 
 		}
@@ -16,9 +16,9 @@ state={
 			}
 
 		}
-		add_core_of = RUS
+		add_core_of = TUR
 		add_core_of = GEO
-		add_core_of = ADJ
+		add_core_of = KAV
 		add_core_of = KPP
 	}
 	provinces={

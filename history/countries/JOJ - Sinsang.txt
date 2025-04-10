@@ -1,0 +1,27 @@
+capital = 617
+set_research_slots = 2
+
+
+set_politics = {
+    ruling_party = monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+	monarchy = 50
+	conservatism = 25
+	nationalism = 10
+	liberalism = 5
+	socialism = 3
+	military_dictatorship = 2
+	neutrality = 2
+	buddism = 3
+}
+
+
+set_stability = 0.50
+
+
+

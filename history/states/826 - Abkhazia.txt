@@ -4,8 +4,8 @@ state = {
 
 	history = {
 		owner = KAV
-		add_claim_by = RUS
-		add_core_of = RUS
+		
+		add_core_of = KAV
 		add_core_of = GEO
 		add_core_of = ABK
 		victory_points = {

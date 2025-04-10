@@ -4,15 +4,18 @@ state={
 	manpower = 914775
 	state_category = rural
 	provinces={
-		7448 7584 10852 12248 12877 
+		7448 7584 12248  
 	}
 	history={
-		owner = AFG
+		owner = RAJ
 		add_core_of = AFG
 		add_core_of = UZB
 		add_claim_by = TMS
 		add_core_of = STU
 		add_core_of = KHO
+		victory_points = {
+			12248 1 
+		}
 	}
 	
 	buildings_max_level_factor=1.000

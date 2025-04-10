@@ -11,8 +11,8 @@ state={
 
 
 	history={
-		add_core_of = UAE
-		owner = ENG
+		add_core_of = YEM
+		owner = TUR
 		victory_points = {
 			10904 1 
 		}
