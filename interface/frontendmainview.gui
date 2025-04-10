@@ -291,11 +291,12 @@ guiTypes = {
 		instantTextBoxType = {
 			name ="1version_label"
 			position = { x = 495 y = -28 }
-			font = "aldrich_24_outline"
+			font = "aldrich_28_outline"
 			text = "Тихий Крест"
 			maxWidth = 415
 			maxHeight = 20
 		}
+		
 
 		#ghost window used for buttons background
 		containerWindowType = {
@@ -316,7 +317,7 @@ guiTypes = {
 			name = "single_player_button"
 			position = { x = 96 y = 375 }
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "aldrich_24_outline"
+			font = "Bomb_24"
 			text = "FE_SINGLE_PLAYER"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -326,11 +327,59 @@ guiTypes = {
 			name = "multi_player_button"
 			position = { x = 409 y = 375}
 			quadTextureSprite ="GFX_main_lobby_button"
-			font = "aldrich_24_outline"
+			font = "Bomb_24"
 			text = "FE_MULTI_PLAYER"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
+		
+				ButtonType = {
+			name = "settings_button"
+			position = { x = 16 y = 98 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			font = "Bomb_24"
+			buttonText = "OPTIONS"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		buttonType = {
+			name = "career_profile_button"
+			position = { x = 16 y = 138 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "MENU_BAR_CAREER_PROFILE"
+			buttonFont = "Bomb_24"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		iconType = {
+			name = "career_profile_button_star"
+			position = { x = -37 y = 155 }
+			spriteType = "GFX_icon_best_in_career"
+			centerposition = yes
+			orientation = upper_right
+			alwaysTransparent = yes
+		}
+		
+		buttonType = {
+			name = "friends_button"
+			position = { x = 16 y = 178 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonText = "MENU_BAR_FRIENDS"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		
+		ButtonType = {
+			name = "nudge_button"
+			position = { x = 16 y = 258 }
+			quadTextureSprite ="GFX_main_lobby_button"	
+			buttonText = "Nudge!"
+			buttonFont = "hoi_24header"
+		}
+
 		
 		@warn_icon_x = 378
 		iconType = {

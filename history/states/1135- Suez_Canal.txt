@@ -1,6 +1,6 @@
 state = {
-	id = 446
-	name = "STATE_446" # Suez
+	id = 1135
+	name = "STATE_1135" # Suez
 	manpower = 131732
 	state_category = wasteland
 
@@ -11,28 +11,13 @@ state = {
 
 		buildings = {
 			infrastructure = 3
-			
-			12049 = {
-				naval_base = 2
-			}
-			4073 = {
-				naval_base = 1
-			}
 
-		}
-		
-		victory_points = {
-			12049 5 
-		}
-		
-		victory_points = {
-			4073 3 
 		}
 
 	}
 
 	provinces = {
-	 4073 12049 
+		1155 9947 
 	}
 
 	buildings_max_level_factor = 1.000

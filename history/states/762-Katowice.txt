@@ -13,7 +13,7 @@ state = {
 
 	history = {
 		
-		owner = SIL
+		owner = POL
 		add_core_of = POL
 		add_core_of = SIL
 		add_core_of = USI

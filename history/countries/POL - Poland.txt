@@ -53,6 +53,11 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 		freedom_level = 0.4
 	}
+	set_autonomy = {
+		target = KIV
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
 }
 
 set_stability = 0.50

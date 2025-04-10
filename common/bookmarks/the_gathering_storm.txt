@@ -1,7 +1,7 @@
 bookmarks = {
 	bookmark = {
-		name = "KREST_RUS_ST"
-		desc = "KREST_RUS_DESC"
+		name = "II_RUS_ST"
+		desc = "II_RUS_DESC"
 		date = 1894.1.1.1
 		picture = "GFX_select_date_1894"
 		default_country = "RUS"

@@ -5,6 +5,14 @@ spriteTypes = {
 		name = "GFX_pol_leader_frame"
 		texturefile = "gfx/interface/pol_leader_frame.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_bookmark_entrys_1894"
+		texturefile = "gfx/interface/bookmark_entrys_1894.dds"
+	}
+	
+	
+	
 }
 
 

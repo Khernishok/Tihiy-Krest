@@ -15,11 +15,9 @@ state={
 		add_claim_by = POL
 		add_core_of = SIL
 		add_core_of = MRV
+		add_core_of = AUS
 
-		1939.3.14 = {
-			owner = POL
-			controller = POL
-		}
+
 	}
 
 	provinces={

@@ -1,0 +1,24 @@
+capital = 282
+
+set_politics = {
+    ruling_party = constitutional_monarchy
+    last_election = "1894.1.1"
+    election_frequency = 48
+    elections_allowed = yes
+}
+
+recruit_character = YAP_Meiji_Mutsuhito
+recruit_character = YAP_Hirohito
+
+set_popularities = {
+	constitutional_monarchy = 20
+	military_dictatorship = 12
+    military_soviet = 18
+	navy_union = 12
+	marxism = 2
+    liberalism = 4
+	democratic = 3
+	nationalism = 19
+    fascism	= 3
+	neutrality = 7
+}

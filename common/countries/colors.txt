@@ -2,6 +2,18 @@ RUS = {
 	color = rgb { 11 137 49 }
 	color_ui = rgb { 9 108 39 }
 }
+PRB = {
+	color = rgb { 177 62 97 }
+	color_ui = rgb { 116 42 65 }
+}
+SND = {
+	color = rgb { 177 62 97 }
+	color_ui = rgb { 116 42 65 }
+}
+FNK = {
+	color = rgb { 179 0 179 }
+	color_ui = rgb { 144 44 132 }
+}
 MOP = {
 	color = rgb { 255 69 0 }
 	color_ui = rgb { 163 44 0 }

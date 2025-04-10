@@ -41,11 +41,6 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.35
 	}
-	set_autonomy = {
-		target = SIL
-		autonomous_state = autonomy_integrated_puppet
-		freedom_level = 0.4
-	}
 		set_autonomy = {
 		target = MRV
 		autonomous_state = autonomy_integrated_puppet

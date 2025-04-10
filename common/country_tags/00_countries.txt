@@ -1,4 +1,7 @@
 RUS = "countries/Russian.txt"
+FNK = "countries/Finikiy.txt"
+SND = "countries/Sanitsiyskiy_Orden.txt"
+PRB = "countries/Pribalt.txt"
 MOP = "countries/Mopdalia.txt"
 KAV = "countries/Kavkaz.txt"
 TEX = "countries/Texas.txt"

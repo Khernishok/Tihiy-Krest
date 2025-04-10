@@ -10,7 +10,7 @@ state = {
 		victory_points = {
 			476 3
 		}
-		owner = TNI
+		owner = KIV
 		add_core_of = RUS
 		add_core_of = UKR
 		add_core_of = PDL
