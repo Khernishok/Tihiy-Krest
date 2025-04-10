@@ -1,7 +1,7 @@
 state = {
 	id = 1135
 	name = "STATE_1135" # Suez
-	manpower = 131732
+	manpower = 13173
 	state_category = wasteland
 
 	history = {
