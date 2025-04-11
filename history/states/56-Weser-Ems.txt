@@ -10,7 +10,7 @@ state={
 		add_core_of = HAN
 		add_core_of = WGR
 		add_core_of = OSN
-		add_core_of = TCK
+		
 		add_core_of = MUN
 		victory_points = {
 			11233 1 
