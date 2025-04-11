@@ -1,14 +1,235 @@
 ﻿focus_tree = {
-    id = russian_focus
-
+    id = RUS_succession_tree
     
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = RUS
+            has_dlc = "Man the Guns"
+        }
+    }
+    replace = yes
+    default = no
+
+    ##########################
+    ### СМЕРТЬ АЛЕКСАНДРА III ###
+    ##########################
+    focus = {
+        id = RUS_death_of_alexander
+        icon = GFX_focus_generic_monarchy_crisis
+        x = 10
+        y = 0
+        cost = 10
+        
+        completion_reward = {
+            country_event = RUS_events.1 # Событие о смерти Александра III
+        }
+    }
+
+    ##########################
+    ### ВОЦАРЕНИЕ НИКОЛАЯ II ###
+    ##########################
+    focus = {
+        id = RUS_nicholas_coronation
+        icon = GFX_focus_generic_monarchy
+        prerequisite = { focus = RUS_death_of_alexander }
+        x = 10
+        y = 1
+        cost = 10
+        
+        completion_reward = {
+            set_politics = {
+                ruling_party = democratic
+                head_of_state = nicholas_ii
+                head_of_government = nicholas_ii
+            }
+            country_event = RUS_events.2 # Коронация Николая
+        }
+    }
+
+    ##########################
+    ### ОТМЕНА ЗАКОНА О ПРЕСТОЛОНАСЛЕДИИ ###
+    ##########################
+    focus = {
+        id = RUS_change_succession_laws
+        icon = GFX_focus_generic_political_effort
+        prerequisite = { focus = RUS_nicholas_coronation }
+        x = 8
+        y = 2
+        cost = 10
+        
+        available = {
+            has_government = democratic
+            NOT = { has_country_flag = nicholas_abdicated }
+        }
+        
+        completion_reward = {
+            country_event = RUS_events.3 # Николай меняет законы
+            add_political_power = 100
+        }
+    }
+
+    ##########################
+    ### ОТРЕЧЕНИЕ НИКОЛАЯ II ###
+    ##########################
+    focus = {
+        id = RUS_nicholas_abdication
+        icon = GFX_focus_generic_monarchy_abdication
+        prerequisite = { focus = RUS_change_succession_laws }
+        x = 8
+        y = 3
+        cost = 10
+        
+        completion_reward = {
+            country_event = RUS_events.4 # Событие отречения
+            set_country_flag = nicholas_abdicated
+            clr_country_flag = nicholas_ruling
+            set_politics = {
+                ruling_party = neutrality
+                head_of_state = vacant
+                head_of_government = vacant
+            }
+        }
+    }
+
+    ##########################
+    ### ВЫБОР НОВОГО ПРАВИТЕЛЯ ###
+    ##########################
+    focus = {
+        id = RUS_choose_new_ruler
+        icon = GFX_focus_generic_political_congress
+        prerequisite = { focus = RUS_nicholas_abdication }
+        x = 8
+        y = 4
+        cost = 10
+        
+        completion_reward = {
+            country_event = RUS_events.5 # Выбор нового правителя
+        }
+    }
+
+    ##########################
+    ### ВЕТКА МИХАИЛА РОМАНОВА ###
+    ##########################
+    focus = {
+        id = RUS_mikhail_romanov_path
+        icon = GFX_focus_generic_monarchy_reform
+        prerequisite = { focus = RUS_choose_new_ruler }
+        x = 6
+        y = 5
+        cost = 10
+        
+        mutually_exclusive = { 
+            focus = RUS_nikolai_nikolaevich_path 
+            focus = RUS_georgy_alexandrovich_path
+        }
+        
+        completion_reward = {
+            set_politics = {
+                ruling_party = democratic
+                head_of_state = mikhail_romanov
+                head_of_government = mikhail_romanov
+            }
+            country_event = RUS_events.6 # Михаил становится царем
+        }
+    }
+
+    ##########################
+    ### ВЕТКА НИКОЛАЯ НИКОЛАЕВИЧА ###
+    ##########################
+    focus = {
+        id = RUS_nikolai_nikolaevich_path
+        icon = GFX_focus_generic_military_advisor
+        prerequisite = { focus = RUS_choose_new_ruler }
+        x = 8
+        y = 5
+        cost = 10
+        
+        mutually_exclusive = { 
+            focus = RUS_mikhail_romanov_path 
+            focus = RUS_georgy_alexandrovich_path
+        }
+        
+        completion_reward = {
+            set_politics = {
+                ruling_party = fascism
+                head_of_state = nikolai_nikolaevich
+                head_of_government = nikolai_nikolaevich
+            }
+            country_event = RUS_events.7 # Николай Николаевич у власти
+        }
+    }
+
+    ##########################
+    ### ВЕТКА ГЕОРГИЯ АЛЕКСАНДРОВИЧА ###
+    ##########################
+    focus = {
+        id = RUS_georgy_alexandrovich_path
+        icon = GFX_focus_generic_army_effort
+        prerequisite = { focus = RUS_choose_new_ruler }
+        x = 10
+        y = 5
+        cost = 10
+        
+        mutually_exclusive = { 
+            focus = RUS_mikhail_romanov_path 
+            focus = RUS_nikolai_nikolaevich_path
+        }
+        
+        completion_reward = {
+            set_politics = {
+                ruling_party = neutrality
+                head_of_state = georgy_alexandrovich
+                head_of_government = georgy_alexandrovich
+            }
+            country_event = RUS_events.8 # Георгий становится царем
+        }
+    }
+
+    ##########################
+    ### ВЕТКА НИКОЛАЯ II ###
+    ##########################
+    focus = {
+        id = RUS_nicholas_reforms
+        icon = GFX_focus_generic_economic_effort
+        prerequisite = { focus = RUS_nicholas_coronation }
+        x = 12
+        y = 2
+        cost = 10
+        
+        completion_reward = {
+            add_political_power = 50
+            set_country_flag = nicholas_ruling
+            country_event = RUS_events.9 # Начало реформ Николая
+        }
+    }
 
     focus = {
-        id = RUS_afghanistan_annexation
-        icon = GFX_RUS_Anex_Afganistan
-
-
+        id = RUS_nicholas_foreign_policy
+        icon = GFX_focus_generic_foreign_affairs
+        prerequisite = { focus = RUS_nicholas_reforms }
+        x = 12
+        y = 3
+        cost = 10
         
+        completion_reward = {
+            add_ideas = RUS_nicholas_diplomacy
+            country_event = RUS_events.10 # Внешняя политика
+        }
+    }
+
+    focus = {
+        id = RUS_nicholas_military_reform
+        icon = GFX_focus_generic_army_effort
+        prerequisite = { focus = RUS_nicholas_reforms }
+        x = 11
+        y = 4
+        cost = 10
+        
+        completion_reward = {
+            research_slot = 1
+            country_event = RUS_events.11 # Военная реформа
         }
     }
 }

@@ -1,23 +1,18 @@
 state={
 	id=1055
 	name="STATE_1055"
-
+	provinces={
+		1995 5082 7916 7984 10852 10896 12769 12788 12831 12877 
+	}
 	history={
 		owner = AFG
-		victory_points = {
-			10789 1 
-		}
-		buildings = {
-			infrastructure = 1
-		}
 		add_core_of = AFG
-		add_core_of = HZR
+		add_core_of = TAJ
+		add_core_of = BDH
 		add_core_of = KHO
-
-	}
-
-	provinces={
-		1995  2078 7916 7984  10789 10852 10896 12769 12788 12877
+		victory_points = {
+			12769 1
+		}
 	}
 	manpower=1487058
 	buildings_max_level_factor=1.000
